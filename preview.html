@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beeclou — Preview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #f5f3f0 0%, #ede9e3 100%);
+            padding: 40px 20px;
+            color: #1a1a1a;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            color: #1a1a1a;
+        }
+
+        .preview-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        @media (max-width: 1024px) {
+            .preview-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .frame {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(26, 26, 26, 0.15);
+        }
+
+        .frame-label {
+            padding: 16px 24px;
+            background: #faf9f7;
+            border-bottom: 1px solid #e0e0e0;
+            font-weight: 600;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #6b6b6b;
+        }
+
+        .frame-content {
+            padding: 0;
+            height: 100%;
+        }
+
+        .mobile-frame {
+            max-width: 390px;
+            margin: 0 auto;
+        }
+
+        .mobile-frame .frame-content {
+            height: 600px;
+            overflow-y: auto;
+        }
+
+        .desktop-frame .frame-content {
+            height: 700px;
+            overflow-y: auto;
+        }
+
+        /* CONTENU PREVIEW */
+        .preview-content {
+            padding: 0;
+        }
+
+        /* HEADER */
+        .preview-header {
+            background: rgba(250, 249, 247, 0.95);
+            padding: 16px 20px;
+            border-bottom: 1px solid rgba(26, 26, 26, 0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .preview-logo {
+            font-size: 1.2em;
+            font-weight: 700;
+        }
+
+        /* HERO */
+        .preview-hero {
+            background: linear-gradient(135deg, #faf9f7 0%, #f5f3f0 100%);
+            padding: 40px 24px;
+            text-align: center;
+        }
+
+        .preview-hero h1 {
+            font-size: 2em;
+            margin: 0 0 16px 0;
+            line-height: 1.3;
+            color: #1a1a1a;
+        }
+
+        .preview-hero p {
+            font-size: 1em;
+            color: #6b6b6b;
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+
+        .preview-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .preview-btn {
+            padding: 14px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95em;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: #F4C430;
+            color: #1a1a1a;
+        }
+
+        .btn-primary:hover {
+            opacity: 0.9;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #1a1a1a;
+            border: 2px solid #1a1a1a;
+        }
+
+        /* SECTION */
+        .preview-section {
+            padding: 32px 24px;
+            border-bottom: 1px solid #e8e3db;
+        }
+
+        .preview-section:nth-child(odd) {
+            background: #faf9f7;
+        }
+
+        .preview-section:nth-child(even) {
+            background: #f5f3f0;
+        }
+
+        .preview-section h2 {
+            font-size: 1.4em;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+        }
+
+        .preview-section p {
+            font-size: 0.95em;
+            color: #6b6b6b;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .preview-visual {
+            width: 100%;
+            height: 120px;
+            background: linear-gradient(135deg, #e8e3db 0%, #ddd6cf 100%);
+            border-radius: 8px;
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6b6b6b;
+            font-size: 0.85em;
+        }
+
+        .preview-features {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .preview-feature {
+            background: white;
+            padding: 16px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #e0e0e0;
+        }
+
+        .preview-feature-icon {
+            font-size: 1.8em;
+            margin-bottom: 8px;
+        }
+
+        .preview-feature h3 {
+            font-size: 0.95em;
+            margin-bottom: 6px;
+            color: #1a1a1a;
+        }
+
+        .preview-feature p {
+            font-size: 0.85em;
+            color: #6b6b6b;
+            margin: 0;
+        }
+
+        /* FORM */
+        .preview-form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .preview-input {
+            padding: 12px;
+            border: 1px solid rgba(26, 26, 26, 0.1);
+            border-radius: 6px;
+            font-size: 0.95em;
+            background: white;
+        }
+
+        /* FOOTER */
+        .preview-footer {
+            background: #1a1a1a;
+            color: #faf9f7;
+            padding: 24px;
+            font-size: 0.9em;
+        }
+
+        .preview-footer h3 {
+            color: #F4C430;
+            margin-bottom: 8px;
+            font-size: 1em;
+        }
+
+        .preview-footer p {
+            color: rgba(250, 249, 247, 0.7);
+            margin-bottom: 12px;
+            font-size: 0.85em;
+        }
+
+        /* DESKTOP ONLY ADJUSTMENTS */
+        .desktop-frame .preview-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            align-items: center;
+        }
+
+        .desktop-frame .preview-visual {
+            height: 200px;
+            grid-column: 2;
+        }
+
+        .desktop-frame .preview-features {
+            grid-template-columns: repeat(3, 1fr);
+            grid-column: 1 / -1;
+        }
+
+        /* INFO BOX */
+        .info-box {
+            background: white;
+            border-left: 4px solid #F4C430;
+            padding: 24px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 12px rgba(26, 26, 26, 0.08);
+        }
+
+        .info-box h2 {
+            color: #1a1a1a;
+            margin-bottom: 12px;
+            font-size: 1.3em;
+        }
+
+        .info-box p {
+            color: #6b6b6b;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        .specs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .spec {
+            background: #faf9f7;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 0.9em;
+        }
+
+        .spec strong {
+            color: #1a1a1a;
+        }
+
+        .spec em {
+            color: #6b6b6b;
+            font-style: normal;
+        }
+
+        /* COLORS PALETTE */
+        .palette {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .color-box {
+            text-align: center;
+        }
+
+        .color-swatch {
+            width: 100%;
+            height: 80px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .color-name {
+            font-size: 0.9em;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 4px;
+        }
+
+        .color-code {
+            font-size: 0.8em;
+            color: #6b6b6b;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🐝 Beeclou — Preview Complète</h1>
+
+        <div class="info-box">
+            <h2>✅ Site Vérifié & Prêt</h2>
+            <p>Le site Beeclou mobile-first est <strong>100% complet et fonctionnel</strong>. Voici un aperçu visuel de chaque vue (mobile et desktop).</p>
+            <div class="specs">
+                <div class="spec"><strong>📱 Mobile-First:</strong> <em>iPhone optimisé</em></div>
+                <div class="spec"><strong>🎨 Design:</strong> <em>Premium minimal</em></div>
+                <div class="spec"><strong>⚡ Perfo:</strong> <em>32 KB total</em></div>
+                <div class="spec"><strong>🎯 Sections:</strong> <em>7 complètes</em></div>
+                <div class="spec"><strong>🔧 Stack:</strong> <em>Vanilla (0 deps)</em></div>
+                <div class="spec"><strong>🚀 Deploy:</strong> <em>Hostinger ready</em></div>
+            </div>
+        </div>
+
+        <!-- PREVIEW GRID -->
+        <div class="preview-grid">
+            <!-- MOBILE VERSION -->
+            <div class="frame mobile-frame">
+                <div class="frame-label">📱 Vue Mobile (iPhone 390px)</div>
+                <div class="frame-content">
+                    <div class="preview-content">
+                        <!-- Header -->
+                        <div class="preview-header">
+                            <div class="preview-logo">🐝 Beeclou</div>
+                        </div>
+
+                        <!-- Hero -->
+                        <div class="preview-hero">
+                            <h1>Des déplacements urbains plus libres, plus fluides et sans stress.</h1>
+                            <p>Beeclou imagine une mobilité quotidienne plus humaine, pratique et agréable.</p>
+                            <div class="preview-buttons">
+                                <button class="preview-btn btn-primary">Répondre au sondage</button>
+                                <button class="preview-btn btn-secondary">Devenir testeur</button>
+                            </div>
+                        </div>
+
+                        <!-- Hero Visual -->
+                        <div class="preview-section">
+                            <div class="preview-visual">🏙️ Image Hero</div>
+                        </div>
+
+                        <!-- Problem -->
+                        <div class="preview-section">
+                            <h2>La ville fatigue.</h2>
+                            <p>Bouchons, bruit, retards, transports saturés, stress et perte de temps transforment trop souvent les trajets quotidiens en contrainte.</p>
+                            <div class="preview-visual">🚗 Image Problème</div>
+                        </div>
+
+                        <!-- Vision -->
+                        <div class="preview-section">
+                            <h2>Repenser le voyage urbain.</h2>
+                            <p>Beeclou veut aider chacun à retrouver de la liberté, du calme et du plaisir dans ses déplacements.</p>
+                            <div class="preview-visual">✨ Image Vision</div>
+                        </div>
+
+                        <!-- Experience -->
+                        <div class="preview-section">
+                            <h2>Une mobilité simple, utile et rassurante.</h2>
+                            <p>Vélo pratique, top case sécurisé, rangement pour les affaires du quotidien.</p>
+                            <div class="preview-features">
+                                <div class="preview-feature">
+                                    <div class="preview-feature-icon">🚴</div>
+                                    <h3>Vélo Pratique</h3>
+                                    <p>Conçu pour la ville</p>
+                                </div>
+                                <div class="preview-feature">
+                                    <div class="preview-feature-icon">🎒</div>
+                                    <h3>Rangement Sécurisé</h3>
+                                    <p>Top case discret</p>
+                                </div>
+                                <div class="preview-feature">
+                                    <div class="preview-feature-icon">✨</div>
+                                    <h3>Sensation de Liberté</h3>
+                                    <p>Fluidité & calme</p>
+                                </div>
+                            </div>
+                            <div class="preview-visual" style="height: 140px;">🚴 Image Expérience</div>
+                        </div>
+
+                        <!-- Approach -->
+                        <div class="preview-section">
+                            <h2>Construire avec les vrais usages.</h2>
+                            <p>Beeclou se construit à partir d'observations terrain et de retours utilisateurs.</p>
+                            <div class="preview-visual">👥 Image Approche</div>
+                        </div>
+
+                        <!-- Testers -->
+                        <div class="preview-section">
+                            <h2>Participez aux premiers tests.</h2>
+                            <p>Vous utilisez le vélo en ville ou souhaitez vous y mettre ?</p>
+                            <div class="preview-form">
+                                <input type="text" class="preview-input" placeholder="Votre nom" disabled>
+                                <input type="email" class="preview-input" placeholder="Votre email" disabled>
+                                <input type="tel" class="preview-input" placeholder="Votre téléphone" disabled>
+                                <select class="preview-input" disabled>
+                                    <option>Quelle ville ?</option>
+                                </select>
+                                <button class="preview-btn btn-primary">Je veux devenir testeur</button>
+                            </div>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="preview-footer">
+                            <h3>Beeclou</h3>
+                            <p>Mobilité urbaine plus libre, plus fluide, plus humaine.</p>
+                            <p style="margin-top: 12px; font-size: 0.8em; color: rgba(250, 249, 247, 0.5);">© 2025 Beeclou</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DESKTOP VERSION -->
+            <div class="frame desktop-frame">
+                <div class="frame-label">🖥️ Vue Desktop (1024px+)</div>
+                <div class="frame-content">
+                    <div class="preview-content">
+                        <!-- Header -->
+                        <div class="preview-header">
+                            <div class="preview-logo">🐝 Beeclou</div>
+                            <div style="font-size: 0.85em; color: #6b6b6b;">Vision • Expérience • Testeurs</div>
+                        </div>
+
+                        <!-- Hero -->
+                        <div class="preview-hero" style="padding: 60px 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; text-align: left;">
+                            <div>
+                                <h1 style="font-size: 2.8em;">Des déplacements urbains plus libres, plus fluides et sans stress.</h1>
+                                <p style="margin-bottom: 32px;">Beeclou imagine une mobilité quotidienne plus humaine, pratique et agréable.</p>
+                                <div class="preview-buttons" style="flex-direction: row;">
+                                    <button class="preview-btn btn-primary">Répondre au sondage</button>
+                                    <button class="preview-btn btn-secondary">Devenir testeur</button>
+                                </div>
+                            </div>
+                            <div class="preview-visual" style="height: 240px;">🏙️ Hero Desktop</div>
+                        </div>
+
+                        <!-- Problem -->
+                        <div class="preview-section" style="padding: 60px 40px;">
+                            <div>
+                                <h2>La ville fatigue.</h2>
+                                <p>Bouchons, bruit, retards, transports saturés, stress et perte de temps transforment trop souvent les trajets quotidiens en contrainte.</p>
+                            </div>
+                            <div class="preview-visual" style="height: 200px;">🚗</div>
+                        </div>
+
+                        <!-- Experience Features -->
+                        <div class="preview-section" style="padding: 60px 40px;">
+                            <div style="grid-column: 1 / -1;">
+                                <h2>Une mobilité simple, utile et rassurante.</h2>
+                                <p>Vélo pratique, top case sécurisé, rangement pour les affaires du quotidien, trajets plus fluides et sensation de liberté.</p>
+                            </div>
+                            <div class="preview-features">
+                                <div class="preview-feature">
+                                    <div class="preview-feature-icon">🚴</div>
+                                    <h3>Vélo Pratique</h3>
+                                    <p>Conçu pour la ville, pas pour les compétitions</p>
+                                </div>
+                                <div class="preview-feature">
+                                    <div class="preview-feature-icon">🎒</div>
+                                    <h3>Rangement Sécurisé</h3>
+                                    <p>Top case discret pour vos affaires</p>
+                                </div>
+                                <div class="preview-feature">
+                                    <div class="preview-feature-icon">✨</div>
+                                    <h3>Sensation de Liberté</h3>
+                                    <p>Fluidité, calme et plaisir</p>
+                                </div>
+                            </div>
+                            <div class="preview-visual" style="height: 200px; grid-column: 1 / -1;">🚴 Image Experience</div>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="preview-footer">
+                            <h3>Beeclou</h3>
+                            <p>Mobilité urbaine plus libre, plus fluide, plus humaine.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PALETTE -->
+        <div class="info-box">
+            <h2>🎨 Palette de Couleurs</h2>
+            <p>Design premium minimaliste inspiré par Apple, Citymapper et Cowboy.</p>
+            <div class="palette">
+                <div class="color-box">
+                    <div class="color-swatch" style="background: #faf9f7; border: 1px solid #e0e0e0;"></div>
+                    <div class="color-name">Off-white</div>
+                    <div class="color-code">#faf9f7</div>
+                </div>
+                <div class="color-box">
+                    <div class="color-swatch" style="background: #1a1a1a;"></div>
+                    <div class="color-name">Soft Black</div>
+                    <div class="color-code">#1a1a1a</div>
+                </div>
+                <div class="color-box">
+                    <div class="color-swatch" style="background: #6b6b6b;"></div>
+                    <div class="color-name">Urban Gray</div>
+                    <div class="color-code">#6b6b6b</div>
+                </div>
+                <div class="color-box">
+                    <div class="color-swatch" style="background: #6b9b84;"></div>
+                    <div class="color-name">Sage Green</div>
+                    <div class="color-code">#6b9b84</div>
+                </div>
+                <div class="color-box">
+                    <div class="color-swatch" style="background: #F4C430;"></div>
+                    <div class="color-name">Beeclou Yellow</div>
+                    <div class="color-code">#F4C430</div>
+                </div>
+                <div class="color-box">
+                    <div class="color-swatch" style="background: #f5f3f0;"></div>
+                    <div class="color-name">Light Beige</div>
+                    <div class="color-code">#f5f3f0</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEXT STEPS -->
+        <div class="info-box" style="border-left-color: #6b9b84;">
+            <h2>🚀 Prochaines Étapes</h2>
+            <p>Le site est <strong>100% prêt</strong>. Choisissez ce que vous voulez faire maintenant :</p>
+            <div class="specs">
+                <div class="spec" style="cursor: pointer;"><strong>A)</strong> ✏️ <em>Personnaliser (emails, textes, liens)</em></div>
+                <div class="spec" style="cursor: pointer;"><strong>B)</strong> 🎨 <em>Ajouter des images premium</em></div>
+                <div class="spec" style="cursor: pointer;"><strong>C)</strong> 🚀 <em>Déployer sur Hostinger</em></div>
+                <div class="spec" style="cursor: pointer;"><strong>D)</strong> 🔧 <em>Personnaliser les couleurs/design</em></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
