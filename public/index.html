@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beeclou - Transforme tes déplacements en revenus</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #FFF8D6;
+            color: #111111;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: #ffffff;
+            padding: 16px;
+            border-bottom: 1px solid #FFD83D;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .menu {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-icon {
+            font-size: 72px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: rgba(17, 17, 17, 0.8);
+            margin-bottom: 32px;
+            line-height: 1.5;
+        }
+
+        .features {
+            width: 100%;
+            margin-bottom: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .feature-card {
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+
+        .feature-icon {
+            font-size: 32px;
+            flex-shrink: 0;
+        }
+
+        .feature-text {
+            text-align: left;
+        }
+
+        .feature-text h3 {
+            font-weight: bold;
+            margin-bottom: 4px;
+            font-size: 16px;
+        }
+
+        .feature-text p {
+            font-size: 13px;
+            color: #888888;
+        }
+
+        .cta-buttons {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        button {
+            padding: 14px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .btn-primary {
+            background: #FFD83D;
+            color: #111111;
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 4px 12px rgba(255, 216, 61, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: #ffffff;
+            color: #111111;
+            border: 2px solid #111111;
+        }
+
+        .btn-secondary:hover {
+            background: #FFF8D6;
+        }
+
+        footer {
+            background: #ffffff;
+            padding: 16px;
+            text-align: center;
+            font-size: 12px;
+            color: #888888;
+            border-top: 1px solid #FFD83D;
+        }
+
+        .cities {
+            font-size: 12px;
+            color: #888888;
+            margin-bottom: 20px;
+        }
+
+        /* Status bar mobile */
+        @media (max-width: 480px) {
+            .container {
+                max-width: 100%;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .subtitle {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🐝</div>
+            <div class="menu">☰</div>
+        </header>
+
+        <main>
+            <div class="hero-icon">🐝</div>
+            <h1>Beeclou</h1>
+            <p class="subtitle">Transforme tes déplacements en revenus et avantages locaux</p>
+
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <div class="feature-text">
+                        <h3>Se déplacer</h3>
+                        <p>À vélo, à pied, en mobilité douce</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <div class="feature-text">
+                        <h3>Gagner</h3>
+                        <p>Des points et des récompenses locales</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <div class="feature-text">
+                        <h3>Communauté</h3>
+                        <p>Rejoins ta ville et invite tes amis</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-buttons">
+                <button class="btn-primary">➡️ Commencer</button>
+                <button class="btn-secondary">🤝 Je suis partenaire</button>
+            </div>
+
+            <div class="cities">
+                📍 Disponible à Paris et Clermont-Ferrand
+            </div>
+        </main>
+
+        <footer>
+            © 2026 Beeclou - Mobilité durable & économie locale
+        </footer>
+    </div>
+</body>
+</html>
