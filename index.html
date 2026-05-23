@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Beeclou — Des déplacements urbains plus libres, plus fluides et sans stress. Une mobilité quotidienne plus humaine.">
+    <meta name="theme-color" content="#1a1a1a">
+    <meta property="og:title" content="Beeclou — Mobilité Urbaine">
+    <meta property="og:description" content="Des déplacements urbains plus libres, plus fluides et sans stress.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>Beeclou — Mobilité Urbaine Plus Libre</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50' y='60' font-size='80' text-anchor='middle' fill='%23F4C430'>🐝</text></svg>">
+</head>
+<body>
+    <!-- NAVIGATION / HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">🐝 Beeclou</div>
+                <nav class="nav-links">
+                    <a href="#vision" class="nav-link">Vision</a>
+                    <a href="#experience" class="nav-link">Expérience</a>
+                    <a href="#testeurs" class="nav-link">Testeurs</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 1: HERO -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Des déplacements urbains plus libres, plus fluides et sans stress.
+                </h1>
+                <p class="hero-subtitle">
+                    Beeclou imagine une mobilité quotidienne plus humaine, pratique et agréable, pensée pour les trajets réels de la vie urbaine.
+                </p>
+                <div class="hero-cta">
+                    <a href="#survey-form" class="btn btn-primary">Répondre au sondage</a>
+                    <a href="#testeurs" class="btn btn-secondary">Devenir testeur</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-placeholder hero-placeholder"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: PROBLÈME -->
+    <section id="problem" class="problem">
+        <div class="container">
+            <h2 class="section-title">La ville fatigue.</h2>
+            <p class="section-text">
+                Bouchons, bruit, retards, transports saturés, stress et perte de temps transforment trop souvent les trajets quotidiens en contrainte.
+            </p>
+            <div class="visual-placeholder problem-placeholder"></div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: VISION -->
+    <section id="vision" class="vision">
+        <div class="container">
+            <h2 class="section-title">Repenser le voyage urbain quotidien.</h2>
+            <p class="section-text">
+                Beeclou veut aider chacun à retrouver de la liberté, du calme et du plaisir dans ses déplacements.
+            </p>
+            <div class="visual-placeholder vision-placeholder"></div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: EXPÉRIENCE -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Une mobilité simple, utile et rassurante.</h2>
+            <p class="section-text">
+                Vélo pratique, top case sécurisé, rangement pour les affaires du quotidien, trajets plus fluides et sensation de liberté.
+            </p>
+            <div class="experience-features">
+                <div class="feature">
+                    <div class="feature-icon">🚴</div>
+                    <h3>Vélo Pratique</h3>
+                    <p>Conçu pour la ville, pas pour les compétitions.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🎒</div>
+                    <h3>Rangement Sécurisé</h3>
+                    <p>Top case discret pour vos affaires du quotidien.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">✨</div>
+                    <h3>Sensation de Liberté</h3>
+                    <p>Fluidité, calme et plaisir dans chaque trajet.</p>
+                </div>
+            </div>
+            <div class="visual-placeholder experience-placeholder"></div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: DÉMARCHE TERRAIN -->
+    <section id="approach" class="approach">
+        <div class="container">
+            <h2 class="section-title">Construire avec les vrais usages.</h2>
+            <p class="section-text">
+                Beeclou se construit à partir d'observations terrain, de retours utilisateurs et d'expériences réelles de cyclistes urbains.
+            </p>
+            <div class="visual-placeholder approach-placeholder"></div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: TESTEURS -->
+    <section id="testeurs" class="testeurs">
+        <div class="container">
+            <h2 class="section-title">Participez aux premiers tests.</h2>
+            <p class="section-text">
+                Vous utilisez le vélo en ville ou souhaitez vous y mettre ? Aidez-nous à imaginer une mobilité plus agréable.
+            </p>
+
+            <form id="testeur-form" class="testeur-form" novalidate>
+                <div class="form-group">
+                    <input
+                        type="text"
+                        name="nom"
+                        placeholder="Votre nom"
+                        required
+                    >
+                </div>
+                <div class="form-group">
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Votre email"
+                        required
+                    >
+                </div>
+                <div class="form-group">
+                    <input
+                        type="tel"
+                        name="telephone"
+                        placeholder="Votre téléphone"
+                    >
+                </div>
+                <div class="form-group">
+                    <select name="ville" required>
+                        <option value="">Quelle ville ?</option>
+                        <option value="paris">Paris</option>
+                        <option value="lyon">Lyon</option>
+                        <option value="marseille">Marseille</option>
+                        <option value="toulouse">Toulouse</option>
+                        <option value="bordeaux">Bordeaux</option>
+                        <option value="nice">Nice</option>
+                        <option value="nantes">Nantes</option>
+                        <option value="lille">Lille</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox">
+                        <input type="checkbox" name="conditions" required>
+                        <span>Je souhaite recevoir les infos sur Beeclou</span>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Je veux devenir testeur</button>
+                <p class="form-note">On ne spam jamais. Promis. 🐝</p>
+            </form>
+
+            <!-- Placement pour sondage Google Form -->
+            <div id="survey-form" class="survey-placeholder">
+                <p><strong>Sondage :</strong> Remplacer cette section par un iframe vers votre Google Form</p>
+                <!--
+                    À ajouter :
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true"
+                        width="100%"
+                        height="600"
+                        frameborder="0"
+                        marginheight="0"
+                        marginwidth="0">
+                        Chargement…
+                    </iframe>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <h3>Beeclou</h3>
+                    <p>Mobilité urbaine plus libre, plus fluide, plus humaine.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Connexions</h4>
+                    <ul>
+                        <!-- Remplacer par vos liens réels -->
+                        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                        <li><a href="mailto:hello@beeclou.com">Contact</a></li>
+                        <li><a href="#" class="scroll-to-top">Haut de page</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Beeclou. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
