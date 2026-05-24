@@ -1,148 +1,297 @@
-# 🐝 Beeclou — Mobilité Urbaine Premium
+# 🐝 Beeclou V1 — Mobilité Urbaine Plus Libre, Plus Fluide, Plus Agréable
 
-**Des déplacements urbains plus libres, plus fluides et sans stress.**
+**Des déplacements urbains sans surcharge mentale.**
 
-Version bêta mobile-first du site Beeclou — une solution de mobilité urbaine pensée pour les trajets réels de la vie urbaine.
+Site statique ultra-moderne pour Beeclou, construit avec Vite. Déploiement simple sur GitHub + Vercel. Stack minimaliste : HTML/CSS/JavaScript vanilla, aucun back-end.
 
 ## ✨ Caractéristiques
 
-- **Mobile-First** : Conçu pour être parfait sur iPhone en priorité
-- **Zéro Framework** : HTML/CSS/JavaScript pur — aucune dépendance externe
-- **Ultra-Léger** : ~30 KB total (HTML + CSS + JS)
-- **Déploiement Simple** : Upload direct dans Hostinger public_html
-- **Premium Accessible** : Design épuré et minimaliste, inspiré d'Apple × Citymapper × Cowboy
-- **Responsive** : Adapté à tous les écrans (mobile, tablette, desktop)
+- **Vite** : Build system moderne et rapide
+- **Mobile-First** : Design optimisé pour les petits écrans
+- **Vanilla Stack** : HTML/CSS/JavaScript pur — zéro dépendances lourdes
+- **Ultra Rapide** : ~50 KB (après build + gzip)
+- **Design Premium** : Inspiré Apple × Cowboy × Citymapper × Notion
+- **Déploiement Automatique** : Git push → Vercel déploie automatiquement
+- **100% Statique** : Pas de back-end, pas de base de données
 
-## 🎨 Design
+## 🎨 Design & Couleurs
 
-**Palette de couleurs:**
-- Off-white: `#faf9f7` (fond)
-- Soft Black: `#1a1a1a` (texte)
-- Urban Gray: `#6b6b6b` (texte secondaire)
-- Sage Green: `#6b9b84` (accent)
-- **Beeclou Yellow**: `#F4C430` (CTA principal)
+**Palette:**
+- Off-white: `#f5f3f0` (fond)
+- Noir doux: `#2a2520` (texte)
+- Gris urbain: `#8b8680` (texte secondaire)
+- Vert sauge: `#a8b8a0` (accent)
+- Beige clair: `#e8dfd8` (zones)
+- **Jaune Beeclou**: `#f4c430` (highlights)
 
-**Inspirations:**
-- Apple → épure, minimalisme
-- Citymapper → fluidité urbaine
-- Cowboy → élégance, sérénité
+**Style:**
+- Minimalisme lumineux
+- Beaucoup d'espace blanc
+- Animations subtiles
+- Premium accessible
+- Focus sur la lisibilité
 
-## 📁 Structure
+## 📁 Structure du Projet
 
 ```
-.
-├── index.html         # Page principale
-├── style.css          # Styles (mobile-first)
-├── script.js          # Interactions légères
-├── config.js          # Configuration centralisée
-├── DEPLOYMENT.md      # Guide complet de déploiement
-├── assets/
-│   ├── images/        # Images (à ajouter)
-│   └── fonts/         # Fonts (optionnel)
-└── .gitignore
+Beeclou/
+├── index.html              # HTML principal
+├── package.json            # Dépendances (Vite)
+├── vite.config.js          # Config Vite
+├── README.md               # Ce fichier
+├── src/
+│   ├── main.js             # JavaScript interactif
+│   └── styles.css          # Styles complets
+├── public/
+│   ├── assets/             # Images, icônes
+│   └── favicon.svg         # Favicon
+├── dist/                   # Build output (généré)
+└── .gitignore              # Fichiers à ignorer
 ```
 
-## 🚀 Déploiement Rapide
+## 🚀 Démarrage Rapide
 
-### Hostinger (recommandé)
-
-1. **Via File Manager:**
-   - Hostinger Control Panel → File Manager → public_html
-   - Créer dossier `beeclou` (optionnel)
-   - Uploader tous les fichiers
-
-2. **Votre URL:**
-   ```
-   https://votredomaine.com/beeclou/
-   ou
-   https://votredomaine.com/ (si upload direct à la racine)
-   ```
-
-### Local (développement)
+### Installation & Développement
 
 ```bash
-cd Beeclou/
-python3 -m http.server 8000
-# Puis ouvrir http://localhost:8000
+# Clone et installation
+git clone https://github.com/jean63echalier-alt/beeclou.git
+cd beeclou
+npm install
+
+# Démarrage en développement (http://localhost:5173)
+npm run dev
+
+# Build pour production
+npm run build
+
+# Preview du build
+npm run preview
+```
+
+### Variables d'environnement
+
+Créer un fichier `.env.local` (optionnel) :
+
+```env
+VITE_GOOGLE_FORM_ID=YOUR_FORM_ID
+VITE_INSTAGRAM_URL=https://instagram.com/beeclou
+VITE_CONTACT_EMAIL=hello@beeclou.com
+```
+
+## 🔧 Configuration (Important!)
+
+**Modifier les liens dans `src/main.js` :**
+
+```javascript
+const CONFIG = {
+  googleFormUrl: 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true',
+  instagramUrl: 'https://instagram.com/beeclou',
+  contactEmail: 'hello@beeclou.com',
+  contactForm: 'https://docs.google.com/forms/d/e/YOUR_TESTER_FORM_ID/viewform?embedded=true'
+}
+```
+
+Remplacer :
+- `YOUR_FORM_ID` → ID de votre Google Form (sondage)
+- `YOUR_TESTER_FORM_ID` → ID du formulaire testeurs
+- `instagram.com/beeclou` → Votre profil Instagram
+- `hello@beeclou.com` → Email de contact
+
+## 📱 Sections du Site
+
+1. **Hero** — Titre principal + CTA
+2. **La ville fatigue** — Problématiques urbaines
+3. **Le vrai enjeu** — Positionnement (calme > vitesse)
+4. **Le vélo est désiré mais freiné** — Obstacles identifiés
+5. **Vision** — Mission Beeclou
+6. **Expérience Beeclou** — 6 avantages clés
+7. **Collective Intelligence** — Vision partagée
+8. **Keyline** — Phrase clé en full dark
+9. **Démarche terrain** — Méthodologie
+10. **Participation** — Appels à l'action
+11. **Footer** — Liens et légal
+
+## 🌐 Déploiement sur Vercel
+
+### Étape 1 : Créer un repo GitHub
+
+```bash
+# Initialiser repo (si pas encore fait)
+git init
+git add .
+git commit -m "Initial commit: Beeclou V1 site"
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/beeclou.git
+git push -u origin main
+```
+
+### Étape 2 : Connecter à Vercel
+
+1. **Aller sur [vercel.com](https://vercel.com)**
+2. S'identifier avec GitHub
+3. **Import Project** → Sélectionner le repo `beeclou`
+4. Vercel détecte automatiquement Vite
+5. Cliquer **Deploy**
+
+**Résultat :** Site accessible sur `https://beeclou.vercel.app`
+
+### Étape 3 : Ajouter le domaine beeclou.fr
+
+1. Dans Vercel → Project Settings → Domains
+2. Ajouter `beeclou.fr` et `www.beeclou.fr`
+3. Vercel vous donne les nameservers
+
+### Étape 4 : Configurer les DNS
+
+Aller sur votre registrar (OVH, Namecheap, etc.) :
+
+1. Créer des records **CNAME** :
+   - `beeclou.fr` → ALIAS vers `beeclou.vercel.app`
+   - `www.beeclou.fr` → CNAME `beeclou.vercel.app`
+
+2. Ou des records **NS** pointant vers Vercel
+
+*Délai de propagation : 24-48h (parfois instantané)*
+
+### Étape 5 : Déploiement Automatique
+
+Une fois configuré :
+
+```bash
+# Chaque push déclenche un build automatique
+git push origin main
+# → Vercel rebuild et déploie automatiquement
+# → Site live sur beeclou.fr en ~2 minutes
 ```
 
 ## ✏️ Personnalisation
 
-Voir **DEPLOYMENT.md** pour:
-- Modifier les textes
-- Changer les couleurs
-- Ajouter des images
-- Intégrer Google Form
-- Mettre à jour les liens sociaux
-- Ajouter Google Analytics
+### Modifier les textes
 
-## 📱 Sections
+Éditer `index.html` directement (sections commentées).
 
-1. **Hero** — Titre + sous-titre + CTA
-2. **Problème** — "La ville fatigue"
-3. **Vision** — "Repenser le voyage urbain"
-4. **Expérience** — Caractéristiques (Vélo, Rangement, Liberté)
-5. **Approche** — "Construire avec les vrais usages"
-6. **Testeurs** — Formulaire d'inscription + Sondage Google Form
-7. **Footer** — Liens sociaux + contact
+### Changer les couleurs
 
-## 🔧 Configuration
+Éditer `:root` dans `src/styles.css` :
 
-Fichier `config.js`:
-- Liens sociaux (Instagram, email)
-- Google Form URL
-- Villes disponibles
-- Messages & textes
-- Palette de couleurs
+```css
+:root {
+  --color-bg: #f5f3f0;
+  --color-text-dark: #2a2520;
+  --color-accent-green: #a8b8a0;
+  /* ... etc */
+}
+```
+
+### Ajouter des images
+
+1. Placer images dans `public/assets/`
+2. Référencer dans HTML : `<img src="/assets/image.jpg" alt="Description">`
+3. **Important** : Optimiser les images (format WebP recommandé)
+
+### Intégrer Google Form
+
+1. Créer un formulaire sur [Google Forms](https://forms.google.com)
+2. Cliquer **Envoyer** → **< >** (embed)
+3. Copier l'URL du formulaire
+4. Coller dans `CONFIG.googleFormUrl` dans `src/main.js`
 
 ## ⚡ Performance
 
-- **Lighthouse Score**: 95+ ✓
-- **Temps de chargement**: < 1.5s
-- **Aucun JavaScript lourd**
-- **CSS optimisé**
-- **Images compressées (optionnel)**
+- **Lighthouse Score** : 95+ (objectif)
+- **First Contentful Paint** : < 1s
+- **Time to Interactive** : < 2s
+- **Bundle Size** : ~50 KB (gzip)
 
-Test: Chrome → DevTools → Lighthouse
+Tester : Lighthouse (Chrome DevTools) ou [pagespeed.web.dev](https://pagespeed.web.dev)
 
-## 📐 Responsive
+## 📐 Responsive Design
 
-- **Mobile** (< 768px): Layout en colonne
-- **Tablette** (768px - 1024px): Grille adaptée
-- **Desktop** (> 1024px): Layout optimisé
+Testé et optimisé pour :
+- **Mobile** (< 480px)
+- **Tablette** (480px - 768px)
+- **Desktop** (> 768px)
 
-Tester: Chrome DevTools → Vue responsive
+Breakpoints dans `src/styles.css` :
+```css
+@media (max-width: 768px) { /* Tablette/mobile */ }
+@media (max-width: 480px) { /* Mobile */ }
+```
 
 ## 🔍 SEO
 
-- Meta tags essentiels ✓
-- Open Graph tags (réseaux sociaux) ✓
-- Favicon emoji ✓
-- Titres hiérarchisés (H1 → H2 → H3) ✓
-- Descriptions pertinentes ✓
+- ✅ Meta tags (title, description)
+- ✅ Open Graph (réseaux sociaux)
+- ✅ Favicon
+- ✅ Hiérarchie H1 → H2 → H3
+- ✅ Alt text sur images
+- ✅ Structured data (optionnel)
+
+## 🔐 Bonnes Pratiques
+
+- ✅ Aucune clé d'API en public
+- ✅ `.gitignore` configuré
+- ✅ Linting & formatting (optionnel : ajouter ESLint/Prettier)
+- ✅ Build optimisé pour production
 
 ## 📋 Checklist Avant Lancement
 
+- [ ] Configuration URLs dans `src/main.js`
 - [ ] Textes personnalisés
-- [ ] Images ajoutées et compressées
+- [ ] Images optimisées
+- [ ] Logo et favicon
+- [ ] Forms Google intégrés
 - [ ] Liens sociaux corrects
-- [ ] Google Form intégré
 - [ ] Testé sur iOS et Android
-- [ ] Lighthouse Score 90+
-- [ ] Domain/email configurés
+- [ ] Lighthouse score 90+
+- [ ] Domaine pointant vers Vercel
 
-## 🎯 Objectif
+## 🎯 Prochaines Étapes
 
-Présenter Beeclou comme une solution de mobilité urbaine **plus libre, plus fluide et plus humaine**, avec un design premium et minimaliste que les utilisateurs ont envie d'utiliser.
+1. **MVP** : Site statique + formulaires
+2. **Analytics** : Ajouter Vercel Analytics ou Google Analytics
+3. **Blog** : Ajouter section actualités (MDX optionnel)
+4. **API** : Si besoin backend (serverless Vercel)
+5. **Email** : Intégration Mailchimp/Brevo pour newsletter
 
-## 📞 Support
+## 🆘 Troubleshooting
 
-Voir **DEPLOYMENT.md** pour:
-- Instructions détaillées de déploiement
-- Guide de personnalisation
-- Troubleshooting Hostinger
-- Optimization tips
+**Vercel dit "Build failed"**
+- Vérifier `npm run build` en local fonctionne
+- Vérifier `dist/` est bien généré
+- Vérifier `.gitignore` n'exclut pas `dist/`
+
+**Site vide après déploiement**
+- Vérifier URLs absolues (toujours `/` à la racine)
+- Vérifier assets path : `/assets/...` pas `assets/...`
+
+**Lenteur au build**
+- Vérifier images sont compressées
+- Vérifier aucune grosse vidéo
+- Optimiser CSS/JS
+
+## 📦 Technologies
+
+| Tech | Version | Usage |
+|------|---------|-------|
+| Vite | ^5.0.0 | Build system |
+| Node.js | 16+ | Runtime |
+| HTML5 | - | Markup |
+| CSS3 | - | Styling |
+| JavaScript | ES6+ | Interactivity |
+
+## 📄 Licence
+
+Propriétaire Beeclou. Tous droits réservés.
+
+## 📧 Support
+
+Pour questions/bugs :
+- Email : hello@beeclou.com
+- Instagram : @beeclou
 
 ---
 
-**Made with 🐝 for better urban mobility.**
+**Made with 🐝 for better urban mobility.**  
+*Beeclou — Des déplacements urbains plus libres, plus fluides, plus agréables.*

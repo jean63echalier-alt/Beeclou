@@ -1,21 +1,28 @@
 # OS
 .DS_Store
 Thumbs.db
+.AppleDouble
+.LSOverride
 
 # Logs
 *.log
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Build
+# Build outputs
 dist/
 build/
 *.min.js
 *.min.css
 
-# Dev
+# Dependencies
+node_modules/
+
+# Environment
+.env
 .env.local
 .env.*.local
-node_modules/
 
 # IDE
 .vscode/
@@ -23,11 +30,10 @@ node_modules/
 *.swp
 *.swo
 *~
-
-# Backups
 *.bak
-*~
 
-# OS temp files
-.AppleDouble
-.LSOverride
+# Vite
+.vite/
+
+# Misc
+*.orig

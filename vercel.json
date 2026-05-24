@@ -1,0 +1,39 @@
+{
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "vite",
+  "outputDirectory": "dist",
+  "env": {
+    "VITE_GOOGLE_FORM_ID": "@google_form_id",
+    "VITE_INSTAGRAM_URL": "@instagram_url",
+    "VITE_CONTACT_EMAIL": "@contact_email"
+  },
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/instagram",
+      "destination": "https://instagram.com/beeclou",
+      "permanent": false
+    }
+  ]
+}
