@@ -23,6 +23,7 @@
 >
 > ## 3. Personnalisation
 > - Rédiger une lettre de motivation courte et percutante, adaptée à chaque offre, en mettant en avant l'expérience la plus pertinente (Beeclou pour le digital/social media, LSDJ et Département du Puy-de-Dôme pour le community management, Clermont Foot 63 pour la vidéo/montage).
+> - Adapter le ton de la lettre au profil de l'entreprise : analyser l'offre et la communication de l'entreprise (site, réseaux sociaux) pour déterminer si elle est plutôt formelle (grand groupe, institution) ou décontractée (startup, agence créative), puis ajuster le style en conséquence (formules de politesse classiques vs ton direct et énergique).
 > - Joindre le CV : `documents/ECHALIER_JEAN_CV_communication.pdf`.
 > - Objet de l'email : "Candidature – [Intitulé du poste] – Jean Echalier".
 >
