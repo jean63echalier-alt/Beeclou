@@ -32,8 +32,8 @@
 > - Si pas d'email indiqué, postuler via le formulaire de la plateforme.
 >
 > ## 5. Suivi
-> - Tenir un tableau de suivi : date, entreprise, poste, lien offre, statut.
-> - Ne jamais postuler deux fois à la même offre.
+> - Tenir un tableau de suivi dans un Google Sheet partagé (colonnes : date, entreprise, poste, lien offre, statut, ton de la lettre utilisé).
+> - Avant chaque nouvelle recherche, consulter ce Google Sheet pour ne jamais postuler deux fois à la même offre.
 >
 > ## 6. Limites
 > - Maximum 5 candidatures par jour.
