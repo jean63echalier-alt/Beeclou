@@ -14,7 +14,7 @@
 > ## 1. Recherche des offres
 > - Plateformes : LinkedIn, Indeed, Welcome to the Jungle, HelloWork, APEC.
 > - Mots-clés : "Community Manager", "Social Media Manager", "Chargé de communication digitale", "Web Designer", "Graphiste / Motion Designer", "Assistant communication".
-> - Localisation : **Clermont-Ferrand** et environs, **+ offres à distance / télétravail**.
+> - Localisation : **Clermont-Ferrand, Paris, Lyon** et environs, **+ offres à distance / télétravail**.
 > - Type de contrat : **CDD, CDI, Freelance/Mission**.
 > - Exclure les offres publiées depuis plus de 7 jours et celles exigeant plus de 3 ans d'expérience.
 >
