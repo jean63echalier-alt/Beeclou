@@ -8,6 +8,7 @@
 > - Compétences : Adobe Suite (Photoshop, Illustrator, Premiere Pro, After Effects, InDesign, Lightroom), Canva, création de contenu, montage vidéo, stratégie digitale, SEO, négociation commerciale
 > - Langues : Français (natif), Anglais (courant), Espagnol (intermédiaire)
 > - Contact : jean63.echalier@gmail.com / +33 7 66 12 15 65
+> - Portfolio : https://jeechalier.fr
 > - CV joint : `documents/ECHALIER_JEAN_CV_communication.pdf`
 >
 > ## 1. Recherche des offres
@@ -25,6 +26,7 @@
 > - Rédiger une lettre de motivation courte et percutante, adaptée à chaque offre, en mettant en avant l'expérience la plus pertinente (Beeclou pour le digital/social media, LSDJ et Département du Puy-de-Dôme pour le community management, Clermont Foot 63 pour la vidéo/montage).
 > - Adapter le ton de la lettre au profil de l'entreprise : analyser l'offre et la communication de l'entreprise (site, réseaux sociaux) pour déterminer si elle est plutôt formelle (grand groupe, institution) ou décontractée (startup, agence créative), puis ajuster le style en conséquence (formules de politesse classiques vs ton direct et énergique).
 > - Joindre le CV : `documents/ECHALIER_JEAN_CV_communication.pdf`.
+> - Inclure le lien du portfolio (https://jeechalier.fr) dans la lettre/l'email, en particulier pour les offres de web design/graphisme.
 > - Objet de l'email : "Candidature – [Intitulé du poste] – Jean Echalier".
 >
 > ## 4. Envoi
