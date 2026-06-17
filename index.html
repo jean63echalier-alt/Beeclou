@@ -1856,8 +1856,8 @@
 
 <script>
   // ── SUPABASE INIT ──
-  const SUPABASE_URL = "https://anzobodydlmgcdfceqc.supabase.co";
-  const SUPABASE_ANON_KEY = "COLLER_ICI_LA_PUBLISHABLE_KEY";
+  const SUPABASE_URL = "https://aanzobodydlmgcdfceqc.supabase.co";
+  const SUPABASE_ANON_KEY = "sb_publishable_YDlXzUT7MUEYSd8AEiU62Q_rziJYBS_";
   let sbClient = null;
   try {
     if (window.supabase && window.supabase.createClient) {
@@ -1959,6 +1959,17 @@
       ? document.getElementById('c_email').value.trim()
       : document.getElementById('d_email').value.trim();
     if (!email) { setBtnError(btn, 'Email requis'); return; }
+    const _msg = [
+      'Profil : '+(ic ? 'Cycliste' : 'DRH / Entreprise'),
+      'Email : '+email,
+      'Réponse 1 : '+(answers.c_transport || answers.d_taille || ''),
+      'Réponse 2 : '+(answers.c_freins || answers.d_freins || ''),
+      'Réponse 3 : '+(answers.c_employeur || answers.d_convainc || ''),
+      'Réponse 4 : '+(answers.c_ideal || answers.d_fmd || '')
+    ].join('\n');
+    let _mailed = false;
+    try { await sendMail('🐝 Beeclou — '+(ic?'Cycliste':'DRH'), email, _msg); _mailed = true; }
+    catch(e) { console.warn('EmailJS échec:', e); }
     try {
       await saveLead({
         source: 'survey',
@@ -1971,19 +1982,11 @@
           trajet_ideal: answers.c_ideal || answers.d_fmd || ''
         }
       });
-      const _msg = [
-        'Profil : '+(ic ? 'Cycliste' : 'DRH / Entreprise'),
-        'Email : '+email,
-        'Réponse 1 : '+(answers.c_transport || answers.d_taille || ''),
-        'Réponse 2 : '+(answers.c_freins || answers.d_freins || ''),
-        'Réponse 3 : '+(answers.c_employeur || answers.d_convainc || ''),
-        'Réponse 4 : '+(answers.c_ideal || answers.d_fmd || '')
-      ].join('\n');
-      try { await sendMail('🐝 Beeclou — '+(ic?'Cycliste':'DRH'), email, _msg); }
-      catch(e2) { console.warn('EmailJS non envoyé:', e2); }
+    } catch(e) { console.warn('Supabase indisponible (lead non stocké):', e); }
+    if (_mailed) {
       document.querySelectorAll('#overlay-'+type+' .q-wrap, #overlay-'+type+' .popup-progress').forEach(el=>el.style.display='none');
       document.getElementById('ty-'+type).style.display='block';
-    } catch(e) {
+    } else {
       setBtnError(btn, 'Réessayer');
       document.getElementById(p+'-submit').insertAdjacentHTML('afterend', '<p style="color:#c0392b;font-size:13px;margin-top:8px">Une erreur est survenue, veuillez réessayer.</p>');
     }
@@ -2271,34 +2274,27 @@ async function submitTunnel() {
     }
   };
 
-  try {
-    await saveLead(tunnelPayload);
+  const _msg = [
+    'Profil : Cycliste (tunnel pilote)',
+    'Email : '+tunnelEmail,
+    'Ville : '+(tunnelCity || ''),
+    'Société / employeur : '+(tunnelCompany || ''),
+    'Pack : '+(tunnelAnswers.pack || 'Non choisi'),
+    'Employeur (FMD) : '+(tunnelAnswers.t_employer || '')
+  ].join('\n');
+  let _mailed = false;
+  try { await sendMail('🚲 Beeclou — Nouveau cycliste (tunnel)', tunnelEmail, _msg); _mailed = true; }
+  catch (emailError) { console.warn('EmailJS échec:', emailError); }
+  try { await saveLead(tunnelPayload); } catch (e) { console.warn('Supabase indisponible (lead non stocké):', e); }
 
-    if (window.emailjs) {
-      try {
-        const _msg = [
-          'Profil : Cycliste (tunnel pilote)',
-          'Email : '+tunnelEmail,
-          'Ville : '+(tunnelCity || ''),
-          'Société / employeur : '+(tunnelCompany || ''),
-          'Pack : '+(tunnelAnswers.pack || 'Non choisi'),
-          'Employeur (FMD) : '+(tunnelAnswers.t_employer || '')
-        ].join('\n');
-        await sendMail('🚲 Beeclou — Nouveau cycliste (tunnel)', tunnelEmail, _msg);
-      } catch (emailError) {
-        console.warn("EmailJS a échoué, lead enregistré quand même :", emailError);
-      }
-    }
-
+  if (_mailed) {
     document.querySelectorAll('#overlay-tunnel .tunnel-step, #overlay-tunnel .tunnel-progress-dots')
       .forEach(el => el.style.display = 'none');
     document.getElementById('ty-tunnel').style.display = 'block';
-
-  } catch (tunnelError) {
-    console.error("Erreur tunnel:", tunnelError);
+  } else {
     btn.textContent = 'Réessayer';
     btn.disabled = false;
-    alert("Une erreur est survenue. Veuillez réessayer.");
+    alert("L'envoi a échoué. Vérifiez votre connexion et réessayez.");
   }
 }
 document.getElementById('overlay-tunnel').addEventListener('click', e => {
