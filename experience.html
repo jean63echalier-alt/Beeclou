@@ -157,17 +157,12 @@
     font-style:italic;color:rgba(225,217,209,.45);font-size:12px;letter-spacing:.2em;
     mix-blend-mode:difference}
 
-  /* return-to-site at the end */
-  #returnHint{position:fixed;left:50%;bottom:42px;transform:translateX(-50%) translateY(20px);
-    z-index:120;font-family:var(--serif);font-style:italic;letter-spacing:.12em;font-size:14px;
-    color:var(--off-white);opacity:0;pointer-events:none;transition:opacity .8s,transform .8s;
-    background:rgba(9,10,2,.55);padding:13px 28px;border:1px solid rgba(232,184,115,.55);
-    border-radius:40px;backdrop-filter:blur(5px);text-align:center}
-  #returnHint.show{opacity:1;transform:translateX(-50%) translateY(0);animation:hintPulse 2.4s ease-in-out infinite}
-  #returnHint b{color:var(--gold-bright);font-weight:400}
-  @keyframes hintPulse{0%,100%{box-shadow:0 0 0 0 rgba(232,184,115,.0)}50%{box-shadow:0 0 22px 2px rgba(232,184,115,.25)}}
-  #fadeout{position:fixed;inset:0;background:#0A0901;z-index:300;opacity:0;pointer-events:none;transition:opacity .6s ease}
-  #fadeout.on{opacity:1;pointer-events:auto}
+  /* ---------- Return-to-site hint (process MyThèse §3) ---------- */
+  .return-hint{margin-top:34px;font-family:var(--serif);font-size:12px;
+    letter-spacing:.32em;text-transform:uppercase;color:var(--gold-bright);
+    opacity:0;transition:opacity .8s ease;pointer-events:none}
+  .return-hint.show{opacity:.85}
+  body.at-end{cursor:pointer}
 </style>
 </head>
 <body class="locked">
@@ -282,10 +277,11 @@
         <div><span>🐝 La ruche entière</span><b>un miel partagé</b></div>
       </div>
       <div class="cta-row reveal">
-        <a href="#hero" class="cta gold">Essaimer dans ma ville</a>
-        <a href="#hero" class="cta">Devenir marque partenaire</a>
+        <a href="index.html#cyclists" class="cta gold">Essaimer dans ma ville</a>
+        <a href="index.html#advertisers" class="cta">Devenir marque partenaire</a>
       </div>
       <div class="instr reveal" style="cursor:pointer" id="restart">Revivre l'expérience</div>
+      <div class="return-hint" id="returnHint">Cliquez n'importe où pour revenir au site &rarr;</div>
     </section>
   </main>
 
@@ -654,35 +650,6 @@ window.addEventListener('load', ()=>{
     });
   });
 
-  // ---- fin de l'expérience : un clic n'importe où renvoie au site principal ----
-  let experienceEnded=false, returnArmed=false;
-  const returnHint=document.getElementById('returnHint');
-  function returnToSite(e){
-    if(!returnArmed) return;
-    e.preventDefault(); e.stopPropagation();
-    returnArmed=false;
-    document.removeEventListener('click', returnToSite, true);
-    document.getElementById('fadeout').classList.add('on');
-    setTimeout(function(){ window.location.href='index.html'; }, 640);
-  }
-  ScrollTrigger.create({
-    trigger:'#outro', start:'top 55%',
-    onEnter:function(){
-      experienceEnded=true; returnHint.classList.add('show');
-      setTimeout(function(){
-        if(experienceEnded && !returnArmed){
-          returnArmed=true;
-          document.addEventListener('click', returnToSite, true);
-        }
-      }, 1100);
-    },
-    onLeaveBack:function(){
-      experienceEnded=false; returnArmed=false;
-      returnHint.classList.remove('show');
-      document.removeEventListener('click', returnToSite, true);
-    }
-  });
-
   // enter button
   document.getElementById('enterBtn').addEventListener('click',()=>{
     document.getElementById('c1').scrollIntoView({behavior:'smooth'});
@@ -695,6 +662,23 @@ window.addEventListener('load', ()=>{
   // restart
   document.getElementById('restart').addEventListener('click',()=>{
     document.getElementById('hero').scrollIntoView({behavior:'smooth'});
+  });
+
+  // ---------- Retour au site à la fin (process MyThèse §3) ----------
+  // Quand l'utilisateur atteint l'outro : un clic n'importe où ramène à l'accueil.
+  let atEnd = false;
+  const RETURN_URL = 'index.html';            // adresse de l'accueil (Beeclou = racine)
+  const returnHint = document.getElementById('returnHint');
+  ScrollTrigger.create({
+    trigger:'#outro', start:'top 55%', end:'bottom top',
+    onEnter:()=>{ atEnd=true; returnHint.classList.add('show'); document.body.classList.add('at-end'); },
+    onLeaveBack:()=>{ atEnd=false; returnHint.classList.remove('show'); document.body.classList.remove('at-end'); },
+  });
+  document.addEventListener('click',(e)=>{
+    if(!atEnd) return;
+    // on ignore les éléments interactifs pour ne pas casser leurs actions
+    if(e.target.closest('a, button, #restart, #info, #chapnav, header')) return;
+    window.location.href = RETURN_URL;
   });
 
   // info panel
@@ -729,7 +713,5 @@ window.addEventListener('load', ()=>{
   });
 });
 </script>
-  <div id="returnHint">🐝 Cliquez n'importe où pour revenir au <b>site Beeclou</b></div>
-  <div id="fadeout"></div>
 </body>
 </html>
