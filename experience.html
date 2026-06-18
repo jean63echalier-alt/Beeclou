@@ -34,6 +34,8 @@
 
   /* ---------- WebGL canvas ---------- */
   #webgl{position:fixed;inset:0;width:100vw;height:100vh;z-index:-1;display:block}
+  #bgvideo{position:fixed;inset:0;width:100vw;height:100vh;object-fit:cover;z-index:-3;background:var(--main-bg)}
+  #videoveil{position:fixed;inset:0;z-index:-2;pointer-events:none;background:linear-gradient(rgba(10,9,1,.55),rgba(10,9,1,.62))}
   #vignette{position:fixed;inset:0;z-index:-1;pointer-events:none;
     background:radial-gradient(ellipse at center, transparent 45%, rgba(5,4,0,.55) 100%)}
 
@@ -173,6 +175,12 @@
     <div class="loader-txt">Beeclou</div>
     <div class="loader-bar"><i></i></div>
   </div>
+
+  <!-- Fond video (synchronise au scroll) -->
+  <video id="bgvideo" muted playsinline preload="auto" aria-hidden="true">
+    <source src="experience-bg.mp4" type="video/mp4">
+  </video>
+  <div id="videoveil"></div>
 
   <!-- WebGL -->
   <canvas id="webgl"></canvas>
@@ -712,6 +720,29 @@ window.addEventListener('load', ()=>{
     if(master) gsap.to(master.gain,{value:muted?0:0.12,duration:.6});
   });
 });
+</script>
+<script>
+/* Fond video synchronise au scroll : haut de page = debut, bas de page = fin */
+(function(){
+  var v=document.getElementById('bgvideo'); if(!v) return;
+  var ready=false, ticking=false;
+  function markReady(){ ready=true; scrub(); }
+  v.addEventListener('loadedmetadata', markReady);
+  v.addEventListener('canplay', markReady);
+  // amorce le decodage (Safari/iOS affiche sinon une frame noire au scrub)
+  var p=v.play(); if(p&&p.then){ p.then(function(){v.pause();}).catch(function(){}); }
+  function scrub(){
+    ticking=false;
+    if(!ready||!v.duration||!isFinite(v.duration)) return;
+    var max=document.documentElement.scrollHeight-window.innerHeight;
+    var pr=max>0?Math.min(1,Math.max(0,(window.scrollY||window.pageYOffset)/max)):0;
+    var t=pr*(v.duration-0.05);
+    if(Math.abs(v.currentTime-t)>0.015){ try{v.currentTime=t;}catch(e){} }
+  }
+  window.addEventListener('scroll', function(){ if(!ticking){ ticking=true; requestAnimationFrame(scrub); } }, {passive:true});
+  window.addEventListener('resize', scrub);
+  window.addEventListener('load', scrub);
+})();
 </script>
 </body>
 </html>
