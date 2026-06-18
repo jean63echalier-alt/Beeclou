@@ -535,6 +535,8 @@
 
   /* ---------- animation loop ---------- */
   const tmp = new THREE.Vector3();
+  let dispersing=false;
+  const dvel=new Float32Array(N*3);
   function animate(){
     requestAnimationFrame(animate);
     const time = performance.now()*0.001;
@@ -570,6 +572,21 @@
     const mr = 2.2;     // mouse radius
     for(let i=0;i<N;i++){
       const ix=i*3, iy=ix+1, iz=ix+2;
+      if(dispersing){
+        // l'essaim s'envole loin (radial + vers le haut) puis disparait
+        if(Math.abs(cur[ix])<90 && Math.abs(cur[iy])<90 && Math.abs(cur[iz])<90){
+          cur[ix]+=dvel[ix]; cur[iy]+=dvel[iy]; cur[iz]+=dvel[iz];
+          dvel[ix]=Math.max(-3,Math.min(3,dvel[ix]*1.035));
+          dvel[iy]=Math.max(-3,Math.min(3,dvel[iy]*1.035));
+          dvel[iz]=Math.max(-3,Math.min(3,dvel[iz]*1.035));
+        }
+        cur[ix]+=Math.sin(time*3 + i*0.13)*0.012;
+        cur[iy]+=Math.cos(time*3 + i*0.21)*0.012;
+        col[ix]+=(colTarget[ix]-col[ix])*0.05;
+        col[iy]+=(colTarget[iy]-col[iy])*0.05;
+        col[iz]+=(colTarget[iz]-col[iz])*0.05;
+        continue;
+      }
       let tx=curForm[ix], ty=curForm[iy], tz=curForm[iz];
       // gentle per-particle drift
       tx += Math.sin(time*0.7 + i*0.13)*0.10;
@@ -620,8 +637,33 @@
     document.getElementById('chapnav').classList.toggle('show', chapter>=1);
   }
 
+  /* l'essaim s'envole hors de la page (outro) pour liberer le texte */
+  function disperse(on){
+    if(on){
+      for(let i=0;i<N;i++){
+        const ix=i*3, iy=ix+1, iz=ix+2;
+        const x=cur[ix], y=cur[iy], z=cur[iz];
+        const len=Math.hypot(x,y,z)||1;
+        dvel[ix]=(x/len)*0.05 + (Math.random()-0.5)*0.03;
+        dvel[iy]=(y/len)*0.05 + 0.045 + Math.random()*0.03;   // biais vers le haut
+        dvel[iz]=(z/len)*0.05 + (Math.random()-0.5)*0.02;
+      }
+      dispersing=true;
+      gsap.to(points.material,{opacity:0,duration:1.7,ease:'power2.in'});
+      gsap.to(honey.material,{opacity:0,duration:1.0});
+      gsap.to(bee.material,{opacity:0,duration:0.8});
+      gsap.to(trail.material,{opacity:0,duration:0.8});
+    } else {
+      dispersing=false;
+      gsap.to(points.material,{opacity:0.95,duration:1.2});
+      gsap.to(bee.material,{opacity:0.95,duration:0.9});
+      gsap.to(trail.material,{opacity:0.5,duration:0.9});
+      if(chapter===4) gsap.to(honey.material,{opacity:0.85,duration:1.0});
+    }
+  }
+
   /* expose */
-  window.__beeclou = { goChapter, init };
+  window.__beeclou = { goChapter, init, disperse };
   init();
 })();
 
@@ -679,8 +721,8 @@ window.addEventListener('load', ()=>{
   const returnHint = document.getElementById('returnHint');
   ScrollTrigger.create({
     trigger:'#outro', start:'top 55%', end:'bottom top',
-    onEnter:()=>{ atEnd=true; returnHint.classList.add('show'); document.body.classList.add('at-end'); },
-    onLeaveBack:()=>{ atEnd=false; returnHint.classList.remove('show'); document.body.classList.remove('at-end'); },
+    onEnter:()=>{ atEnd=true; returnHint.classList.add('show'); document.body.classList.add('at-end'); window.__beeclou.disperse(true); },
+    onLeaveBack:()=>{ atEnd=false; returnHint.classList.remove('show'); document.body.classList.remove('at-end'); window.__beeclou.disperse(false); },
   });
   document.addEventListener('click',(e)=>{
     if(!atEnd) return;
