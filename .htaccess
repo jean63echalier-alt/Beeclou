@@ -1,0 +1,25 @@
+# Beeclou — canonical domain + security headers
+
+# Force apex domain (redirect www -> beeclou.fr), matches og:url / canonical
+# (HTTPS is already enforced at the Hostinger platform level, no rule needed here)
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.beeclou\.fr$ [NC]
+RewriteRule ^(.*)$ https://beeclou.fr/$1 [L,R=301]
+
+# Security headers
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Browser caching for static assets
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
