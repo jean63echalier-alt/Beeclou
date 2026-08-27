@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr"><head>
   <meta charset="UTF-8">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%90%9D%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beeclou — Mobilité urbaine durable</title>
   <meta name="description" content="Beeclou équipe les vélos d'un top case malin : rangement fiable et marque locale choisie par le cycliste. Une mobilité urbaine financée par l'usage.">
@@ -114,6 +116,8 @@
     .btn-ghost:hover { border-color: var(--ink); transform: translateY(-2px); }
     .btn-sage { background: var(--sage); color: var(--cream); border: none; border-radius: 28px; padding: 14px 28px; font-size: 15px; font-weight: 500; cursor: pointer; transition: all 0.25s; font-family: 'DM Sans', sans-serif; }
     .btn-sage:hover { background: #4a6648; transform: translateY(-2px); }
+    .btn-honey { background: var(--honey); color: var(--ink); border: none; border-radius: 28px; padding: 14px 28px; font-size: 15px; font-weight: 500; cursor: pointer; transition: all 0.25s; font-family: 'DM Sans', sans-serif; }
+    .btn-honey:hover { background: var(--gold); transform: translateY(-2px); }
     .btn-sm { padding: 10px 20px; font-size: 13px; }
 
     /* ── SECTION BASE ── */
@@ -1054,9 +1058,9 @@
   <div class="nav-links">
     <a href="#home" class="nav-link" onclick="showPage('home');return false;">Accueil</a>
     <a href="#cyclists" class="nav-link" onclick="showPage('cyclists');return false;">Cyclistes</a>
+    <a href="#advertisers" class="nav-link" onclick="showPage('advertisers');return false;">Annonceurs</a>
     <a href="#companies" class="nav-link" onclick="showPage('companies');return false;">Entreprises</a>
     <a href="#cities" class="nav-link" onclick="showPage('cities');return false;">Villes</a>
-    <a href="#advertisers" class="nav-link" onclick="showPage('advertisers');return false;">Annonceurs</a>
     <a href="#blog" class="nav-link" onclick="showPage('blog');return false;">Blog</a>
     <a href="#contact" class="nav-link" onclick="showPage('contact');return false;">Contact</a>
     <button class="nav-cta" onclick="openSurvey('cycliste')">Rejoindre le pilote</button>
@@ -1068,9 +1072,9 @@
 <div class="mobile-menu" id="mobile-menu">
   <a href="#home" class="nav-link" onclick="showPage('home');toggleMobile();return false;">Accueil</a>
   <a href="#cyclists" class="nav-link" onclick="showPage('cyclists');toggleMobile();return false;">Cyclistes</a>
+  <a href="#advertisers" class="nav-link" onclick="showPage('advertisers');toggleMobile();return false;">Annonceurs</a>
   <a href="#companies" class="nav-link" onclick="showPage('companies');toggleMobile();return false;">Entreprises</a>
   <a href="#cities" class="nav-link" onclick="showPage('cities');toggleMobile();return false;">Villes</a>
-  <a href="#advertisers" class="nav-link" onclick="showPage('advertisers');toggleMobile();return false;">Annonceurs</a>
   <a href="#blog" class="nav-link" onclick="showPage('blog');toggleMobile();return false;">Blog</a>
   <a href="#contact" class="nav-link" onclick="showPage('contact');toggleMobile();return false;">Contact</a>
   <button class="btn-ink btn-sm" onclick="openSurvey('cycliste');toggleMobile()">Rejoindre le pilote</button>
@@ -1146,7 +1150,7 @@
         <div class="step-num">3</div>
         <div class="step-icon">🏢</div>
         <h3>L'employeur &amp; la ville soutiennent</h3>
-        <p>Entreprises et collectivités co‑financent via le Forfait Mobilités Durables et verdissent les déplacements.</p>
+        <p>Entreprises et collectivités participent au financement (via l'aide au vélo que la loi permet aux employeurs de verser) et soutiennent des trajets plus propres.</p>
       </div>
       <div class="step-card">
         <div class="step-num">4</div>
@@ -1196,12 +1200,27 @@
     <h2 class="section-title">Vous êtes…</h2>
     <p class="section-sub">Choisissez votre profil pour rejoindre la phase pilote.</p>
     <div class="hero-actions" style="justify-content:flex-start;">
+      <button class="btn-honey" onclick="showPage('cyclists')">Je suis cycliste</button>
+      <button class="btn-ghost" onclick="showPage('advertisers')">Je suis une marque</button>
       <button class="btn-ink" onclick="showPage('companies')">Je suis une entreprise</button>
       <button class="btn-sage" onclick="showPage('cities')">Je suis une ville</button>
-      <button class="btn-ghost" onclick="showPage('advertisers')">Je suis une marque</button>
     </div>
 
-    <div class="trio-grid">
+    <div class="trio-grid" style="grid-template-columns:repeat(2,1fr);max-width:640px">
+      <div class="trio-card" onclick="showPage('cyclists')" style="border-color:var(--honey)">
+        <span class="trio-pill trio-pill light">Cyclistes</span>
+        <span class="trio-icon">🚲</span>
+        <div class="trio-title">Rouler et être payé au kilomètre</div>
+        <div class="trio-desc">Vous roulez en ville ? Rejoignez les premiers cyclistes pilotes Beeclou.</div>
+        <div class="trio-cta" style="color:var(--gold)">Participer au pilote →</div>
+      </div>
+      <div class="trio-card" onclick="showPage('advertisers')">
+        <span class="trio-pill trio-pill light">Marques · Agences</span>
+        <span class="trio-icon">📢</span>
+        <div class="trio-title">Visibilité locale sur les vélos du quotidien</div>
+        <div class="trio-desc">Vous êtes une marque locale ? Testez un nouveau canal de communication urbain avec nous.</div>
+        <div class="trio-cta" style="color:var(--sage)">Participer au pilote →</div>
+      </div>
       <div class="trio-card dark" onclick="showPage('companies')">
         <span class="trio-pill">Entreprises · DRH</span>
         <span class="trio-icon">🏢</span>
@@ -1215,13 +1234,6 @@
         <div class="trio-title">Tester la mobilité douce à grande échelle</div>
         <div class="trio-desc">Nous cherchons des villes pilotes pour tester le modèle Beeclou sur le terrain.</div>
         <div class="trio-cta">Participer au pilote →</div>
-      </div>
-      <div class="trio-card" onclick="showPage('advertisers')">
-        <span class="trio-pill trio-pill light">Marques · Agences</span>
-        <span class="trio-icon">📢</span>
-        <div class="trio-title">Visibilité locale sur les vélos du quotidien</div>
-        <div class="trio-desc">Vous êtes une marque locale ? Testez un nouveau canal de communication urbain avec nous.</div>
-        <div class="trio-cta" style="color:var(--sage)">Participer au pilote →</div>
       </div>
     </div>
   </section>
@@ -1254,7 +1266,7 @@
       </div>
       <div class="testi-card">
         <div class="testi-stars">🏢</div>
-        <div class="testi-quote">Les entreprises cherchent une solution mobilité simple à déployer, éligible au FMD, sans gestion lourde.</div>
+        <div class="testi-quote">Les entreprises cherchent une solution mobilité simple à mettre en place, finançable par l'aide au vélo, sans gestion lourde.</div>
         <div class="testi-author">Hypothèse entreprise — aidez-nous à la confirmer</div>
       </div>
       <div class="testi-card">
@@ -1349,8 +1361,8 @@
     <span class="hero-badge">🚴 Je suis cycliste</span>
     <img src="assets/images/06-cycliste-avec-le-top-case-beeclou.jpg" loading="lazy" decoding="async" alt="Cycliste avec le top case Beeclou" class="hero-photo-float" loading="lazy" width="220" height="220" onerror="this.style.display='none'">
     <h2 class="hero-title">
-      <span class="line">Roulez en ville,</span>
-      <span class="line">soyez <em class="styled">récompensé</em></span>
+      <span class="line">Gagnez jusqu'à</span>
+      <span class="line"><em class="styled">80€</em> par mois</span>
     </h2>
     <p class="hero-sub">Beeclou équipe votre vélo d'un top case. Vous choisissez la marque locale qu'il affiche, et chaque kilomètre parcouru vous rapporte. Nous cherchons nos premiers cyclistes pilotes.</p>
     <div class="hero-actions">
@@ -1382,6 +1394,21 @@
       <div class="step-card"><div class="step-num">1</div><div class="step-icon">🚲</div><h3>Vous équipez votre vélo</h3><p>On installe le top case Beeclou sur votre porte-bagages (fixation Klickfix, sans outil).</p></div>
       <div class="step-card"><div class="step-num">2</div><div class="step-icon">🎯</div><h3>Vous choisissez la marque</h3><p>Vous sélectionnez la marque locale affichée. Vous en êtes l'ambassadeur.</p></div>
       <div class="step-card"><div class="step-num">3</div><div class="step-icon">💶</div><h3>Vous roulez, vous gagnez</h3><p>Chaque kilomètre parcouru vous rapporte. Plus vous roulez, plus ça compte.</p></div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- FAQ CYCLISTE -->
+  <section class="section rise">
+    <div class="section-label">Questions fréquentes</div>
+    <h2 class="section-title">Ce que vous<br><em class="styled">voulez savoir</em></h2>
+    <div class="faq-list">
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Ai-je besoin d'un porte-bagages ?</div><div class="faq-a">Oui. Le top case Beeclou se clipse sur un porte-bagages arrière, avec une fixation Klickfix — sans outil.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Puis-je choisir moi-même la marque affichée ?</div><div class="faq-a">Oui. Vous êtes libre de choisir la marque locale affichée sur votre top case — vous en êtes l'ambassadeur, pas de pub imposée.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Mes trajets sont-ils suivis ?</div><div class="faq-a">Oui, de façon anonymisée : c'est ce qui permet de calculer ce que chaque trajet vous rapporte. Position anonymisée, données regroupées — jamais de suivi individuel.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Le top case sert-il aussi de rangement ?</div><div class="faq-a">Oui, c'est un vrai coffre ergonomique. Vos affaires du quotidien y tiennent, en plus d'afficher la marque que vous avez choisie.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Quand puis-je commencer à rouler avec Beeclou ?</div><div class="faq-a">Beeclou est en phase pilote : nous ouvrons les premières places progressivement. Inscrivez-vous à la liste des cyclistes pilotes, nous revenons vers vous rapidement.</div></div>
     </div>
   </section>
 
@@ -1422,13 +1449,13 @@
     <div class="problems-grid">
       <div class="problem-card">
         <div class="problem-icon">💰</div>
-        <h3>Budget FMD inexploité</h3>
-        <p>La plupart des entreprises n'utilisent pas leurs 900€/an par salarié de Forfait Mobilités Durables. De l'argent laissé sur la table.</p>
+        <h3>Une aide au vélo non utilisée</h3>
+        <p>La loi permet à chaque employeur de verser jusqu'à 900€/an et par salarié pour ses trajets à vélo (le "Forfait Mobilités Durables"). La plupart des entreprises ne s'en servent pas.</p>
       </div>
       <div class="problem-card">
         <div class="problem-icon">😰</div>
-        <h3>Stress du trajet nuit à la QVT</h3>
-        <p>Métro bondé, embouteillages, pollution = mauvaise qualité de vie au travail. L'absentéisme augmente inévitablement.</p>
+        <h3>Le trajet stresse vos salariés</h3>
+        <p>Métro bondé, embouteillages, pollution : le trajet fatigue avant même d'arriver au travail. Résultat, plus d'absences.</p>
       </div>
       <div class="problem-card">
         <div class="problem-icon">🏢</div>
@@ -1464,9 +1491,9 @@
       <div class="feature-item">
         <div class="feature-icon-box">❤️</div>
         <div class="feature-content">
-          <h3>Vos collaborateurs en redemandent</h3>
-          <p>Le trajet en VAE = agréable, sain, sans stress. Améliore la rétention, réduit l'absentéisme, booste le moral. 78% de satisfaction collaborateur constatée.</p>
-          <span class="feature-badge">✅ −12% d'arrêts maladie</span>
+          <h3>Vos collaborateurs vont adorer</h3>
+          <p>Le trajet en vélo électrique : agréable, sain, sans stress. On pense que ça améliore la fidélisation, réduit l'absentéisme et booste le moral d'équipe — c'est justement ce que le pilote doit valider avec vous.</p>
+          <span class="feature-badge">✅ Mesuré ensemble dès le pilote</span>
         </div>
       </div>
     </div>
@@ -1478,12 +1505,12 @@
   <section class="section rise" id="pricing-companies">
     <div class="section-label">Tarification</div>
     <h2 class="section-title">Une offre construite<br><em class="styled">avec vous</em></h2>
-    <p class="section-sub">Chaque organisation est différente. Taille de flotte, budget FMD disponible, objectifs RSE — nous construisons une proposition adaptée à votre situation.</p>
+    <p class="section-sub">Chaque organisation est différente. Nombre de vélos, aide au vélo disponible, objectifs environnementaux — nous construisons une proposition adaptée à votre situation.</p>
     <div class="feature-item" style="max-width:600px">
       <div class="feature-icon-box">💶</div>
       <div class="feature-content">
         <h3>Tarification sur mesure</h3>
-        <p>Le coût du pack Beeclou dépend du nombre de vélos, de la formule choisie (Option A ou B) et de votre budget FMD disponible. Dans la plupart des cas, le FMD couvre l'essentiel du coût.</p>
+        <p>Le coût du pack Beeclou dépend du nombre de vélos, de la formule choisie (Option A ou B) et de l'aide au vélo que vous pouvez verser. Dans la plupart des cas, cette aide couvre l'essentiel du coût.</p>
         <span class="feature-badge">✅ Devis gratuit sous 48h</span>
       </div>
     </div>
@@ -1502,10 +1529,10 @@
       <div class="case-card">
         <div class="case-tag">Pilote visé · PME · Auvergne</div>
         <h3>Entreprise pilote #1</h3>
-        <p>Une PME locale avec un budget FMD inexploité, prête à tester Beeclou avec 5 à 10 salariés.</p>
+        <p>Une PME locale qui n'utilise pas encore son aide au vélo, prête à tester Beeclou avec 5 à 10 salariés.</p>
         <div class="case-results">
           <div class="case-result">Valider l'intérêt réel des salariés pour le vélo quotidien</div>
-          <div class="case-result">Tester la fixation FMD en conditions réelles</div>
+          <div class="case-result">Tester le versement de l'aide au vélo en conditions réelles</div>
           <div class="case-result">Mesurer l'adoption sur 3 mois</div>
         </div>
         <div class="case-quote">Ce pilote est en cours de construction — rejoignez-nous.</div>
@@ -1534,7 +1561,7 @@
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Qu'est-ce que le Forfait Mobilités Durables ?</div><div class="faq-a">C'est une allocation française exonérée d'impôts jusqu'à 900€/an par salarié pour la mobilité durable (vélos, transports, covoiturage). L'employeur la verse sans charges sociales, le salarié la reçoit sans impôts.</div></div>
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Comment l'Option B permet-elle d'économiser ?</div><div class="faq-a">Les annonceurs paient Beeclou pour placer leurs publicités sur les boîtes. Ce revenu réduit vos coûts. Avec 50 vélos, vous pouvez économiser 500–1000€/mois.</div></div>
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Les vélos sont-ils entretenus ?</div><div class="faq-a">Oui, la maintenance est incluse dans tous les forfaits. Beeclou gère tout : réparations, révisions, assurance.</div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Et si les salariés ne veulent pas de vélo ?</div><div class="faq-a">C'est facultatif. Nous le proposons, l'adoption est volontaire. La plupart des équipes atteignent 40–50% d'adoption dès le premier trimestre.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Et si les salariés ne veulent pas de vélo ?</div><div class="faq-a">C'est facultatif. Nous le proposons, l'adoption reste volontaire. Le taux d'adoption réel est justement l'une des choses que le pilote doit mesurer avec vous.</div></div>
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">RGPD et confidentialité des données ?</div><div class="faq-a">Nous sommes 100% conformes RGPD. Aucun tracking personnel. Uniquement des métriques agrégées (trajets, impact CO2).</div></div>
     </div>
   </section>
@@ -1580,7 +1607,7 @@
   <footer>
     <div class="footer-grid">
       <div class="footer-brand"><span class="nav-logo">Bee<span style="color:var(--gold)">clou</span></span><p>Beeclou — En construction · 2025–2026</p></div>
-      <div class="footer-col"><h4>Solutions</h4><a href="#companies" onclick="showPage('companies');return false;">Entreprises</a><a href="#cities" onclick="showPage('cities');return false;">Villes</a><a href="#advertisers" onclick="showPage('advertisers');return false;">Annonceurs</a></div>
+      <div class="footer-col"><h4>Solutions</h4><a href="#cyclists" onclick="showPage('cyclists');return false;">Cyclistes</a><a href="#advertisers" onclick="showPage('advertisers');return false;">Annonceurs</a><a href="#companies" onclick="showPage('companies');return false;">Entreprises</a><a href="#cities" onclick="showPage('cities');return false;">Villes</a></div>
       <div class="footer-col"><h4>Entreprise</h4><a href="#blog" onclick="showPage('blog');return false;">Blog</a><a href="#contact" onclick="showPage('contact');return false;">Contact</a></div>
       <div class="footer-col"><h4>Légal</h4><a>Confidentialité</a><a>CGU</a></div>
     </div>
@@ -1729,7 +1756,7 @@
     </div>
   </div>
 
-  <footer><div class="footer-grid"><div class="footer-brand"><span class="nav-logo">Bee<span style="color:var(--gold)">clou</span></span><p>Beeclou — En construction · 2025–2026</p></div><div class="footer-col"><h4>Solutions</h4><a href="#companies" onclick="showPage('companies');return false;">Entreprises</a><a href="#cities" onclick="showPage('cities');return false;">Villes</a><a href="#advertisers" onclick="showPage('advertisers');return false;">Annonceurs</a></div><div class="footer-col"><h4>Entreprise</h4><a href="#blog" onclick="showPage('blog');return false;">Blog</a><a href="#contact" onclick="showPage('contact');return false;">Contact</a></div><div class="footer-col"><h4>Légal</h4><a>Confidentialité</a><a>CGU</a></div></div><div class="footer-bottom"><p>© 2025 Beeclou.</p><p>contact@beeclou.fr</p></div></footer>
+  <footer><div class="footer-grid"><div class="footer-brand"><span class="nav-logo">Bee<span style="color:var(--gold)">clou</span></span><p>Beeclou — En construction · 2025–2026</p></div><div class="footer-col"><h4>Solutions</h4><a href="#cyclists" onclick="showPage('cyclists');return false;">Cyclistes</a><a href="#advertisers" onclick="showPage('advertisers');return false;">Annonceurs</a><a href="#companies" onclick="showPage('companies');return false;">Entreprises</a><a href="#cities" onclick="showPage('cities');return false;">Villes</a></div><div class="footer-col"><h4>Entreprise</h4><a href="#blog" onclick="showPage('blog');return false;">Blog</a><a href="#contact" onclick="showPage('contact');return false;">Contact</a></div><div class="footer-col"><h4>Légal</h4><a>Confidentialité</a><a>CGU</a></div></div><div class="footer-bottom"><p>© 2025 Beeclou.</p><p>contact@beeclou.fr</p></div></footer>
 </div>
 
 <!-- ═══════════════════════════════════════════════════ -->
@@ -1757,9 +1784,9 @@
     <div class="section-label">Le problème</div>
     <h2 class="section-title">Pourquoi la pub urbaine<br><em class="styled">classique ne fonctionne plus</em></h2>
     <div class="problems-grid">
-      <div class="problem-card"><div class="problem-icon">🎯</div><h3>Budget gaspillé sur tous</h3><p>Les panneaux génériques ? La plupart des gens les ignorent. Faible engagement, coût élevé, audience non qualifiée.</p></div>
-      <div class="problem-card"><div class="problem-icon">👁️</div><h3>Une seule expo, oubliée</h3><p>Le cycliste voit votre panneau une fois. Oublié immédiatement. La mémorisation nécessite de la répétition.</p></div>
-      <div class="problem-card"><div class="problem-icon">📊</div><h3>ROI impossible à mesurer</h3><p>Pub traditionnelle : impossible de tracer les impressions, clics ou conversions. Vous pilotez à l'aveugle.</p></div>
+      <div class="problem-card"><div class="problem-icon">🎯</div><h3>Un budget arrosé au hasard</h3><p>Les panneaux génériques ? La plupart des gens ne les regardent même pas. Cher, peu efficace, mal ciblé.</p></div>
+      <div class="problem-card"><div class="problem-icon">👁️</div><h3>Vu une fois, oublié aussitôt</h3><p>Le cycliste voit votre panneau une fois, puis l'oublie. Pour rester en tête, il faut être vu plusieurs fois.</p></div>
+      <div class="problem-card"><div class="problem-icon">📊</div><h3>Impossible à mesurer</h3><p>Avec la pub traditionnelle, impossible de savoir combien de personnes ont vu, cliqué ou acheté. Vous avancez à l'aveugle.</p></div>
     </div>
   </section>
 
@@ -1769,9 +1796,9 @@
     <div class="section-label">La solution Beeclou</div>
     <h2 class="section-title">Publicité sur vélos :<br><em class="styled">performante et mesurable</em></h2>
     <div class="features-list">
-      <div class="feature-item"><div class="feature-icon-box">📍</div><div class="feature-content"><h3>Ciblage hyper-local</h3><p>Ne payez pas pour une portée citywide. Ciblez des rues, quartiers, créneaux précis (trajet domicile-travail vs loisirs). Dépense efficace.</p><span class="feature-badge">✅ Touchez uniquement qui compte</span></div></div>
-      <div class="feature-item"><div class="feature-icon-box">🔄</div><div class="feature-content"><h3>5+ expositions par semaine par cycliste</h3><p>Votre pub est littéralement sur leur vélo. Ils la voient en allant au travail, en rentrant, le week-end. La fréquence crée la mémorisation.</p><span class="feature-badge">✅ La répétition construit la mémoire</span></div></div>
-      <div class="feature-item"><div class="feature-icon-box">📲</div><div class="feature-content"><h3>ROI mesurable à chaque trajet</h3><p>QR code sur la boîte → page d'atterrissage. L'app trace : impressions, clics, conversions. Calculez votre coût d'acquisition exact.</p><span class="feature-badge">✅ Reporting ROI transparent</span></div></div>
+      <div class="feature-item"><div class="feature-icon-box">📍</div><div class="feature-content"><h3>Un ciblage très précis</h3><p>Ne payez pas pour toute la ville. Ciblez des rues, des quartiers, des horaires précis (trajet domicile-travail ou loisirs). Chaque euro compte.</p><span class="feature-badge">✅ Touchez uniquement qui compte</span></div></div>
+      <div class="feature-item"><div class="feature-icon-box">🔄</div><div class="feature-content"><h3>Vu 5 fois ou plus par semaine</h3><p>Votre pub est littéralement sur leur vélo. Ils la voient en allant au travail, en rentrant, le week-end. Vu souvent, on s'en souvient.</p><span class="feature-badge">✅ La répétition construit la mémoire</span></div></div>
+      <div class="feature-item"><div class="feature-icon-box">📲</div><div class="feature-content"><h3>Des résultats mesurables à chaque trajet</h3><p>QR code sur la boîte → votre page web. L'app compte : combien de personnes voient, cliquent, achètent. Vous connaissez votre coût exact par client.</p><span class="feature-badge">✅ Des chiffres transparents</span></div></div>
     </div>
   </section>
 
@@ -1811,7 +1838,7 @@
 
   <!-- ROI CALCULATOR -->
   <section class="section rise" id="roi-calc">
-    <div class="section-label">Calculateur ROI</div>
+    <div class="section-label">Calculateur de retour sur investissement</div>
     <h2 class="section-title">Estimez votre retour<br><em class="styled">sur investissement</em></h2>
     <div class="calc-box">
       <div class="calc-row">
@@ -1823,12 +1850,12 @@
         <input type="range" min="10" max="500" step="10" value="50" id="aov-slider" oninput="calcROI()">
       </div>
       <div class="calc-results">
-        <div class="calc-result-item"><div class="calc-result-num" id="calc-impressions">2 500</div><div class="calc-result-label">Impressions/semaine</div></div>
+        <div class="calc-result-item"><div class="calc-result-num" id="calc-impressions">2 500</div><div class="calc-result-label">Personnes touchées/semaine</div></div>
         <div class="calc-result-item"><div class="calc-result-num" id="calc-clicks">100</div><div class="calc-result-label">Clics estimés/semaine</div></div>
-        <div class="calc-result-item"><div class="calc-result-num" id="calc-conversions">8</div><div class="calc-result-label">Conversions/semaine</div></div>
-        <div class="calc-result-item"><div class="calc-result-num" id="calc-roi">200%</div><div class="calc-result-label">ROI mensuel estimé</div></div>
+        <div class="calc-result-item"><div class="calc-result-num" id="calc-conversions">8</div><div class="calc-result-label">Ventes estimées/semaine</div></div>
+        <div class="calc-result-item"><div class="calc-result-num" id="calc-roi">200%</div><div class="calc-result-label">Gain estimé par mois</div></div>
       </div>
-      <p style="font-size:12px;color:var(--muted);margin-top:14px">* Estimations basées sur CTR moyen 4%, taux de conversion 2%. À titre indicatif.</p>
+      <p style="font-size:12px;color:var(--muted);margin-top:14px">* Estimations basées sur une moyenne de 4% de clics et 2% d'achats. À titre indicatif.</p>
     </div>
   </section>
 
@@ -1872,7 +1899,7 @@
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Comment fonctionne le QR code ?</div><div class="faq-a">Chaque pub a un QR code unique. Le cycliste scanne → atterrit sur votre page. L'app enregistre l'interaction anonymement.</div></div>
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Quel est le CTR habituel ?</div><div class="faq-a">Moyenne pub transit classique : 2–3%. Beeclou : 4–5% (audience plus engagée, exposition répétée).</div></div>
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Peut-on changer le message en cours de campagne ?</div><div class="faq-a">Oui. Uploadez le nouveau visuel, nous effectuons le remplacement sans interruption.</div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Comment sont comptées les impressions ?</div><div class="faq-a">L'app trace quand un cycliste portant votre pub passe dans des zones trackées. GPS anonymisé, données agrégées.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Comment comptez-vous le nombre de personnes touchées ?</div><div class="faq-a">L'app repère quand un cycliste portant votre pub passe dans une zone suivie. Position anonymisée, données regroupées — jamais de suivi individuel.</div></div>
     </div>
   </section>
 
@@ -1907,7 +1934,7 @@
     </div>
   </div>
 
-  <footer><div class="footer-grid"><div class="footer-brand"><span class="nav-logo">Bee<span style="color:var(--gold)">clou</span></span><p>Beeclou — En construction · 2025–2026</p></div><div class="footer-col"><h4>Solutions</h4><a href="#companies" onclick="showPage('companies');return false;">Entreprises</a><a href="#cities" onclick="showPage('cities');return false;">Villes</a><a href="#advertisers" onclick="showPage('advertisers');return false;">Annonceurs</a></div><div class="footer-col"><h4>Entreprise</h4><a href="#blog" onclick="showPage('blog');return false;">Blog</a><a href="#contact" onclick="showPage('contact');return false;">Contact</a></div><div class="footer-col"><h4>Légal</h4><a>Confidentialité</a><a>CGU</a></div></div><div class="footer-bottom"><p>© 2025 Beeclou.</p><p>contact@beeclou.fr</p></div></footer>
+  <footer><div class="footer-grid"><div class="footer-brand"><span class="nav-logo">Bee<span style="color:var(--gold)">clou</span></span><p>Beeclou — En construction · 2025–2026</p></div><div class="footer-col"><h4>Solutions</h4><a href="#cyclists" onclick="showPage('cyclists');return false;">Cyclistes</a><a href="#advertisers" onclick="showPage('advertisers');return false;">Annonceurs</a><a href="#companies" onclick="showPage('companies');return false;">Entreprises</a><a href="#cities" onclick="showPage('cities');return false;">Villes</a></div><div class="footer-col"><h4>Entreprise</h4><a href="#blog" onclick="showPage('blog');return false;">Blog</a><a href="#contact" onclick="showPage('contact');return false;">Contact</a></div><div class="footer-col"><h4>Légal</h4><a>Confidentialité</a><a>CGU</a></div></div><div class="footer-bottom"><p>© 2025 Beeclou.</p><p>contact@beeclou.fr</p></div></footer>
 </div>
 
 <!-- ═══════════════════════════════════════════════════ -->
@@ -1920,15 +1947,15 @@
     <h2 class="section-title">Insights mobilité<br><em class="styled">urbaine</em></h2>
     <p class="section-sub">Tendances, conseils, études de cas et actualités de la mobilité douce.</p>
     <div class="blog-grid">
-      <div class="blog-card"><div class="blog-img">🏆</div><div class="blog-body"><div class="blog-tag">Entreprises · FMD</div><div class="blog-title">Comment utiliser votre Forfait Mobilités Durables en 2025</div><div class="blog-meta">5 min · Mobilité RH</div></div></div>
+      <div class="blog-card"><div class="blog-img">🏆</div><div class="blog-body"><div class="blog-tag">Entreprises · Aide au vélo</div><div class="blog-title">Comment utiliser votre Forfait Mobilités Durables en 2025</div><div class="blog-meta">5 min · Mobilité RH</div></div></div>
       <div class="blog-card"><div class="blog-img">🏙️</div><div class="blog-body"><div class="blog-tag">Villes · Tendances</div><div class="blog-title">5 villes leaders de la mobilité urbaine durable</div><div class="blog-meta">8 min · Urbanisme</div></div></div>
-      <div class="blog-card"><div class="blog-img">📊</div><div class="blog-body"><div class="blog-tag">Annonceurs · ROI</div><div class="blog-title">Le ROI de la pub urbaine : pourquoi les cyclistes sont votre meilleure audience</div><div class="blog-meta">6 min · Marketing</div></div></div>
+      <div class="blog-card"><div class="blog-img">📊</div><div class="blog-body"><div class="blog-tag">Annonceurs · Résultats</div><div class="blog-title">Pourquoi les cyclistes sont la meilleure audience pour votre pub</div><div class="blog-meta">6 min · Marketing</div></div></div>
       <div class="blog-card"><div class="blog-img">💚</div><div class="blog-body"><div class="blog-tag">RH · Bien-être</div><div class="blog-title">Bien-être au travail grâce aux mobilités douces</div><div class="blog-meta">7 min · Ressources Humaines</div></div></div>
       <div class="blog-card"><div class="blog-img">🚲</div><div class="blog-body"><div class="blog-tag">Tendances 2025</div><div class="blog-title">Le vélo électrique en ville : chiffres et perspectives 2025</div><div class="blog-meta">5 min · Analyse</div></div></div>
       <div class="blog-card"><div class="blog-img">🐝</div><div class="blog-body"><div class="blog-tag">Beeclou · Actualité</div><div class="blog-title">Beeclou, l'abeille qui souffle le bourdon</div><div class="blog-meta">3 min · Notre vision</div></div></div>
     </div>
   </section>
-  <footer><div class="footer-grid"><div class="footer-brand"><span class="nav-logo">Bee<span style="color:var(--gold)">clou</span></span><p>Beeclou — En construction · 2025–2026</p></div><div class="footer-col"><h4>Solutions</h4><a href="#companies" onclick="showPage('companies');return false;">Entreprises</a><a href="#cities" onclick="showPage('cities');return false;">Villes</a><a href="#advertisers" onclick="showPage('advertisers');return false;">Annonceurs</a></div><div class="footer-col"><h4>Entreprise</h4><a href="#blog" onclick="showPage('blog');return false;">Blog</a><a href="#contact" onclick="showPage('contact');return false;">Contact</a></div></div><div class="footer-bottom"><p>© 2025 Beeclou.</p></div></footer>
+  <footer><div class="footer-grid"><div class="footer-brand"><span class="nav-logo">Bee<span style="color:var(--gold)">clou</span></span><p>Beeclou — En construction · 2025–2026</p></div><div class="footer-col"><h4>Solutions</h4><a href="#cyclists" onclick="showPage('cyclists');return false;">Cyclistes</a><a href="#advertisers" onclick="showPage('advertisers');return false;">Annonceurs</a><a href="#companies" onclick="showPage('companies');return false;">Entreprises</a><a href="#cities" onclick="showPage('cities');return false;">Villes</a></div><div class="footer-col"><h4>Entreprise</h4><a href="#blog" onclick="showPage('blog');return false;">Blog</a><a href="#contact" onclick="showPage('contact');return false;">Contact</a></div></div><div class="footer-bottom"><p>© 2025 Beeclou.</p></div></footer>
 </div>
 
 <!-- ═══════════════════════════════════════════════════ -->
@@ -1974,7 +2001,7 @@
       </div>
     </div>
   </section>
-  <footer><div class="footer-grid"><div class="footer-brand"><span class="nav-logo">Bee<span style="color:var(--gold)">clou</span></span><p>Beeclou — En construction · 2025–2026</p></div><div class="footer-col"><h4>Solutions</h4><a href="#companies" onclick="showPage('companies');return false;">Entreprises</a><a href="#cities" onclick="showPage('cities');return false;">Villes</a><a href="#advertisers" onclick="showPage('advertisers');return false;">Annonceurs</a></div><div class="footer-col"><h4>Entreprise</h4><a href="#blog" onclick="showPage('blog');return false;">Blog</a><a href="#contact" onclick="showPage('contact');return false;">Contact</a></div></div><div class="footer-bottom"><p>© 2025 Beeclou.</p></div></footer>
+  <footer><div class="footer-grid"><div class="footer-brand"><span class="nav-logo">Bee<span style="color:var(--gold)">clou</span></span><p>Beeclou — En construction · 2025–2026</p></div><div class="footer-col"><h4>Solutions</h4><a href="#cyclists" onclick="showPage('cyclists');return false;">Cyclistes</a><a href="#advertisers" onclick="showPage('advertisers');return false;">Annonceurs</a><a href="#companies" onclick="showPage('companies');return false;">Entreprises</a><a href="#cities" onclick="showPage('cities');return false;">Villes</a></div><div class="footer-col"><h4>Entreprise</h4><a href="#blog" onclick="showPage('blog');return false;">Blog</a><a href="#contact" onclick="showPage('contact');return false;">Contact</a></div></div><div class="footer-bottom"><p>© 2025 Beeclou.</p></div></footer>
 </div>
 
 <!-- ═══════════════════════════════════════ -->
@@ -2004,7 +2031,7 @@
     <div class="q-wrap active" id="d-q1"><div class="q-text">Quelle est la taille de votre entreprise ?</div><div class="q-options"><button class="q-opt" onclick="pick(this,'d_taille','1-10')">👤 1–10 salariés</button><button class="q-opt" onclick="pick(this,'d_taille','11-50')">👥 11–50 salariés</button><button class="q-opt" onclick="pick(this,'d_taille','51-200')">🏢 51–200 salariés</button><button class="q-opt" onclick="pick(this,'d_taille','+200')">🏭 +200 salariés</button></div><div class="q-nav"><span></span><button class="btn-next" onclick="nextQ('d',1,2)">Suivant →</button></div></div>
     <div class="q-wrap" id="d-q2"><div class="q-text">Proposez-vous déjà un Forfait Mobilités Durables ?</div><div class="q-options"><button class="q-opt" onclick="pick(this,'d_fmd','Oui')">✅ Oui, c'est en place</button><button class="q-opt" onclick="pick(this,'d_fmd','En réflexion')">🤔 Non, mais on y réfléchit</button><button class="q-opt" onclick="pick(this,'d_fmd','Non, inconnu')">❓ Non, je ne connaissais pas</button></div><div class="q-nav"><button class="btn-prev" onclick="prevQ('d',2,1)">← Retour</button><button class="btn-next" onclick="nextQ('d',2,3)">Suivant →</button></div></div>
     <div class="q-wrap" id="d-q3"><div class="q-text">Qu'est-ce qui vous freinerait à proposer des vélos ?</div><div class="q-options"><button class="q-opt" onclick="pick(this,'d_freins','Coût')">💶 Le coût initial</button><button class="q-opt" onclick="pick(this,'d_freins','Admin')">📋 La gestion administrative</button><button class="q-opt" onclick="pick(this,'d_freins','Adhésion')">👥 L'adhésion des salariés</button><button class="q-opt" onclick="pick(this,'d_freins','Aucun')">🚀 Aucun frein, je suis intéressé !</button></div><div class="q-nav"><button class="btn-prev" onclick="prevQ('d',3,2)">← Retour</button><button class="btn-next" onclick="nextQ('d',3,4)">Suivant →</button></div></div>
-    <div class="q-wrap" id="d-q4"><div class="q-text">Qu'est-ce qui vous convaincrait le plus ?</div><div class="q-options"><button class="q-opt" onclick="pick(this,'d_convainc','FMD')">💰 Le financement FMD</button><button class="q-opt" onclick="pick(this,'d_convainc','Pub')">📣 La visibilité publicitaire</button><button class="q-opt" onclick="pick(this,'d_convainc','RSE')">🌱 L'impact RSE mesurable</button><button class="q-opt" onclick="pick(this,'d_convainc','RH')">❤️ La satisfaction des salariés</button></div><div class="q-nav"><button class="btn-prev" onclick="prevQ('d',4,3)">← Retour</button><button class="btn-next" onclick="nextQ('d',4,5)">Suivant →</button></div></div>
+    <div class="q-wrap" id="d-q4"><div class="q-text">Qu'est-ce qui vous convaincrait le plus ?</div><div class="q-options"><button class="q-opt" onclick="pick(this,'d_convainc','FMD')">💰 L'aide au vélo (FMD)</button><button class="q-opt" onclick="pick(this,'d_convainc','Pub')">📣 La visibilité publicitaire</button><button class="q-opt" onclick="pick(this,'d_convainc','RSE')">🌱 L'impact environnemental mesurable</button><button class="q-opt" onclick="pick(this,'d_convainc','RH')">❤️ La satisfaction des salariés</button></div><div class="q-nav"><button class="btn-prev" onclick="prevQ('d',4,3)">← Retour</button><button class="btn-next" onclick="nextQ('d',4,5)">Suivant →</button></div></div>
     <div class="q-wrap" id="d-q5"><div class="q-text">Votre email professionnel :</div><input class="q-input" id="d_email" type="email" placeholder="contact@votreentreprise.fr"><div class="q-nav" style="margin-top:16px"><button class="btn-prev" onclick="prevQ('d',5,4)">← Retour</button><button class="btn-next" id="d-submit" onclick="submitSurvey('drh')">Envoyer ✓</button></div></div>
     <div class="ty-box" id="ty-drh"><div class="ty-icon">🐝</div><div class="ty-title">Merci !</div><p class="ty-sub">Notre équipe vous contacte sous 48h pour discuter d'un projet pilote.</p></div>
   </div>
@@ -2297,7 +2324,7 @@
       <div class="popup-label">🐝 Bienvenue chez Beeclou</div>
       <div class="popup-title" style="font-size:22px">Votre vélo, financé par vos trajets.</div>
       <div class="benefit-list">
-        <div class="benefit-item"><div class="benefit-icon">💶</div><div class="benefit-text"><h4>Financé via le FMD</h4><p>Votre employeur peut financer jusqu'à 900€/an pour votre vélo, exonéré de charges et d'impôts.</p></div></div>
+        <div class="benefit-item"><div class="benefit-icon">💶</div><div class="benefit-text"><h4>Financé par votre employeur</h4><p>Votre employeur peut verser jusqu'à 900€/an pour votre vélo (aide "Forfait Mobilités Durables"), sans charges ni impôts.</p></div></div>
         <div class="benefit-item"><div class="benefit-icon">📦</div><div class="benefit-text"><h4>La boîte Beeclou incluse</h4><p>Coffre 30L pour vos affaires. Chaque trajet rembourse votre vélo.</p></div></div>
         <div class="benefit-item"><div class="benefit-icon">📱</div><div class="benefit-text"><h4>L'app qui compte vos km</h4><p>Plus vous roulez, plus vite vous remboursez votre vélo. Simple et motivant.</p></div></div>
       </div>
