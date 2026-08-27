@@ -5,6 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 <meta name="theme-color" content="#0A0901" />
 <title>Beeclou — Le Vol Vertueux</title>
+<meta name="description" content="Vivez l'expérience immersive Beeclou : le vol vertueux d'une mobilité vélo qui récompense chaque trajet, pour les cyclistes, les entreprises et les marques.">
+<link rel="canonical" href="https://beeclou.fr/experience.html">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Beeclou — Le Vol Vertueux">
+<meta property="og:description" content="Vivez l'expérience immersive Beeclou : le vol vertueux d'une mobilité vélo qui récompense chaque trajet.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://beeclou.fr/experience.html">
+<meta property="og:image" content="https://beeclou.fr/og-beeclou.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500;1,700&family=Bellefair&display=swap" rel="stylesheet">
@@ -345,7 +357,11 @@
   let chapter = 0, chapterF = 0;          // current chapter (display) & smoothed
   const mouse = new THREE.Vector2(-10,-10);
   const mouseWorld = new THREE.Vector3();
-  let W = innerWidth, H = innerHeight;
+  // Fallback si innerWidth/innerHeight ne sont pas encore fiables (certains
+  // in-app browsers / webviews retournent 0 avant le premier layout) —
+  // evite un crash de buildForms() (division par aspect=0/NaN).
+  let W = innerWidth || document.documentElement.clientWidth || 1280;
+  let H = innerHeight || document.documentElement.clientHeight || 800;
 
   // Bee
   let bee, beePos = new THREE.Vector3(0,0,0), beeTarget = new THREE.Vector3(0,0,0);
@@ -413,6 +429,7 @@
           if(Math.hypot(x/aspect*0.9,y) < 4.4) cells.push([x,y]);
         }
       }
+      if(cells.length===0) cells.push([0,0]); // garde-fou : aspect extreme/invalide
       for(let i=0;i<N;i++){
         const c=cells[i%cells.length];
         const ang=Math.random()*Math.PI*2;

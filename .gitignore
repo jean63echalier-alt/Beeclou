@@ -11,6 +11,8 @@ dist/
 build/
 *.min.js
 *.min.css
+# ...sauf les libs vendorisées servies directement par le site statique
+!assets/js/*.min.js
 
 # Dev
 .env.local
@@ -31,3 +33,4 @@ node_modules/
 # OS temp files
 .AppleDouble
 .LSOverride
+.backup/
