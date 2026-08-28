@@ -1063,7 +1063,7 @@
     <a href="#cities" class="nav-link" onclick="showPage('cities');return false;">Villes</a>
     <a href="#blog" class="nav-link" onclick="showPage('blog');return false;">Blog</a>
     <a href="#contact" class="nav-link" onclick="showPage('contact');return false;">Contact</a>
-    <button class="nav-cta" onclick="openSurvey('cycliste')">Rejoindre le pilote</button>
+    <button class="nav-cta" onclick="openSurvey('cycliste')">Rejoindre Beeclou</button>
   </div>
   <button class="hamburger" onclick="toggleMobile()" aria-label="Menu">
     <span></span><span></span><span></span>
@@ -1077,7 +1077,7 @@
   <a href="#cities" class="nav-link" onclick="showPage('cities');toggleMobile();return false;">Villes</a>
   <a href="#blog" class="nav-link" onclick="showPage('blog');toggleMobile();return false;">Blog</a>
   <a href="#contact" class="nav-link" onclick="showPage('contact');toggleMobile();return false;">Contact</a>
-  <button class="btn-ink btn-sm" onclick="openSurvey('cycliste');toggleMobile()">Rejoindre le pilote</button>
+  <button class="btn-ink btn-sm" onclick="openSurvey('cycliste');toggleMobile()">Rejoindre Beeclou</button>
 </div>
 
 <!-- ═══════════════════════════════════════════════════ -->
@@ -2637,9 +2637,6 @@ document.getElementById('overlay-tunnel').addEventListener('click', e => {
   try{ routeHash(); }catch(e){}
   window.addEventListener('hashchange', routeHash);
   window.addEventListener('load', routeHash);
-  /* Fix rendu au retour (back/forward cache Safari/iOS) : les images du bundle
-     sont des blob: URLs invalidees a la restauration -> on recharge proprement. */
-  window.addEventListener('pageshow', function(e){ if (e.persisted) { window.location.reload(); } });
 })();
 </script>
 </body></html>
