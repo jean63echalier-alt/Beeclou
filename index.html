@@ -269,7 +269,7 @@
 
     /* ── BLOG ── */
     .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-    .blog-card { background: var(--white); border: 1.5px solid var(--border); border-radius: var(--radius); overflow: hidden; transition: all 0.25s; cursor: pointer; }
+    .blog-card { display: block; background: var(--white); border: 1.5px solid var(--border); border-radius: var(--radius); overflow: hidden; transition: all 0.25s; cursor: pointer; color: inherit; text-decoration: none; }
     .blog-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(28,26,20,0.09); border-color: var(--sage); }
     .blog-img { width: 100%; aspect-ratio: 16/9; background: linear-gradient(135deg, var(--sage-light), rgba(92,122,90,0.2)); display: flex; align-items: center; justify-content: center; font-size: 40px; }
     .blog-body { padding: 20px; }
@@ -1947,12 +1947,12 @@
     <h2 class="section-title">Insights mobilité<br><em class="styled">urbaine</em></h2>
     <p class="section-sub">Tendances, conseils, études de cas et actualités de la mobilité douce.</p>
     <div class="blog-grid">
-      <div class="blog-card"><div class="blog-img">🏆</div><div class="blog-body"><div class="blog-tag">Entreprises · Aide au vélo</div><div class="blog-title">Comment utiliser votre Forfait Mobilités Durables en 2025</div><div class="blog-meta">5 min · Mobilité RH</div></div></div>
-      <div class="blog-card"><div class="blog-img">🏙️</div><div class="blog-body"><div class="blog-tag">Villes · Tendances</div><div class="blog-title">5 villes leaders de la mobilité urbaine durable</div><div class="blog-meta">8 min · Urbanisme</div></div></div>
-      <div class="blog-card"><div class="blog-img">📊</div><div class="blog-body"><div class="blog-tag">Annonceurs · Résultats</div><div class="blog-title">Pourquoi les cyclistes sont la meilleure audience pour votre pub</div><div class="blog-meta">6 min · Marketing</div></div></div>
-      <div class="blog-card"><div class="blog-img">💚</div><div class="blog-body"><div class="blog-tag">RH · Bien-être</div><div class="blog-title">Bien-être au travail grâce aux mobilités douces</div><div class="blog-meta">7 min · Ressources Humaines</div></div></div>
-      <div class="blog-card"><div class="blog-img">🚲</div><div class="blog-body"><div class="blog-tag">Tendances 2025</div><div class="blog-title">Le vélo électrique en ville : chiffres et perspectives 2025</div><div class="blog-meta">5 min · Analyse</div></div></div>
-      <div class="blog-card"><div class="blog-img">🐝</div><div class="blog-body"><div class="blog-tag">Beeclou · Actualité</div><div class="blog-title">Beeclou, l'abeille qui souffle le bourdon</div><div class="blog-meta">3 min · Notre vision</div></div></div>
+      <a class="blog-card" href="blog/forfait-mobilites-durables-2025.html"><div class="blog-img">🏆</div><div class="blog-body"><div class="blog-tag">Entreprises · Aide au vélo</div><div class="blog-title">Comment utiliser votre Forfait Mobilités Durables en 2025</div><div class="blog-meta">5 min · Mobilité RH</div></div></a>
+      <a class="blog-card" href="blog/villes-mobilite-urbaine-durable.html"><div class="blog-img">🏙️</div><div class="blog-body"><div class="blog-tag">Villes · Tendances</div><div class="blog-title">5 villes leaders de la mobilité urbaine durable</div><div class="blog-meta">8 min · Urbanisme</div></div></a>
+      <a class="blog-card" href="blog/cyclistes-meilleure-audience-publicitaire.html"><div class="blog-img">📊</div><div class="blog-body"><div class="blog-tag">Annonceurs · Résultats</div><div class="blog-title">Pourquoi les cyclistes sont la meilleure audience pour votre pub</div><div class="blog-meta">6 min · Marketing</div></div></a>
+      <a class="blog-card" href="blog/bien-etre-travail-mobilites-douces.html"><div class="blog-img">💚</div><div class="blog-body"><div class="blog-tag">RH · Bien-être</div><div class="blog-title">Bien-être au travail grâce aux mobilités douces</div><div class="blog-meta">7 min · Ressources Humaines</div></div></a>
+      <a class="blog-card" href="blog/velo-electrique-chiffres-2025.html"><div class="blog-img">🚲</div><div class="blog-body"><div class="blog-tag">Tendances 2025</div><div class="blog-title">Le vélo électrique en ville : chiffres et perspectives 2025</div><div class="blog-meta">5 min · Analyse</div></div></a>
+      <a class="blog-card" href="blog/beeclou-abeille-bourdon.html"><div class="blog-img">🐝</div><div class="blog-body"><div class="blog-tag">Beeclou · Actualité</div><div class="blog-title">Beeclou, l'abeille qui souffle le bourdon</div><div class="blog-meta">3 min · Notre vision</div></div></a>
     </div>
   </section>
   <footer><div class="footer-grid"><div class="footer-brand"><span class="nav-logo">Bee<span style="color:var(--gold)">clou</span></span><p>Beeclou — En construction · 2025–2026</p></div><div class="footer-col"><h4>Solutions</h4><a href="#cyclists" onclick="showPage('cyclists');return false;">Cyclistes</a><a href="#advertisers" onclick="showPage('advertisers');return false;">Annonceurs</a><a href="#companies" onclick="showPage('companies');return false;">Entreprises</a><a href="#cities" onclick="showPage('cities');return false;">Villes</a></div><div class="footer-col"><h4>Entreprise</h4><a href="#blog" onclick="showPage('blog');return false;">Blog</a><a href="#contact" onclick="showPage('contact');return false;">Contact</a></div></div><div class="footer-bottom"><p>© 2025 Beeclou.</p></div></footer>
