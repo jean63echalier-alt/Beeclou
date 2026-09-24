@@ -989,14 +989,36 @@
       .app-showcase-visual img { max-width: 240px; }
     }
 
-    /* ── Imagerie mise en valeur ── */
-    .hero-home .hero-photo-float {
-      width: clamp(160px, 20vw, 260px);
+    /* ── Hero home : layout deux colonnes (texte / photo produit en grand) ── */
+    .hero-home-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 32px;
+      align-items: center;
+      width: 100%;
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+    .hero-home-text { text-align: left; display: flex; flex-direction: column; align-items: flex-start; }
+    .hero-home-text .hero-title { align-self: stretch; }
+    .hero-home-visual { display: flex; justify-content: center; }
+    .hero-home-visual .hero-photo-float {
+      position: static;
+      width: 100%;
+      max-width: 420px;
       box-shadow: 0 38px 84px -18px rgba(28,26,20,0.30);
       clip-path: none;
       border-radius: 24px;
       border: 5px solid var(--white);
       opacity: 1;
+      transform: none;
+      animation: none;
+    }
+    @media (max-width: 900px) {
+      .hero-home-grid { grid-template-columns: 1fr; gap: 24px; }
+      .hero-home-text { text-align: center; align-items: center; }
+      .hero-home-visual { order: -1; }
+      .hero-home-visual .hero-photo-float { max-width: 260px; }
     }
     .page:not(#page-home) .hero img.hero-photo-float {
       position: relative; inset: auto; right: auto; bottom: auto;
@@ -1104,24 +1126,28 @@
     <div class="orb orb-1"></div>
     <div class="orb orb-2"></div>
     <div class="orb orb-3"></div>
-    <img src="assets/images/13-cycliste-ouvre-le-top-case-beeclou.jpg" loading="eager" fetchpriority="high" decoding="async" alt="Cycliste ouvrant son top case Beeclou dans la rue" class="hero-photo-float" loading="lazy" width="320" height="320" onerror="this.style.display='none'">
+    <div class="hero-home-grid">
+      <div class="hero-home-text">
         <span class="hero-badge">🐝 Le top case connecté qui finance vos trajets à vélo</span>
-        <h1 class="hero-title" style="font-size:clamp(34px,6vw,56px);margin-bottom:18px;margin-top:10px;line-height:1.05">
-      <span class="line">Vos trajets</span>
-      <span class="line">méritent</span>
-      <span class="line">
-        <span class="rotate-word-wrap">
-          <span class="rotate-word active">de la liberté.</span>
-          <span class="rotate-word">du plaisir.</span>
-          <span class="rotate-word">du sens.</span>
-          <span class="rotate-word">Beeclou.</span>
-        </span>
-      </span>
-    </h1>
-    <p class="hero-sub" style="font-size:clamp(15px,3.5vw,18px);margin-bottom:24px;max-width:420px">Nous cherchons nos premiers cyclistes, entreprises et partenaires pilotes.</p>
-
-    <a href="experience.html" class="cta-experience" style="margin-top:0">✦ Découvrir l'expérience Beeclou</a>
-
+        <h1 class="hero-title" style="font-size:clamp(32px,4.2vw,52px);margin-bottom:16px;margin-top:10px;line-height:1.05">
+          <span class="line">Vos trajets</span>
+          <span class="line">méritent</span>
+          <span class="line">
+            <span class="rotate-word-wrap">
+              <span class="rotate-word active">de la liberté.</span>
+              <span class="rotate-word">du plaisir.</span>
+              <span class="rotate-word">du sens.</span>
+              <span class="rotate-word">Beeclou.</span>
+            </span>
+          </span>
+        </h1>
+        <p class="hero-sub" style="font-size:clamp(15px,2vw,18px);margin-bottom:24px;max-width:420px">Nous cherchons nos premiers cyclistes, entreprises et partenaires pilotes.</p>
+        <a href="experience.html" class="cta-experience" style="margin-top:0">✦ Découvrir l'expérience Beeclou</a>
+      </div>
+      <div class="hero-home-visual">
+        <img src="assets/images/13-cycliste-ouvre-le-top-case-beeclou.jpg" loading="eager" fetchpriority="high" decoding="async" alt="Cycliste ouvrant son top case Beeclou dans la rue" class="hero-photo-float" width="440" height="440" onerror="this.style.display='none'">
+      </div>
+    </div>
   </section>
 
 
@@ -2609,7 +2635,6 @@ document.getElementById('overlay-tunnel').addEventListener('click', e => {
       wrapLayer(hero.querySelector('.orb-1'), 0.5);
       wrapLayer(hero.querySelector('.orb-2'), 0.8);
       wrapLayer(hero.querySelector('.orb-3'), 1.1);
-      wrapLayer(hero.querySelector('.hero-photo-float'), 1.5);
       hero.addEventListener('pointermove', function(ev){
         var r = hero.getBoundingClientRect();
         tmx = ((ev.clientX - r.left) / r.width - 0.5) * 2;
