@@ -979,6 +979,15 @@
     .btn-ink:active, .btn-sage:active, .btn-ghost:active, .btn-cream:active, .btn-outline-cream:active, .nav-cta:active { transform: translateY(0) scale(0.96); }
     .nav-cta { transition: transform 0.25s cubic-bezier(.16,1,.3,1), background 0.2s ease; }
 
+    /* ── Vitrine application ── */
+    .app-showcase { display: grid; grid-template-columns: 1fr 1.15fr; gap: 48px; align-items: center; margin-top: 40px; }
+    .app-showcase-visual { display: flex; justify-content: center; }
+    .app-showcase-visual img { max-width: 320px; width: 100%; border-radius: 28px; box-shadow: 0 34px 76px -22px rgba(28,26,20,0.25); }
+    @media (max-width: 768px) {
+      .app-showcase { grid-template-columns: 1fr; }
+      .app-showcase-visual img { max-width: 240px; }
+    }
+
     /* ── Imagerie mise en valeur ── */
     .hero-home .hero-photo-float {
       width: clamp(190px, 28vw, 360px);
@@ -1190,6 +1199,45 @@
         <div style="width:140px;height:140px;border-radius:50%;border:3px solid var(--honey);box-shadow:0 10px 30px rgba(28,26,20,.12);overflow:hidden;margin:0 auto 18px;"><img src="assets/images/05-top-case-beeclou-en-ville.jpg" loading="lazy" decoding="async" alt="Top case Beeclou en ville" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         <div style="font-family:'Playfair Display',serif;font-weight:800;font-size:18px;color:var(--ink);margin-bottom:6px;">Récompensé au km</div>
         <div style="font-size:14px;color:var(--muted);line-height:1.45;">Grâce aux marques, chaque kilomètre parcouru vous rapporte.</div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- APP SHOWCASE -->
+  <section class="section rise" id="application">
+    <div class="section-label">L'application</div>
+    <h2 class="section-title">Votre vélo, <em class="styled">piloté depuis votre poche</em></h2>
+    <p class="section-sub">L'appli Beeclou mesure vos trajets, affiche vos gains en temps réel et vous connecte aux marques locales qui les financent.</p>
+    <div class="app-showcase">
+      <div class="app-showcase-visual">
+        <img src="assets/images/12-application-beeclou-mobile.jpg" loading="lazy" decoding="async" alt="Application mobile Beeclou : trajet en cours, gains et récompenses">
+      </div>
+      <div>
+        <div class="features-list">
+          <div class="feature-item">
+            <div class="feature-icon-box">🚴</div>
+            <div class="feature-content">
+              <h3>Un trajet, un gain</h3>
+              <p>L'appli suit votre distance en direct et calcule votre rémunération au kilomètre, financée par la marque affichée sur votre top case.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon-box">📢</div>
+            <div class="feature-content">
+              <h3>Vos campagnes en un coup d'œil</h3>
+              <p>Suivez le cumulé sur la campagne en cours et découvrez les marques locales qui financent vos trajets.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon-box">🏆</div>
+            <div class="feature-content">
+              <h3>Objectifs &amp; récompenses</h3>
+              <p>Des objectifs hebdomadaires simples et des récompenses qui suivent votre régularité, pas seulement votre distance.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
