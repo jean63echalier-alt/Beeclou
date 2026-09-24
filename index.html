@@ -990,8 +990,12 @@
 
     /* ── Imagerie mise en valeur ── */
     .hero-home .hero-photo-float {
-      width: clamp(190px, 28vw, 360px);
+      width: clamp(220px, 32vw, 400px);
       box-shadow: 0 38px 84px -18px rgba(28,26,20,0.30);
+      clip-path: none;
+      border-radius: 28px;
+      border: 6px solid var(--white);
+      opacity: 1;
     }
     .page:not(#page-home) .hero img.hero-photo-float {
       position: relative; inset: auto; right: auto; bottom: auto;
@@ -1016,6 +1020,7 @@
     @keyframes fxPageIn { from { opacity: 0; transform: translateY(16px) scale(0.992); } to { opacity: 1; transform: none; } }
 
     /* Révélation du héros — accueil */
+    html.fx .hero-home .hero-badge { opacity: 0; transform: translateY(20px); animation: fxUp 0.9s cubic-bezier(.16,1,.3,1) 0.05s forwards; }
     html.fx .hero-home .hero-title .line { opacity: 0; transform: translateY(38px); animation: fxUp 1s cubic-bezier(.16,1,.3,1) forwards; }
     html.fx .hero-home .hero-title .line:nth-child(1) { animation-delay: 0.15s; }
     html.fx .hero-home .hero-title .line:nth-child(2) { animation-delay: 0.30s; }
@@ -1023,7 +1028,7 @@
     html.fx .hero-home .cyclist-teaser { opacity: 0; transform: translateY(42px); animation: fxUp 1s cubic-bezier(.16,1,.3,1) 0.64s forwards; }
     html.fx .hero-home .hero-sub { opacity: 0; transform: translateY(30px); animation: fxUp 1s cubic-bezier(.16,1,.3,1) 0.80s forwards; }
     html.fx .hero-home .hero-photo-float { opacity: 0; transition: opacity 1.3s ease 0.9s; }
-    html.fx .hero-home.fx-ready .hero-photo-float { opacity: 0.96; }
+    html.fx .hero-home.fx-ready .hero-photo-float { opacity: 1; }
 
     /* Révélation du héros — sous-pages */
     html.fx .page:not(#page-home) .hero .hero-badge { opacity: 0; transform: translateY(20px); animation: fxUp 0.9s cubic-bezier(.16,1,.3,1) 0.10s forwards; }
@@ -1099,6 +1104,7 @@
     <div class="orb orb-2"></div>
     <div class="orb orb-3"></div>
     <img src="assets/images/01-cycliste-beeclou-en-ville-avec-la-bo-te.jpg" loading="eager" fetchpriority="high" decoding="async" alt="Cycliste Beeclou en ville avec la boîte" class="hero-photo-float" loading="lazy" width="320" height="320" onerror="this.style.display='none'">
+        <span class="hero-badge">🐝 Le top case connecté qui finance vos trajets à vélo</span>
         <h1 class="hero-title" style="font-size:clamp(60px,14vw,100px);margin-bottom:32px;margin-top:20px;line-height:1.0">
       <span class="line">Vos trajets</span>
       <span class="line">méritent</span>
