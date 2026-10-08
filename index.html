@@ -2631,7 +2631,9 @@ html.fx .hero-home .hero-sub{animation-duration:.6s;animation-delay:.3s}
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
     document.getElementById('page-' + id).classList.add('active');
     document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active-link'));
-    window.scrollTo(0,0);
+    window.scrollTo({top:0,left:0,behavior:'instant'});
+    try{ history.replaceState(null,'',id==='home'?location.pathname+location.search:'#'+id); }catch(e){}
+    var mm=document.getElementById('mobile-menu'); if(mm) mm.classList.remove('open');
   }
 
   function toggleMobile() {
