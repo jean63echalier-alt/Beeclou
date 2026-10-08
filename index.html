@@ -3007,6 +3007,9 @@ document.getElementById('overlay-tunnel').addEventListener('click', e => {
 .arg-card .arg-ic{font-size:20px;flex:none}
 .arg-card.pop{animation:argPop .5s cubic-bezier(.34,1.56,.64,1)}
 @keyframes argPop{from{opacity:0;transform:translateY(8px) scale(.97)}to{opacity:1;transform:none}}
+.a-bigstat{display:flex;align-items:center;gap:16px;background:var(--white);border:1.5px solid rgba(201,168,76,.55);border-radius:16px;padding:16px 18px;margin:0 0 18px}
+.a-bigstat b{font-family:'Playfair Display',serif;font-size:46px;line-height:1;color:var(--sage);flex:none}
+.a-bigstat p{font-size:13px;line-height:1.5;color:var(--ink);margin:0}
 .a-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 18px}
 .a-kpi{background:var(--white);border:1.5px solid var(--border);border-radius:12px;padding:12px 6px;text-align:center}
 .a-kpi b{display:block;font-family:'Playfair Display',serif;font-size:20px;color:var(--sage)}
@@ -3029,19 +3032,18 @@ document.getElementById('overlay-tunnel').addEventListener('click', e => {
 
     <!-- 1 — Promesse -->
     <div class="tunnel-step active" id="atunnel-1">
-      <div class="popup-label">📢 Annonceurs pilotes</div>
-      <div class="popup-title" style="font-size:22px">Votre marque, sur le vélo de vos futurs clients.</div>
-      <div class="a-kpis">
-        <div class="a-kpi"><b>4–5 %</b><small>CTR visé<br>(pub transit : 2–3 %)</small></div>
-        <div class="a-kpi"><b>5×</b><small>vues / semaine<br>par cycliste (hypothèse)</small></div>
-        <div class="a-kpi"><b>24 h</b><small>pour recevoir<br>votre proposition</small></div>
+      <div class="popup-label">📢 Offre pilote · Premières marques</div>
+      <div class="popup-title" style="font-size:22px">Soyez parmi les premières marques à rouler avec Beeclou.</div>
+      <div class="a-bigstat">
+        <b>55 %</b>
+        <p>des personnes interrogées voient les panneaux publicitaires <strong>une fois par semaine ou plusieurs fois par jour</strong> en zone urbaine.</p>
       </div>
       <div class="benefit-list">
-        <div class="benefit-item"><div class="benefit-icon">📍</div><div class="benefit-text"><h4>Ciblé rue par rue</h4><p>Quartiers, trajets, horaires : vous ne payez pas pour toute la ville.</p></div></div>
-        <div class="benefit-item"><div class="benefit-icon">🔄</div><div class="benefit-text"><h4>Vu et revu</h4><p>Votre pub est sur le top case : domicile-travail, week-end… on s'en souvient.</p></div></div>
-        <div class="benefit-item"><div class="benefit-icon">📲</div><div class="benefit-text"><h4>Mesurable</h4><p>QR code unique : vous connaissez vos scans et votre coût par client.</p></div></div>
+        <div class="benefit-item"><div class="benefit-icon">🚀</div><div class="benefit-text"><h4>Marque pilote</h4><p>Vous testez ce nouveau canal avant tout le monde, dès la phase pilote.</p></div></div>
+        <div class="benefit-item"><div class="benefit-icon">🤝</div><div class="benefit-text"><h4>On construit avec vous</h4><p>Zone, visuel, mesure : la campagne se règle ensemble, et le message peut changer en cours de route.</p></div></div>
+        <div class="benefit-item"><div class="benefit-icon">📲</div><div class="benefit-text"><h4>Résultats mesurables</h4><p>Un QR code unique sur le top case : vous voyez ce que rapporte votre campagne.</p></div></div>
       </div>
-      <button class="btn-ink" style="width:100%" onclick="aNext(1)">Voir ce que ça donne pour ma marque →</button>
+      <button class="btn-ink" style="width:100%" onclick="aNext(1)">Rejoindre le pilote →</button>
       <p class="a-note">2 minutes · gratuit · sans engagement</p>
     </div>
 
