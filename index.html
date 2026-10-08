@@ -1535,7 +1535,7 @@ html.fx .hero-home .hero-sub{animation-duration:.6s;animation-delay:.3s}
 
     <p class="hero-sub" style="font-size:clamp(16px,4vw,20px);margin-bottom:44px;max-width:500px">Beeclou prépare une nouvelle façon de financer la mobilité vélo en ville. Nous cherchons nos premiers cyclistes, entreprises et partenaires pilotes.</p>
 
-    <div class="hero-cta-v2"><button class="btn-honey" onclick="showPage('cyclists')">Devenir cycliste pilote</button><a href="#advertisers" class="cta-experience" onclick="showPage('advertisers');return false;">✦ Devenir annonceur</a></div>
+    <div class="hero-cta-v2"><button class="btn-honey" onclick="openTunnel()">Devenir cycliste pilote</button><a href="#" class="cta-experience" onclick="openATunnel();return false;">✦ Devenir annonceur</a></div>
 
 
 
@@ -1608,8 +1608,8 @@ html.fx .hero-home .hero-sub{animation-duration:.6s;animation-delay:.3s}
       <div class="step-card"><div class="step-num">4</div><div class="step-icon">💶</div><h3>Gagne</h3><p>Rémunération au kilomètre, maintenance et assurance incluses.</p></div>
     </div>
     <div class="hero-actions" style="justify-content:center;margin-top:28px">
-      <button class="btn-honey" onclick="showPage('cyclists')">Devenir cycliste pilote</button>
-      <button class="btn-ghost" onclick="showPage('advertisers')">Demander conseil (marques)</button>
+      <button class="btn-honey" onclick="openTunnel()">Devenir cycliste pilote</button>
+      <button class="btn-ghost" onclick="openATunnel()">Demander conseil (marques)</button>
     </div>
   </section>
 
@@ -1701,7 +1701,7 @@ html.fx .hero-home .hero-sub{animation-duration:.6s;animation-delay:.3s}
       <strong style="font-family:'Playfair Display',serif;font-size:22px">Premiers partenaires pilotes</strong>
       <div class="logos"><span></span><span></span><span></span></div>
       <p style="color:var(--muted);margin:0 0 18px">Marque, entreprise ou collectivité : rejoignez les premiers à tester Beeclou.</p>
-      <button class="btn-ink" onclick="showPage('advertisers')">Demander conseil</button>
+      <button class="btn-ink" onclick="openATunnel()">Demander conseil</button>
     </div>
   </section>
 
@@ -1712,21 +1712,21 @@ html.fx .hero-home .hero-sub{animation-duration:.6s;animation-delay:.3s}
     <h2 class="section-title">Vous êtes…</h2>
     <p class="section-sub">Choisissez votre profil pour rejoindre la phase pilote.</p>
     <div class="hero-actions" style="justify-content:flex-start;">
-      <button class="btn-honey" onclick="showPage('cyclists')">Je suis cycliste</button>
-      <button class="btn-ghost" onclick="showPage('advertisers')">Je suis une marque</button>
+      <button class="btn-honey" onclick="openTunnel()">Je suis cycliste</button>
+      <button class="btn-ghost" onclick="openATunnel()">Je suis une marque</button>
       <button class="btn-ink" onclick="showPage('companies')">Je suis une entreprise</button>
       <button class="btn-sage" onclick="showPage('cities')">Je suis une ville</button>
     </div>
 
     <div class="trio-grid" style="grid-template-columns:repeat(2,1fr);max-width:640px">
-      <div class="trio-card" onclick="showPage('cyclists')" style="border-color:var(--honey)">
+      <div class="trio-card" onclick="openTunnel()" style="border-color:var(--honey)">
         <span class="trio-pill trio-pill light">Cyclistes</span>
         <span class="trio-icon">🚲</span>
         <div class="trio-title">Rouler et être payé au kilomètre</div>
         <div class="trio-desc">Vous roulez en ville ? Rejoignez les premiers cyclistes pilotes Beeclou.</div>
         <div class="trio-cta" style="color:var(--gold)">Participer au pilote →</div>
       </div>
-      <div class="trio-card" onclick="showPage('advertisers')">
+      <div class="trio-card" onclick="openATunnel()">
         <span class="trio-pill trio-pill light">Marques · Agences</span>
         <span class="trio-icon">📢</span>
         <div class="trio-title">Visibilité locale sur les vélos du quotidien</div>
@@ -1796,7 +1796,7 @@ html.fx .hero-home .hero-sub{animation-duration:.6s;animation-delay:.3s}
     <div class="cta-band-actions">
       <button class="btn-cream" onclick="showPage('companies')">Je suis une entreprise — rejoindre le pilote</button>
       <button class="btn-outline-cream" onclick="showPage('cities')">Je représente une ville</button>
-      <button class="btn-outline-cream" onclick="showPage('advertisers')">Je suis une marque</button>
+      <button class="btn-outline-cream" onclick="openATunnel()">Je suis une marque</button>
     </div>
   </div>
 
@@ -2997,6 +2997,176 @@ async function submitTunnel() {
 document.getElementById('overlay-tunnel').addEventListener('click', e => {
   if(e.target===document.getElementById('overlay-tunnel')) closeTunnel();
 });
+</script>
+<!-- ═══════════════════════════════════════ -->
+<!-- TUNNEL ANNONCEUR -->
+<!-- ═══════════════════════════════════════ -->
+<style>
+.arg-card{display:flex;gap:12px;align-items:flex-start;background:linear-gradient(135deg,rgba(201,168,76,.16),rgba(201,168,76,.05));border:1.5px solid rgba(201,168,76,.45);border-radius:14px;padding:13px 15px;margin:0 0 18px;font-size:13px;line-height:1.5;color:var(--ink)}
+.arg-card b{color:var(--sage)}
+.arg-card .arg-ic{font-size:20px;flex:none}
+.arg-card.pop{animation:argPop .5s cubic-bezier(.34,1.56,.64,1)}
+@keyframes argPop{from{opacity:0;transform:translateY(8px) scale(.97)}to{opacity:1;transform:none}}
+.a-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 18px}
+.a-kpi{background:var(--white);border:1.5px solid var(--border);border-radius:12px;padding:12px 6px;text-align:center}
+.a-kpi b{display:block;font-family:'Playfair Display',serif;font-size:20px;color:var(--sage)}
+.a-kpi small{display:block;font-size:10.5px;color:var(--muted);line-height:1.3;margin-top:2px}
+.a-range{width:100%;accent-color:var(--sage);margin:6px 0 4px}
+.a-budget{font-family:'Playfair Display',serif;font-size:30px;font-weight:900;color:var(--sage);text-align:center;margin:4px 0 0}
+.a-recap{list-style:none;padding:0;margin:0 0 16px;display:flex;flex-direction:column;gap:7px}
+.a-recap li{font-size:13px;line-height:1.45;padding-left:24px;position:relative}
+.a-recap li::before{content:"✓";position:absolute;left:0;top:0;width:18px;height:18px;border-radius:50%;background:var(--sage);color:#fff;font-size:11px;display:flex;align-items:center;justify-content:center}
+.a-steps3{display:flex;flex-direction:column;gap:10px;text-align:left;margin-top:18px}
+.a-steps3 div{background:var(--white);border:1.5px solid var(--border);border-radius:12px;padding:11px 14px;font-size:13px}
+.a-note{font-size:12px;color:var(--muted);text-align:center;margin-top:10px}
+</style>
+<div class="popup-overlay" id="overlay-atunnel">
+  <div class="popup-box" style="max-width:520px">
+    <button class="popup-close" onclick="closeATunnel()" aria-label="Fermer">✕</button>
+    <div class="tunnel-progress-dots">
+      <div class="tunnel-dot active" id="adot-1"></div><div class="tunnel-dot" id="adot-2"></div><div class="tunnel-dot" id="adot-3"></div><div class="tunnel-dot" id="adot-4"></div><div class="tunnel-dot" id="adot-5"></div>
+    </div>
+
+    <!-- 1 — Promesse -->
+    <div class="tunnel-step active" id="atunnel-1">
+      <div class="popup-label">📢 Annonceurs pilotes</div>
+      <div class="popup-title" style="font-size:22px">Votre marque, sur le vélo de vos futurs clients.</div>
+      <div class="a-kpis">
+        <div class="a-kpi"><b>4–5 %</b><small>CTR visé<br>(pub transit : 2–3 %)</small></div>
+        <div class="a-kpi"><b>5×</b><small>vues / semaine<br>par cycliste (hypothèse)</small></div>
+        <div class="a-kpi"><b>24 h</b><small>pour recevoir<br>votre proposition</small></div>
+      </div>
+      <div class="benefit-list">
+        <div class="benefit-item"><div class="benefit-icon">📍</div><div class="benefit-text"><h4>Ciblé rue par rue</h4><p>Quartiers, trajets, horaires : vous ne payez pas pour toute la ville.</p></div></div>
+        <div class="benefit-item"><div class="benefit-icon">🔄</div><div class="benefit-text"><h4>Vu et revu</h4><p>Votre pub est sur le top case : domicile-travail, week-end… on s'en souvient.</p></div></div>
+        <div class="benefit-item"><div class="benefit-icon">📲</div><div class="benefit-text"><h4>Mesurable</h4><p>QR code unique : vous connaissez vos scans et votre coût par client.</p></div></div>
+      </div>
+      <button class="btn-ink" style="width:100%" onclick="aNext(1)">Voir ce que ça donne pour ma marque →</button>
+      <p class="a-note">2 minutes · gratuit · sans engagement</p>
+    </div>
+
+    <!-- 2 — Objectif -->
+    <div class="tunnel-step" id="atunnel-2">
+      <div class="popup-label">🎯 Étape 1 sur 4</div>
+      <div class="popup-title" style="font-size:22px">Que voulez-vous obtenir ?</div>
+      <div class="q-options">
+        <button class="q-opt" onclick="aPickObj(this,'Faire connaître ma marque')">📣 Faire connaître ma marque</button>
+        <button class="q-opt" onclick="aPickObj(this,'Attirer des clients en boutique')">🏪 Attirer des clients en boutique</button>
+        <button class="q-opt" onclick="aPickObj(this,'Lancer une offre / un événement')">🎉 Lancer une offre ou un événement</button>
+        <button class="q-opt" onclick="aPickObj(this,'Recruter de nouveaux clients')">🤝 Recruter de nouveaux clients</button>
+      </div>
+      <div class="arg-card" id="a-arg-obj" style="display:none"></div>
+      <div class="q-nav"><button class="btn-prev" onclick="aPrev(2)">← Retour</button><button class="btn-next" onclick="aNext(2)">Suivant →</button></div>
+    </div>
+
+    <!-- 3 — Zone & secteur -->
+    <div class="tunnel-step" id="atunnel-3">
+      <div class="popup-label">📍 Étape 2 sur 4</div>
+      <div class="popup-title" style="font-size:22px">Où sont vos clients ?</div>
+      <div class="arg-card pop"><span class="arg-ic">💡</span><div><b>Chaque euro compte.</b> Beeclou cible des rues, des quartiers et des horaires précis : vous touchez les habitants de votre zone, pas toute la ville.</div></div>
+      <div class="form-group" style="margin-bottom:12px"><input class="q-input" id="at_city" type="text" placeholder="Ville / quartier visé (ex : Clermont-Ferrand centre)"></div>
+      <div class="form-group" style="margin-bottom:12px"><input class="q-input" id="at_sector" type="text" placeholder="Votre activité (ex : restauration, fitness, e-commerce…)"></div>
+      <div class="arg-card"><span class="arg-ic">🧪</span><div><b>Phase pilote :</b> on construit la campagne avec vous et on ajuste le message en cours de route, <b>sans interruption</b>.</div></div>
+      <div class="q-nav"><button class="btn-prev" onclick="aPrev(3)">← Retour</button><button class="btn-next" onclick="aNext(3)">Suivant →</button></div>
+    </div>
+
+    <!-- 4 — Budget & estimation -->
+    <div class="tunnel-step" id="atunnel-4">
+      <div class="popup-label">💶 Étape 3 sur 4</div>
+      <div class="popup-title" style="font-size:22px">Quel budget mensuel envisagez-vous ?</div>
+      <div class="a-budget" id="a-budget-val">800 €</div>
+      <input class="a-range" id="a-budget" type="range" min="150" max="5000" step="50" value="800" oninput="aCalc()" aria-label="Budget mensuel">
+      <div class="a-kpis" style="margin-top:12px">
+        <div class="a-kpi"><b id="a-imp">2 500</b><small>personnes touchées<br>par semaine</small></div>
+        <div class="a-kpi"><b id="a-clk">100</b><small>visites estimées<br>par semaine</small></div>
+        <div class="a-kpi"><b>QR</b><small>chaque scan<br>est mesuré</small></div>
+      </div>
+      <div class="arg-card"><span class="arg-ic">📊</span><div>Estimation indicative (hypothèse pilote : 4 % de clics). <b>Vous voyez ce que vous payez</b> : combien de personnes voient, scannent, achètent.</div></div>
+      <div class="q-nav"><button class="btn-prev" onclick="aPrev(4)">← Retour</button><button class="btn-next" onclick="aNext(4)">Dernière étape →</button></div>
+    </div>
+
+    <!-- 5 — Contact -->
+    <div class="tunnel-step" id="atunnel-5">
+      <div class="popup-label">📧 Étape 4 sur 4</div>
+      <div class="popup-title" style="font-size:22px">Recevez votre proposition de campagne.</div>
+      <ul class="a-recap">
+        <li><b>Proposition sur mesure sous 24 h</b>, gratuite et sans engagement</li>
+        <li>Zone, durée et format calibrés sur <span id="a-recap-zone">votre zone</span></li>
+        <li>Pilote : votre marque fait partie des premières, on construit avec vous</li>
+        <li>Données anonymisées, jamais de suivi individuel</li>
+      </ul>
+      <div class="form-group" style="margin-bottom:12px"><input class="q-input" id="at_brand" type="text" placeholder="Nom de votre marque *"></div>
+      <div class="form-group" style="margin-bottom:12px"><input class="q-input" id="at_email" type="email" placeholder="Email professionnel *"></div>
+      <div class="form-group" style="margin-bottom:18px"><input class="q-input" id="at_phone" type="tel" placeholder="Téléphone (optionnel, pour aller plus vite)"></div>
+      <div class="q-nav"><button class="btn-prev" onclick="aPrev(5)">← Retour</button><button class="btn-next" id="atunnel-submit" onclick="submitATunnel()">Je veux ma proposition 📢</button></div>
+    </div>
+
+    <!-- MERCI -->
+    <div class="ty-box" id="ty-atunnel">
+      <div class="ty-icon">📢</div>
+      <div class="ty-title" style="font-size:24px">Bienvenue parmi les annonceurs pilotes !</div>
+      <p class="ty-sub">Voici la suite :</p>
+      <div class="a-steps3">
+        <div><b>1.</b> Notre stratégiste campagne étudie votre zone.</div>
+        <div><b>2.</b> Vous recevez votre proposition sous 24 h.</div>
+        <div><b>3.</b> On cale ensemble le visuel et le QR code.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Tunnel annonceur
+const aAns = {};
+const A_ARGS = {
+  'Faire connaître ma marque': '<b>Idéal pour la notoriété :</b> votre marque est vue plusieurs fois par semaine par les mêmes personnes, sur leurs trajets du quotidien. Vu souvent, on s\'en souvient.',
+  'Attirer des clients en boutique': '<b>Le QR code fait le lien :</b> le cycliste scanne et arrive chez vous. Vous mesurez l\'impact sur votre trafic en point de vente.',
+  'Lancer une offre / un événement': '<b>Réactif :</b> changez le message en cours de campagne, nous remplaçons le visuel sans interruption.',
+  'Recruter de nouveaux clients': '<b>Zone ciblée :</b> touchez uniquement les habitants du rayon qui vous intéresse, au lieu de payer pour toute la ville.'
+};
+function openATunnel(){ document.getElementById('overlay-atunnel').classList.add('open'); document.body.style.overflow='hidden'; aCalc(); }
+function closeATunnel(){ document.getElementById('overlay-atunnel').classList.remove('open'); document.body.style.overflow=''; }
+function aShow(n){
+  document.querySelectorAll('#overlay-atunnel .tunnel-step').forEach(function(s){s.classList.remove('active')});
+  document.getElementById('atunnel-'+n).classList.add('active');
+  for(var i=1;i<=5;i++){var d=document.getElementById('adot-'+i);d.classList.remove('active','done');if(i===n)d.classList.add('active');else if(i<n)d.classList.add('done');}
+  document.querySelector('#overlay-atunnel .popup-box').scrollTop=0;
+  if(n===5){var z=document.getElementById('at_city').value.trim();document.getElementById('a-recap-zone').textContent=z||'votre zone';}
+}
+function aNext(c){aShow(c+1)}
+function aPrev(c){aShow(c-1)}
+function aPickObj(el,val){
+  aAns.objective=val;
+  el.closest('.q-options').querySelectorAll('.q-opt').forEach(function(o){o.classList.remove('selected')});
+  el.classList.add('selected');
+  var c=document.getElementById('a-arg-obj');c.innerHTML='<span class="arg-ic">💡</span><div>'+A_ARGS[val]+'</div>';
+  c.style.display='flex';c.classList.remove('pop');void c.offsetWidth;c.classList.add('pop');
+}
+function aCalc(){
+  var b=parseInt(document.getElementById('a-budget').value,10)||800,imp=Math.round(b*3.125),clk=Math.round(imp*0.04);
+  document.getElementById('a-budget-val').textContent=b.toLocaleString('fr')+' €';
+  document.getElementById('a-imp').textContent=imp.toLocaleString('fr');
+  document.getElementById('a-clk').textContent=clk.toLocaleString('fr');
+}
+async function submitATunnel(){
+  var btn=document.getElementById('atunnel-submit');
+  var brand=document.getElementById('at_brand').value.trim(),email=document.getElementById('at_email').value.trim(),phone=document.getElementById('at_phone').value.trim();
+  var city=document.getElementById('at_city').value.trim(),sector=document.getElementById('at_sector').value.trim(),budget=document.getElementById('a-budget').value;
+  if(!brand){alert('Veuillez indiquer le nom de votre marque.');return}
+  if(!email){alert('Veuillez entrer votre email.');return}
+  btn.textContent='Envoi…';btn.disabled=true;
+  var payload={source:'tunnel',audience:'annonceur',company:brand,email:email,phone:phone,city:city,organization_size:budget+' €/mois',message:sector,
+    answers:{objective:aAns.objective||'',zone:city,sector:sector,budget:budget+' €/mois'}};
+  var msg=['Profil : Annonceur (tunnel pilote)','Marque : '+brand,'Email : '+email,'Téléphone : '+phone,'Objectif : '+(aAns.objective||'Non précisé'),
+    'Zone : '+city,'Activité : '+sector,'Budget mensuel : '+budget+' €'].join('\n');
+  var mailed=false;
+  try{await sendMail('📢 Beeclou — Nouvel annonceur (tunnel)',email,msg);mailed=true}catch(e){console.warn('EmailJS échec:',e)}
+  try{await saveLead(payload)}catch(e){console.warn('Supabase indisponible (lead non stocké):',e)}
+  if(mailed){
+    document.querySelectorAll('#overlay-atunnel .tunnel-step, #overlay-atunnel .tunnel-progress-dots').forEach(function(el){el.style.display='none'});
+    document.getElementById('ty-atunnel').style.display='block';
+  }else{btn.textContent='Réessayer';btn.disabled=false;alert("L'envoi a échoué. Vérifiez votre connexion et réessayez.");}
+}
 </script>
   <script>
   /* Accessibilité clavier : rend les éléments cliquables (onclick) activables au clavier */
