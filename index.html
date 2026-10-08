@@ -36,6 +36,12 @@
     "url": "https://beeclou.fr/"
   }
   </script>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Combien puis-je gagner ?", "acceptedAnswer": {"@type": "Answer", "text": "Jusqu'à 80 €/mois en phase pilote. C'est un maximum estimé : le montant dépend des kilomètres parcourus et des marques partenaires. Aucun revenu n'est garanti."}}, {"@type": "Question", "name": "Mon vélo est-il compatible ?", "acceptedAnswer": {"@type": "Answer", "text": "Le top case se fixe sur un porte-bagages existant (fixation Klickfix). Sans porte-bagages, nous étudions les solutions au cas par cas."}}, {"@type": "Question", "name": "Qui s'occupe de la maintenance et de l'assurance ?", "acceptedAnswer": {"@type": "Answer", "text": "Beeclou : réparations, révisions et assurance sont incluses dans tous les forfaits."}}, {"@type": "Question", "name": "Mes données sont-elles protégées ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Le suivi est anonymisé et conforme au RGPD, sans traçage individuel."}}, {"@type": "Question", "name": "Et s'il pleut, ou si la sécurité cyclable est insuffisante ?", "acceptedAnswer": {"@type": "Answer", "text": "La participation est volontaire et sans obligation de rouler. Les kilomètres comptent quand vous roulez, pas quand vous restez chez vous."}}, {"@type": "Question", "name": "Où en est le projet ?", "acceptedAnswer": {"@type": "Answer", "text": "Phase pilote 2025-2026. Nous cherchons nos premiers cyclistes, entreprises, marques et territoires pour valider le modèle avec eux."}}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "Product", "name": "Top case Beeclou", "description": "Top case hexagonal de 30 L à clipser sur le porte-bagages d'un vélo (fixation Klickfix), maintenance et assurance incluses.", "brand": {"@type": "Brand", "name": "Beeclou"}}
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
@@ -1061,6 +1067,96 @@
     /* Cartes tiltables : profondeur */
     .trio-card, .price-card, .blog-card, .pack-opt { transform-style: preserve-3d; }
   </style>
+
+<style id="design-v2">
+/* ===== DESIGN V2 (2026-10-06) ===== */
+:root{--muted:#4f4c45;--gold-ink:#8a6d22;--sage-dark:#2f4a33;--sage-tint:#eef2ec}
+html{scroll-behavior:smooth}
+/* contraste + lisibilité */
+.section-label{font-size:12px;font-weight:700;color:var(--gold-ink);letter-spacing:.14em}
+.section-sub,.hero-sub{color:var(--muted);font-size:clamp(16px,1.6vw,18px);line-height:1.6}
+.step-card h3{font-size:17px}
+.step-card p{font-size:15px;line-height:1.6;color:var(--muted)}
+.hero-badge{font-size:14px;font-weight:600;padding:9px 18px;color:var(--ink);gap:8px}
+.hero-badge::before{content:"";width:14px;height:14px;flex:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2l8.66 5v10L12 22l-8.66-5V7z' fill='%23c9a84c'/%3E%3C/svg%3E") center/contain no-repeat}
+/* hero : ordre = message > CTA > visuel */
+.hero-home{min-height:auto;padding-bottom:56px}
+.hero-home .hero-badge{order:1}.hero-home .hero-title{order:2}.hero-home .hero-sub{order:3;margin-bottom:28px!important}
+.hero-home .hero-cta-v2{order:4}.hero-home .mh-wrap{order:5}.hero-home .cyclist-teaser{order:6}.hero-home .hero-photo-float{order:7}
+/* photo hero : dans le flux, sous la scène (plus de chevauchement avec l'animation) */
+.hero-home .hero-photo-float{position:relative!important;inset:auto!important;right:auto!important;bottom:auto!important;display:block;width:min(360px,86vw)!important;height:auto!important;aspect-ratio:4/3;margin:40px auto 0;transform:rotate(-2deg)!important;animation:none!important;z-index:2}
+.hero-cta-v2{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;align-items:center;margin:0 0 40px;position:relative;z-index:3}
+.hero-cta-v2 .btn-honey{font-size:17px;padding:17px 34px;box-shadow:0 14px 34px -14px rgba(201,168,76,.9);font-weight:600}
+.hero-cta-v2 .cta-experience{margin-top:0}
+/* animation d'entrée plus courte : le titre ne reste jamais pâle */
+html.fx .hero-home .hero-badge{animation-duration:.5s;animation-delay:0s}
+html.fx .hero-home .hero-title .line{animation-duration:.55s}
+html.fx .hero-home .hero-title .line:nth-child(1){animation-delay:.05s}
+html.fx .hero-home .hero-title .line:nth-child(2){animation-delay:.12s}
+html.fx .hero-home .hero-title .line:nth-child(3){animation-delay:.2s}
+html.fx .hero-home .hero-sub{animation-duration:.6s;animation-delay:.3s}
+/* sections en alternance de fond (pleine largeur) */
+#preuves,#parcours-cycliste,#faq{position:relative;max-width:960px}
+#preuves::before,#parcours-cycliste::before,#faq::before{content:"";position:absolute;inset:0 -100vmax;z-index:-1}
+#preuves::before{background:var(--sage-dark)}
+#parcours-cycliste::before{background:#fff}
+#faq::before{background:var(--sage-tint)}
+#preuves .section-title,#preuves .section-sub{color:var(--cream)}
+#preuves .section-title em{color:var(--honey)}
+#preuves .section-sub{opacity:.85}
+#preuves .section-label{color:var(--honey)}
+#preuves + hr.divider,#parcours-cycliste + hr.divider,#faq + hr.divider{display:none}
+#preuves, #parcours-cycliste, #faq{isolation:isolate}
+/* barre de chiffres : grille + hiérarchie */
+#preuves .mh-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:32px;width:100%}
+#preuves .stat{min-width:0;padding:18px 20px;border:none}
+#preuves .stat small{font-size:12px;color:var(--muted)}
+#preuves .stat b{font-size:clamp(22px,2.6vw,30px);line-height:1.15}
+#preuves .stat-key{grid-column:1/-1;background:var(--honey);display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:6px 20px;padding:22px 28px}
+#preuves .stat-key small{color:var(--ink);font-size:13px}
+#preuves .stat-key b{font-size:clamp(30px,5vw,48px);color:var(--ink)}
+#preuves .note{color:rgba(247,244,238,.8)!important}
+/* étapes : puces pleines, lisibles */
+.steps-grid .step-num{width:56px;height:56px;border-radius:50%;background:var(--sage);color:var(--cream);border:none;font-size:22px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;box-shadow:0 0 0 6px var(--cream)}
+#parcours-cycliste .steps-grid .step-num{box-shadow:0 0 0 6px #fff}
+.steps-grid::before{top:48px!important;height:2px!important;background:linear-gradient(to right,transparent,var(--honey) 15%,var(--honey) 85%,transparent)!important}
+.steps-grid .step-card{opacity:1!important;transform:none!important}
+/* FAQ */
+#faq details{transition:background .25s,border-color .25s,box-shadow .25s}
+#faq summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:17px}
+#faq summary::-webkit-details-marker{display:none}
+#faq summary::after{content:"";width:10px;height:10px;border-right:2px solid var(--sage);border-bottom:2px solid var(--sage);transform:rotate(45deg);transition:transform .25s;flex:none;margin-top:-4px}
+#faq details[open]{background:#fff;border-color:var(--sage);box-shadow:0 10px 30px -18px rgba(47,74,51,.5)}
+#faq details[open] summary::after{transform:rotate(225deg);margin-top:4px}
+#faq details[open] p{animation:faqIn .3s ease both}
+@keyframes faqIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+#faq details p{font-size:16px;color:var(--muted)}
+/* encart partenaires */
+.partner-card{max-width:720px;margin:36px auto 0;padding:28px;border:1px solid var(--honey);border-radius:20px;text-align:center;background:linear-gradient(180deg,rgba(212,180,131,.22),rgba(212,180,131,.1))}
+.partner-card .logos{display:flex;gap:14px;justify-content:center;margin:18px 0 20px;flex-wrap:wrap}
+.partner-card .logos span{width:110px;height:48px;border-radius:12px;background:rgba(255,255,255,.7);border:1px dashed var(--honey)}
+#preuves.section{padding-top:64px!important;padding-bottom:64px!important}
+#parcours-cycliste.section{padding-top:64px!important;padding-bottom:64px!important}
+#faq.section{padding-top:72px!important;padding-bottom:72px!important}
+/* images : traitement unique */
+.hero-photo-float{border-radius:24px;box-shadow:0 18px 44px -20px rgba(28,26,20,.45)}
+/* CTA mobile collant */
+.sticky-cta{display:none}
+@media(max-width:768px){
+  body{font-size:16px;padding-bottom:84px}
+  .hero{padding-top:84px}
+  .hero-home .hero-title{font-size:clamp(40px,12vw,60px)!important;margin-bottom:16px!important;margin-top:14px!important}
+  .hero-home .hero-photo-float{position:static!important;width:100%;max-width:320px;height:auto!important;aspect-ratio:1/1;margin:24px auto 0;transform:none!important}
+  .hero-home .mh-wrap{display:none}
+  .hero-cta-v2{flex-direction:column;align-items:stretch;width:100%;margin-bottom:28px}
+  .hero-cta-v2 .btn-honey,.hero-cta-v2 .cta-experience{justify-content:center;width:100%}
+  #preuves .mh-stats{grid-template-columns:1fr 1fr}
+  .steps-grid{grid-template-columns:1fr!important;gap:28px!important}
+  .steps-grid::before{display:none}
+  .sticky-cta{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:60;justify-content:center;background:var(--ink);color:var(--cream);padding:16px;border-radius:30px;font-weight:600;text-decoration:none;box-shadow:0 14px 34px -10px rgba(28,26,20,.55)}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}#faq details[open] p{animation:none}}
+</style>
 </head>
 <body>
 
@@ -1104,7 +1200,7 @@
     <div class="orb orb-2"></div>
     <div class="orb orb-3"></div>
     <img src="assets/images/13-cycliste-ouvre-le-top-case-beeclou.jpg" loading="eager" fetchpriority="high" decoding="async" alt="Cycliste ouvrant son top case Beeclou dans la rue" class="hero-photo-float" loading="lazy" width="320" height="320" onerror="this.style.display='none'">
-        <span class="hero-badge">🐝 Le top case connecté qui finance vos trajets à vélo</span>
+        <span class="hero-badge">Simple. Utile. Visible. Le top case qui finance vos trajets</span>
         <h1 class="hero-title" style="font-size:clamp(60px,14vw,100px);margin-bottom:32px;margin-top:20px;line-height:1.0">
       <span class="line">Vos trajets</span>
       <span class="line">méritent</span>
@@ -1117,6 +1213,314 @@
         </span>
       </span>
     </h1>
+<!-- MOTION HERO (ajouté 2026-10-06) -->
+<style id="mh-style">
+.mh-wrap{position:relative;z-index:2;width:100%;display:flex;flex-direction:column;align-items:center;margin:0 0 28px}
+.mh-wrap .stat b{font-family:'Playfair Display',serif}
+
+
+.mh-stage{position:relative;margin-left:auto;margin-right:auto;z-index:1;width:min(1180px,100%);margin-top:10px;animation:mhFade 1.2s .5s both}
+.mh-stage svg{display:block;width:100%;height:auto;overflow:visible}
+
+.mh-stats{position:relative;z-index:2;display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:6px;animation:mhRise .9s 1s cubic-bezier(.2,.7,.2,1) both}
+.stat{background:#fff;border:1px solid var(--border);border-radius:18px;padding:12px 22px;min-width:150px;text-align:left;box-shadow:0 6px 24px rgba(45,92,63,.06);transition:transform .25s}
+.stat.pulse{transform:scale(1.06)}
+.stat small{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.stat b{font-family:'Playfair Display',serif;font-size:28px;font-weight:900;font-variant-numeric:tabular-nums;color:var(--ink)}
+.stat.gain b{color:var(--sage)}
+.stat b.brand{font-size:20px;display:inline-block;line-height:1.5}
+.mh-note{position:relative;z-index:2;margin-top:12px;font-size:11px;color:var(--muted);opacity:.7}
+
+/* hexagones flottants */
+.hex{fill:none;stroke:var(--gold);stroke-width:1.5;opacity:0;animation:hexUp linear infinite}
+@keyframes hexUp{0%{opacity:0;transform:translateY(40px) rotate(0)}15%{opacity:.35}85%{opacity:.25}100%{opacity:0;transform:translateY(-220px) rotate(60deg)}}
+.hex{transform-box:fill-box;transform-origin:center}
+
+/* abeille */
+.wing{transform-box:fill-box;transform-origin:50% 100%;animation:flap .09s ease-in-out infinite alternate}
+.wing.w2{animation-delay:.045s}
+@keyframes flap{from{transform:scaleY(1) rotate(-10deg)}to{transform:scaleY(.35) rotate(10deg)}}
+
+/* pièces */
+.coin{pointer-events:none}
+
+@keyframes mhRise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes mhFade{from{opacity:0}to{opacity:1}}
+
+@media (prefers-reduced-motion:reduce){.mh-stage,.mh-stats{animation:none;opacity:1;transform:none}.hex,.wing{animation:none}}
+
+.mh-wrap .stat{background:#fff}
+</style>
+<div class="mh-wrap" id="motion-hero">
+<div class="mh-stage">
+    <svg id="scene" viewBox="0 0 1200 460" preserveAspectRatio="xMidYMax meet" role="img" aria-label="Animation : un cycliste roule en ville avec un top case Beeclou qui affiche une marque locale et fait gagner de l'argent au kilomètre">
+      <defs>
+        <linearGradient id="fadeL" x1="0" x2="1"><stop offset="0" stop-color="#F5F0E8"/><stop offset="1" stop-color="#F5F0E8" stop-opacity="0"/></linearGradient>
+        <linearGradient id="fadeR" x1="1" x2="0"><stop offset="0" stop-color="#F5F0E8"/><stop offset="1" stop-color="#F5F0E8" stop-opacity="0"/></linearGradient>
+        <radialGradient id="sun"><stop offset="0" stop-color="#C9A84C" stop-opacity=".35"/><stop offset="1" stop-color="#C9A84C" stop-opacity="0"/></radialGradient>
+        <path id="hexp" d="M0-14L12-7V7L0 14L-12 7V-7Z"/>
+      </defs>
+
+      <circle cx="930" cy="150" r="130" fill="url(#sun)"/>
+      <g id="hexes"></g>
+
+      <g id="L1"></g>
+      <g id="L2"></g>
+
+      <!-- route -->
+      <rect x="-40" y="380" width="1280" height="90" fill="rgba(45,92,63,.07)"/>
+      <line x1="-40" y1="380" x2="1240" y2="380" stroke="#5c7a5a" stroke-opacity=".35" stroke-width="2"/>
+      <line id="dash" x1="-40" y1="424" x2="1240" y2="424" stroke="#5c7a5a" stroke-opacity=".28" stroke-width="3" stroke-dasharray="40 40" stroke-linecap="round"/>
+      <g id="L3"></g>
+
+      <!-- ombre -->
+      <ellipse cx="520" cy="382" rx="120" ry="7" fill="#000" opacity=".12"/>
+
+      <!-- cycliste -->
+      <g id="bike" transform="translate(520 338)">
+        <g id="rig">
+          <!-- roues -->
+          <g transform="translate(-70 0)"><g id="wR"></g></g>
+          <g transform="translate(70 0)"><g id="wF"></g></g>
+          <!-- jambe arrière (derrière le cadre) -->
+          <path id="legB" d="" fill="none" stroke="#1a1a1a" stroke-opacity=".55" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- cadre -->
+          <g fill="none" stroke="#5c7a5a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M-70 0L-5 0M-5 0L-18 -70M-18 -70L42 -66M-5 0L42 -66M42 -66L70 0M-18 -70L-70 0"/>
+          </g>
+          <path d="M-32 -76L-6 -76" stroke="#1a1a1a" stroke-width="6" stroke-linecap="round"/>
+          <path d="M42 -66L47 -86M47 -86L57 -86" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round" fill="none"/>
+          <!-- porte-bagages -->
+          <path d="M-106 -64L-38 -64M-92 -64L-70 0M-52 -64L-70 0" stroke="#6b6560" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <!-- manivelle + pédale -->
+          <line id="crank" x1="-5" y1="0" x2="-5" y2="0" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round"/>
+          <!-- buste -->
+          <path d="M-14 -80L24 -116" stroke="#6f8f6c" stroke-width="15" stroke-linecap="round"/>
+          <path d="M24 -116L41 -100L51 -88" stroke="#1a1a1a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <circle cx="33" cy="-129" r="10" fill="#1a1a1a"/>
+          <path d="M24 -133a11 11 0 0 1 18 -2" stroke="#C9A84C" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <!-- jambe avant -->
+          <path id="legF" d="" fill="none" stroke="#1a1a1a" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+
+          <!-- TOP CASE -->
+          <g transform="translate(-72 -96)">
+            <path d="M0-31L27-15.5V15.5L0 31L-27 15.5V-15.5Z" fill="#5c7a5a" stroke="#1a1a1a" stroke-opacity=".25" stroke-width="2"/>
+            <path d="M0-24L21-12V12L0 24L-21 12V-12Z" fill="none" stroke="#C9A84C" stroke-width="1.5" stroke-opacity=".9"/>
+            <text id="caseTxt" x="0" y="3.5" text-anchor="middle" font-family="DM Sans,sans-serif" font-weight="700" font-size="8.5" fill="#fff">Marque locale</text>
+            <circle cx="0" cy="-17" r="2.2" fill="#C9A84C"/>
+          </g>
+        </g>
+      </g>
+
+      <!-- abeille -->
+      <g id="bee">
+        <ellipse class="wing" cx="-5" cy="-5" rx="5" ry="9" fill="#fff" fill-opacity=".85" stroke="#6b6560" stroke-opacity=".4"/>
+        <ellipse class="wing w2" cx="4" cy="-5" rx="5" ry="9" fill="#fff" fill-opacity=".85" stroke="#6b6560" stroke-opacity=".4"/>
+        <ellipse cx="0" cy="2" rx="11" ry="7.5" fill="#C9A84C"/>
+        <path d="M-3 -4.5V8.5M3 -4.5V8.5" stroke="#1a1a1a" stroke-width="3"/>
+        <circle cx="10" cy="0" r="3.8" fill="#1a1a1a"/>
+      </g>
+
+      <g id="coins"></g>
+
+      <rect x="-40" y="0" width="150" height="470" fill="url(#fadeL)"/>
+      <rect x="1090" y="0" width="150" height="470" fill="url(#fadeR)"/>
+    </svg>
+  </div>
+
+  <div class="mh-stats">
+    <div class="stat"><small>Distance</small><b id="kmV">0,00</b> <span style="color:var(--muted)">km</span></div>
+    <div class="stat gain" id="gainBox"><small>Gains</small><b id="eurV">0,00</b> <span style="color:var(--sage);font-weight:600">€</span></div>
+    <div class="stat"><small>Marque affichée</small><b class="brand" id="brandV">Marque locale</b></div>
+  </div>
+  <p class="mh-note">Simulation illustrative</p>
+</div>
+<script>
+(() => {
+  // ── RÉGLAGES (démo) ──
+  const KM_PER_SEC   = 0.15;   // vitesse du compteur (simulation)
+  const EUR_PER_KM   = 0.20;   // taux illustratif — à remplacer par le vrai taux Beeclou
+  const COIN_STEP    = 0.05;   // une pièce tous les 0,05 €
+  const WORLD_SPEED  = 260;    // px/s de défilement
+  const BRANDS       = ['Marque locale','Commerce de quartier','Association','Votre marque'];
+  const CASE_TXT     = ['Marque locale','Commerce','Association','Votre marque'];
+
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const $ = id => document.getElementById(id);
+  const NS = 'http://www.w3.org/2000/svg';
+  const el = (tag, attrs, parent) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); parent && parent.appendChild(e); return e; };
+  const fmt = n => n.toFixed(2).replace('.', ',');
+
+  // ── RNG déterministe ──
+  let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+
+  // ── DÉCOR : villes en tuiles répétées ──
+  const TILE = 1400;
+  function buildCity(g, fill, hMin, hMax, wMin, wMax, op) {
+    const content = document.createDocumentFragment();
+    let x = 0;
+    while (x < TILE) {
+      const w = wMin + rnd() * (wMax - wMin), h = hMin + rnd() * (hMax - hMin);
+      const wRem = Math.min(w, TILE - x);
+      el('rect', { x, y: 380 - h, width: wRem - 4, height: h, fill, 'fill-opacity': op, rx: 3 }, content);
+      // fenêtres
+      for (let wy = 380 - h + 14; wy < 366; wy += 22)
+        for (let wx = x + 10; wx < x + wRem - 18; wx += 20)
+          if (rnd() > .55) el('rect', { x: wx, y: wy, width: 7, height: 9, fill: '#C9A84C', 'fill-opacity': op * 1.8, rx: 1 }, content);
+      x += w;
+    }
+    const a = el('g', {}, g); a.appendChild(content.cloneNode(true));
+    const b = el('g', { transform: `translate(${TILE})` }, g); b.appendChild(content);
+  }
+  buildCity($('L1'), '#5c7a5a', 90, 230, 60, 120, .08);
+  buildCity($('L2'), '#5c7a5a', 60, 150, 50, 90, .14);
+
+  // premier plan : lampadaires + arbres (tuile 1200 = période du dash)
+  const L3 = $('L3'); const L3tile = 1200;
+  const f3 = document.createDocumentFragment();
+  [150, 750].forEach(px => {
+    el('line', { x1: px, y1: 380, x2: px, y2: 270, stroke: '#1a1a1a', 'stroke-opacity': .45, 'stroke-width': 4, 'stroke-linecap': 'round' }, f3);
+    el('path', { d: `M${px} 270q18 0 22 14`, fill: 'none', stroke: '#1a1a1a', 'stroke-opacity': .45, 'stroke-width': 4, 'stroke-linecap': 'round' }, f3);
+    el('circle', { cx: px + 22, cy: 288, r: 5, fill: '#C9A84C' }, f3);
+  });
+  [450, 1020].forEach(px => {
+    el('rect', { x: px - 3, y: 330, width: 6, height: 50, fill: '#1a1a1a', 'fill-opacity': .4 }, f3);
+    el('circle', { cx: px, cy: 318, r: 30, fill: '#6f8f6c', 'fill-opacity': .55 }, f3);
+    el('circle', { cx: px - 18, cy: 332, r: 20, fill: '#5c7a5a', 'fill-opacity': .5 }, f3);
+    el('circle', { cx: px + 20, cy: 334, r: 18, fill: '#5c7a5a', 'fill-opacity': .5 }, f3);
+  });
+  const a3 = el('g', {}, L3); a3.appendChild(f3.cloneNode(true));
+  const b3 = el('g', { transform: `translate(${L3tile})` }, L3); b3.appendChild(f3);
+  const a3b = el('g', { transform: `translate(${-L3tile})` }, L3); a3b.appendChild(a3.cloneNode(true));
+
+  // hexagones flottants
+  const hx = $('hexes');
+  for (let i = 0; i < 14; i++) {
+    const s = .6 + rnd() * 1.6;
+    const g = el('g', { transform: `translate(${rnd() * 1200} ${60 + rnd() * 260}) scale(${s})` }, hx);
+    const u = el('use', { href: '#hexp', class: 'hex' }, g);
+    u.style.animationDuration = (9 + rnd() * 9) + 's';
+    u.style.animationDelay = (-rnd() * 12) + 's';
+  }
+
+  // roues
+  function wheel(g) {
+    el('circle', { r: 42, fill: 'none', stroke: '#1a1a1a', 'stroke-width': 5 }, g);
+    el('circle', { r: 37, fill: 'none', stroke: '#C9A84C', 'stroke-width': 1.2, 'stroke-opacity': .8 }, g);
+    for (let i = 0; i < 8; i++) {
+      const a = i * Math.PI / 4;
+      el('line', { x1: 0, y1: 0, x2: Math.cos(a) * 37, y2: Math.sin(a) * 37, stroke: '#6b6560', 'stroke-width': 1, 'stroke-opacity': .75 }, g);
+    }
+    el('circle', { cx: 37, cy: 0, r: 3.5, fill: '#C9A84C' }, g);
+    el('circle', { r: 4, fill: '#1a1a1a' }, g);
+  }
+  wheel($('wR')); wheel($('wF'));
+
+  // ── JAMBES (IK 2 segments) ──
+  const HIP = [-14, -78], BB = [-5, 0], CR = 17, L1 = 46, L2 = 48;
+  function leg(a) {
+    const fx = BB[0] + CR * Math.cos(a), fy = BB[1] + CR * Math.sin(a);
+    let dx = fx - HIP[0], dy = fy - HIP[1], d = Math.hypot(dx, dy);
+    d = Math.min(d, L1 + L2 - .5);
+    const ux = dx / Math.hypot(dx, dy), uy = dy / Math.hypot(dx, dy);
+    const q = (L1 * L1 - L2 * L2 + d * d) / (2 * d), h = Math.sqrt(Math.max(L1 * L1 - q * q, 0));
+    const kx = HIP[0] + q * ux + h * uy, ky = HIP[1] + q * uy - h * ux;
+    return { d: `M${HIP[0]} ${HIP[1]}L${kx.toFixed(1)} ${ky.toFixed(1)}L${fx.toFixed(1)} ${fy.toFixed(1)}L${(fx + 8).toFixed(1)} ${fy.toFixed(1)}`, fx, fy };
+  }
+
+  // ── PIÈCES ──
+  const coinsG = $('coins');
+  const coins = [];
+  function spawnCoin(t) {
+    const g = el('g', { class: 'coin' }, coinsG);
+    el('circle', { r: 13, fill: '#C9A84C', stroke: '#8f7430', 'stroke-width': 1.5 }, g);
+    el('circle', { r: 9, fill: 'none', stroke: '#8f7430', 'stroke-opacity': .5 }, g);
+    const tx = el('text', { 'text-anchor': 'middle', y: 4.5, 'font-family': 'Playfair Display,serif', 'font-weight': 900, 'font-size': 13, fill: '#6b5416' }, g);
+    tx.textContent = '€';
+    coins.push({ g, t0: t, x0: 448, y0: 232 });
+  }
+
+  // ── ÉTAT ──
+  const kmEl = $('kmV'), eurEl = $('eurV'), brandEl = $('brandV'), caseTxt = $('caseTxt'), gainBox = $('gainBox');
+  let km = 0, nextCoinEur = COIN_STEP, brandI = 0, nextBrandT = 3, running = true, last = 0, T = 0;
+  let worldX = 0, pedal = 0, wheelA = 0;
+
+  function frame(now) {
+    if (!running) { last = 0; return; }
+    if (!last) last = now;
+    const dt = Math.min((now - last) / 1000, .05); last = now; T += dt;
+    render(dt);
+    requestAnimationFrame(frame);
+  }
+
+  function render(dt) {
+    worldX += WORLD_SPEED * dt;
+    pedal += 9.2 * dt;
+    wheelA += (WORLD_SPEED / 42) * dt;
+
+    // décor (parallaxe)
+    $('L1').setAttribute('transform', `translate(${-(worldX * .12) % TILE} 0)`);
+    $('L2').setAttribute('transform', `translate(${-(worldX * .32) % TILE} 0)`);
+    $('L3').setAttribute('transform', `translate(${-(worldX) % L3tile} 0)`);
+    $('dash').setAttribute('stroke-dashoffset', (worldX % 80));
+
+    // vélo
+    const bob = Math.sin(pedal * 2) * 1.6;
+    $('rig').setAttribute('transform', `translate(0 ${bob.toFixed(2)})`);
+    const deg = wheelA * 180 / Math.PI;
+    $('wR').setAttribute('transform', `rotate(${deg})`);
+    $('wF').setAttribute('transform', `rotate(${deg})`);
+    const lf = leg(pedal), lb = leg(pedal + Math.PI);
+    $('legF').setAttribute('d', lf.d); $('legB').setAttribute('d', lb.d);
+    $('crank').setAttribute('x2', lf.fx); $('crank').setAttribute('y2', lf.fy);
+    $('crank').setAttribute('x1', BB[0]); $('crank').setAttribute('y1', BB[1]);
+
+    // abeille
+    const bx = 640 + Math.sin(T * .8) * 70, by = 170 + Math.sin(T * 1.7) * 22;
+    const dir = Math.cos(T * .8) >= 0 ? 1 : -1;
+    $('bee').setAttribute('transform', `translate(${bx.toFixed(1)} ${by.toFixed(1)}) scale(${dir * 1.15} 1.15)`);
+
+    // compteurs
+    km += KM_PER_SEC * dt;
+    const eur = km * EUR_PER_KM;
+    kmEl.textContent = fmt(km); eurEl.textContent = fmt(eur);
+    if (eur >= nextCoinEur) { nextCoinEur += COIN_STEP; spawnCoin(T); gainBox.classList.add('pulse'); setTimeout(() => gainBox.classList.remove('pulse'), 220); }
+
+    // marque affichée (flip sur le top case)
+    if (T >= nextBrandT) { nextBrandT = T + 3.2; brandI = (brandI + 1) % BRANDS.length; flipBrand(); }
+
+    // pièces
+    for (let i = coins.length - 1; i >= 0; i--) {
+      const c = coins[i], k = (T - c.t0) / 1.6;
+      if (k >= 1) { c.g.remove(); coins.splice(i, 1); continue; }
+      const e = 1 - Math.pow(1 - k, 3);
+      const sx = Math.min(1, k * 6);
+      c.g.setAttribute('transform', `translate(${(c.x0 + e * 40).toFixed(1)} ${(c.y0 - e * 120).toFixed(1)}) scale(${(sx * Math.cos(k * 10)).toFixed(2)} ${sx.toFixed(2)})`);
+      c.g.setAttribute('opacity', k < .75 ? 1 : 1 - (k - .75) / .25);
+    }
+  }
+
+  function flipBrand() {
+    caseTxt.style.transition = 'opacity .25s'; caseTxt.style.opacity = 0;
+    brandEl.style.transition = 'opacity .25s'; brandEl.style.opacity = 0;
+    setTimeout(() => { caseTxt.textContent = CASE_TXT[brandI]; brandEl.textContent = BRANDS[brandI]; caseTxt.style.opacity = 1; brandEl.style.opacity = 1; }, 260);
+  }
+
+  // viewBox responsive (cadrage serré sur mobile)
+  const svg = $('scene');
+  function fit() { svg.setAttribute('viewBox', innerWidth < 700 ? '250 20 620 450' : '0 0 1200 460'); }
+  fit(); addEventListener('resize', fit);
+
+  // pause hors écran / onglet caché
+  function setRun(v) { if (v && !running && !reduce) { running = true; last = 0; requestAnimationFrame(frame); } else if (!v) running = false; }
+  new IntersectionObserver(es => setRun(es[0].isIntersecting)).observe($('motion-hero'));
+  document.addEventListener('visibilitychange', () => setRun(!document.hidden));
+
+  if (reduce) { km = 1.2; running = false; render(0.016); kmEl.textContent = fmt(km); eurEl.textContent = fmt(km * EUR_PER_KM); }
+  else requestAnimationFrame(frame);
+})();
+</script>
+<!-- /MOTION HERO -->
     <!-- CYCLIST TEASER -->
     <div class="cyclist-teaser" onclick="window.location.href='experience.html'">
       <div class="cyclist-teaser-inner">
@@ -1131,7 +1535,7 @@
 
     <p class="hero-sub" style="font-size:clamp(16px,4vw,20px);margin-bottom:44px;max-width:500px">Beeclou prépare une nouvelle façon de financer la mobilité vélo en ville. Nous cherchons nos premiers cyclistes, entreprises et partenaires pilotes.</p>
 
-    <a href="experience.html" class="cta-experience">✦ Découvrir l'expérience Beeclou</a>
+    <div class="hero-cta-v2"><button class="btn-honey" onclick="showPage('cyclists')">Devenir cycliste pilote</button><a href="experience.html" class="cta-experience">✦ Découvrir l'expérience Beeclou</a></div>
 
 
 
@@ -1173,6 +1577,39 @@
         <h3>Tout le monde y gagne</h3>
         <p>Le cycliste est rémunéré, la marque gagne en visibilité locale, l'employeur et la ville accélèrent la mobilité douce.</p>
       </div>
+    </div>
+  </section>
+
+
+  <!-- FUSION 2026-10-06 : preuves + parcours + specs -->
+  <section class="section rise" id="preuves" style="padding-top:12px;padding-bottom:8px;">
+    <div class="section-label">Simple. Utile. Visible.</div>
+    <h2 class="section-title">Les chiffres <em class="styled">du pilote</em></h2>
+    <p class="section-sub">Objectifs et hypothèses de la phase pilote 2025-2026, que nous validons avec les premiers participants.</p>
+    <div class="mh-stats" style="animation:none;margin-top:28px">
+      <div class="stat stat-key"><small>Cycliste pilote</small><b>jusqu'à 80 €/mois</b></div>
+      <div class="stat"><small>Aide employeur (FMD)</small><b>900 €/an</b></div>
+      <div class="stat"><small>Top case</small><b>30 L</b></div>
+      <div class="stat"><small>CTR visé</small><b>4–5 %</b></div>
+      <div class="stat"><small>Réponse</small><b>24-48 h</b></div>
+    </div>
+    <p class="note" style="text-align:center;font-size:14px;margin-top:16px">Estimations : le gain réel dépend des kilomètres parcourus et des marques partenaires. Aucun revenu garanti.</p>
+  </section>
+
+  <hr class="divider">
+
+  <section class="section rise" id="parcours-cycliste" style="padding-top:12px">
+    <div class="section-label">Pour les cyclistes</div>
+    <h2 class="section-title">En 4 étapes, <em class="styled">c'est parti</em></h2>
+    <div class="steps-grid">
+      <div class="step-card"><div class="step-num">1</div><div class="step-icon">📝</div><h3>Inscris-toi</h3><p>Ville, type de vélo, porte-bagages : 2 minutes.</p></div>
+      <div class="step-card"><div class="step-num">2</div><div class="step-icon">📦</div><h3>Reçois ton top case</h3><p>Il se clipse sans outil (Klickfix) sur ton porte-bagages.</p></div>
+      <div class="step-card"><div class="step-num">3</div><div class="step-icon">🚴</div><h3>Roule</h3><p>Tu choisis la marque locale affichée. Chaque kilomètre compte.</p></div>
+      <div class="step-card"><div class="step-num">4</div><div class="step-icon">💶</div><h3>Gagne</h3><p>Rémunération au kilomètre, maintenance et assurance incluses.</p></div>
+    </div>
+    <div class="hero-actions" style="justify-content:center;margin-top:28px">
+      <button class="btn-honey" onclick="showPage('cyclists')">Devenir cycliste pilote</button>
+      <button class="btn-ghost" onclick="showPage('advertisers')">Demander conseil (marques)</button>
     </div>
   </section>
 
@@ -1249,7 +1686,28 @@
   <hr class="divider">
 
   <!-- AUDIENCE ROUTING -->
-  <section class="section rise">
+    <section class="section rise" id="faq" style="scroll-margin-top:80px;">
+    <div class="section-label">Confiance</div>
+    <h2 class="section-title">Questions <em class="styled">fréquentes</em></h2>
+    <div style="max-width:720px;margin:28px auto 0;text-align:left">
+      <details style="border:1px solid var(--border);border-radius:var(--radius);padding:16px 20px;margin-bottom:12px;background:#fff"><summary style="cursor:pointer;font-weight:600;color:var(--ink)">Combien puis-je gagner ?</summary><p style="margin-top:10px;color:var(--muted);line-height:1.55">Jusqu'à 80 €/mois en phase pilote. C'est un maximum estimé : le montant dépend des kilomètres parcourus et des marques partenaires. Aucun revenu n'est garanti.</p></details>
+      <details style="border:1px solid var(--border);border-radius:var(--radius);padding:16px 20px;margin-bottom:12px;background:#fff"><summary style="cursor:pointer;font-weight:600;color:var(--ink)">Mon vélo est-il compatible ?</summary><p style="margin-top:10px;color:var(--muted);line-height:1.55">Le top case se fixe sur un porte-bagages existant (fixation Klickfix). Sans porte-bagages, nous étudions les solutions au cas par cas.</p></details>
+      <details style="border:1px solid var(--border);border-radius:var(--radius);padding:16px 20px;margin-bottom:12px;background:#fff"><summary style="cursor:pointer;font-weight:600;color:var(--ink)">Qui s'occupe de la maintenance et de l'assurance ?</summary><p style="margin-top:10px;color:var(--muted);line-height:1.55">Beeclou : réparations, révisions et assurance sont incluses dans tous les forfaits.</p></details>
+      <details style="border:1px solid var(--border);border-radius:var(--radius);padding:16px 20px;margin-bottom:12px;background:#fff"><summary style="cursor:pointer;font-weight:600;color:var(--ink)">Mes données sont-elles protégées ?</summary><p style="margin-top:10px;color:var(--muted);line-height:1.55">Oui. Le suivi est anonymisé et conforme au RGPD, sans traçage individuel.</p></details>
+      <details style="border:1px solid var(--border);border-radius:var(--radius);padding:16px 20px;margin-bottom:12px;background:#fff"><summary style="cursor:pointer;font-weight:600;color:var(--ink)">Et s'il pleut, ou si la sécurité cyclable est insuffisante ?</summary><p style="margin-top:10px;color:var(--muted);line-height:1.55">La participation est volontaire et sans obligation de rouler. Les kilomètres comptent quand vous roulez, pas quand vous restez chez vous.</p></details>
+      <details style="border:1px solid var(--border);border-radius:var(--radius);padding:16px 20px;margin-bottom:12px;background:#fff"><summary style="cursor:pointer;font-weight:600;color:var(--ink)">Où en est le projet ?</summary><p style="margin-top:10px;color:var(--muted);line-height:1.55">Phase pilote 2025-2026. Nous cherchons nos premiers cyclistes, entreprises, marques et territoires pour valider le modèle avec eux.</p></details>
+    </div>
+    <div class="partner-card">
+      <strong style="font-family:'Playfair Display',serif;font-size:22px">Premiers partenaires pilotes</strong>
+      <div class="logos"><span></span><span></span><span></span></div>
+      <p style="color:var(--muted);margin:0 0 18px">Marque, entreprise ou collectivité : rejoignez les premiers à tester Beeclou.</p>
+      <button class="btn-ink" onclick="showPage('advertisers')">Demander conseil</button>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+<section class="section rise">
     <div class="section-label">Rejoindre le pilote</div>
     <h2 class="section-title">Vous êtes…</h2>
     <p class="section-sub">Choisissez votre profil pour rejoindre la phase pilote.</p>
@@ -2624,7 +3082,6 @@ document.getElementById('overlay-tunnel').addEventListener('click', e => {
       wrapLayer(hero.querySelector('.orb-1'), 0.5);
       wrapLayer(hero.querySelector('.orb-2'), 0.8);
       wrapLayer(hero.querySelector('.orb-3'), 1.1);
-      wrapLayer(hero.querySelector('.hero-photo-float'), 1.5);
       hero.addEventListener('pointermove', function(ev){
         var r = hero.getBoundingClientRect();
         tmx = ((ev.clientX - r.left) / r.width - 0.5) * 2;
@@ -2693,4 +3150,5 @@ document.getElementById('overlay-tunnel').addEventListener('click', e => {
   window.addEventListener('load', routeHash);
 })();
 </script>
+<a class="sticky-cta" href="#cyclists" onclick="showPage('cyclists');return false;">Rejoindre le pilote</a>
 </body></html>
