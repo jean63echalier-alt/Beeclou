@@ -254,6 +254,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 @media (min-width:861px){.pn--7 .row2{grid-template-columns:1fr 1fr}}
 @media (min-width:700px) and (max-width:860px){.row2{grid-template-columns:1fr 1fr}}
 @media (prefers-reduced-motion:reduce){*{transition-duration:.01ms!important;animation:none!important}}
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 </style>
 </head>
 <body>
@@ -264,7 +265,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 
   <header class="duo" id="duo">
     <div class="duo__l">
-      <h1>Bee<span class="it">clou</span></h1>
+      <h1>Bee<span class="it">clou</span><span class="sr-only"> : publicité locale à vélo, cyclistes rémunérés au kilomètre</span></h1>
       <p class="duo__sub">Votre vélo travaille pour vous.</p>
       <p class="duo__tag">Beeclou finance des vélos grâce à la publicité locale. Les marques gagnent en visibilité, les cyclistes gagnent au kilomètre.</p>
       <p class="duo__q"><svg class="arr arr--l" viewBox="0 0 56 28" aria-hidden="true"><path d="M54 14H5M16 3L4 14l12 11"/></svg><span>Qui êtes-vous ?</span><svg class="arr arr--r" viewBox="0 0 56 28" aria-hidden="true"><path d="M2 14h49M40 3l12 11-12 11"/></svg><svg class="arr arr--d" viewBox="0 0 28 56" aria-hidden="true"><path d="M14 2v49M3 40l11 12 11-12"/></svg></p>
