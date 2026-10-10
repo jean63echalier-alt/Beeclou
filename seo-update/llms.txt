@@ -1,0 +1,8 @@
+# Beeclou
+
+> Beeclou finance des vélos grâce à la publicité locale : les marques gagnent en visibilité en ville, les cyclistes sont rémunérés au kilomètre. Phase pilote 2025-2026.
+
+- [Accueil](https://beeclou.fr/): présentation des deux parcours, cycliste et annonceur
+- [Cyclistes](https://beeclou.fr/cycliste.html): boîte de 30 L prêtée (caution 40 €), pose gratuite en magasin partenaire, jusqu'à 25 € par mois en phase pilote (estimation, non garantie)
+- [Annonceurs](https://beeclou.fr/annonceur.html): packs Découverte 600 €, Quartier 3 300 €, Ville 7 500 €
+- Contact : contact@beeclou.fr
