@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Beeclou, publicité locale à vélo : cyclistes rémunérés au kilomètre</title>
+<meta name="description" content="Beeclou finance des vélos grâce à la publicité locale : les marques gagnent en visibilité en ville, les cyclistes sont rémunérés au kilomètre. Phase pilote ouverte.">
+<link rel="canonical" href="https://beeclou.fr/">
+<meta property="og:type" content="website"><meta property="og:locale" content="fr_FR"><meta property="og:site_name" content="Beeclou">
+<meta property="og:title" content="Beeclou, votre vélo travaille pour vous">
+<meta property="og:description" content="La publicité locale qui finance des vélos : les marques gagnent en visibilité, les cyclistes gagnent au kilomètre.">
+<meta property="og:url" content="https://beeclou.fr/"><meta property="og:image" content="https://beeclou.fr/og-beeclou-photo.jpg?v=20261009">
+<meta property="og:image:alt" content="Un vélo équipé d'une boîte publicitaire Beeclou en ville">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Beeclou, publicité locale à vélo">
+<meta name="twitter:description" content="Les marques gagnent en visibilité en ville, les cyclistes sont rémunérés au kilomètre.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Beeclou", "url": "https://beeclou.fr/", "logo": "https://beeclou.fr/og-beeclou.png", "email": "contact@beeclou.fr", "description": "Beeclou finance des vélos grâce à la publicité locale : les marques gagnent en visibilité en ville, les cyclistes sont rémunérés au kilomètre."}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Beeclou", "url": "https://beeclou.fr/", "inLanguage": "fr-FR"}</script>
+
+<link rel="icon" href="nouveau/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#F7F3EA; --cream-2:#EFE9DB; --paper:#fff; --ink:#16130f; --ink-2:#221e18;
+  --gold:#C9A84C; --gold-2:#E3C56E; --sage:#5c7a5a; --green:#3d5540; --mute:#4f4c45; --mute-d:#b9b0a0;
+  --line:rgba(22,19,15,.14);
+  --serif:"Playfair Display",Georgia,serif; --sans:"DM Sans",system-ui,sans-serif;
+  --bar:56px; --pad:22px;
+}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);background:#d9d3c4;color:var(--ink);line-height:1.5;font-size:16px;-webkit-font-smoothing:antialiased;overflow:hidden}
+a{color:inherit} img{display:block;max-width:100%} button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.it{font-family:var(--serif);font-style:italic;font-weight:700}
+.app{position:relative;height:100vh;height:100svh;max-width:520px;margin:0 auto;overflow:hidden;background:var(--cream)}
+[hidden]{display:none!important}
+
+/* ============ ÉCRAN 1 : le choix ============ */
+.home{position:absolute;inset:0;display:grid;grid-template-rows:1fr 1fr;transition:grid-template-rows .55s cubic-bezier(.7,0,.2,1)}
+.home[data-go="c"]{grid-template-rows:1fr 0fr}
+.home[data-go="a"]{grid-template-rows:0fr 1fr}
+.half{position:relative;overflow:hidden;display:flex;flex-direction:column;text-align:left;min-height:0;width:100%;padding:0 var(--pad)}
+.half::before{content:"";position:absolute;inset:0;opacity:.55;background-size:56px 98px;pointer-events:none;animation:drift 38s linear infinite}
+@keyframes drift{to{background-position:0 -196px}}
+.half--c{background:var(--cream);justify-content:flex-start;padding-top:calc(env(safe-area-inset-top) + 20px)}
+.half--c::before{background-image:url("data:image/svg+xml,%3Csvg width='28' height='49' viewBox='0 0 28 49' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%235c7a5a' fill-opacity='.22'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/svg%3E")}
+.half--a{background:var(--ink);color:var(--cream);justify-content:flex-end;padding-bottom:calc(env(safe-area-inset-bottom) + 20px)}
+.half--a::before{background-image:url("data:image/svg+xml,%3Csvg width='28' height='49' viewBox='0 0 28 49' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23C9A84C' fill-opacity='.2'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/svg%3E")}
+.half>*{position:relative}
+.cap{font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;display:flex;align-items:center;gap:10px}
+.cap i{width:8px;height:8px;border-radius:50%;background:currentColor}
+.half--c .cap{color:var(--green)} .half--a .cap{color:var(--gold);justify-content:flex-end;order:3;margin-top:14px}
+.half__body{display:grid;grid-template-columns:1fr 112px;gap:14px;align-items:end;margin-top:14px}
+.half--a .half__body{order:2}
+.half h2{font-family:var(--serif);font-weight:700;font-size:clamp(28px,8.2vw,36px);line-height:1.05}
+.half--c h2 .it{color:var(--sage)} .half--a h2 .it{color:var(--gold-2)}
+.half p{margin-top:8px;font-size:15px;line-height:1.4}
+.half--c p{color:var(--mute)} .half--a p{color:var(--mute-d)}
+.arch{width:112px;height:140px;border-radius:56px 56px 14px 14px;overflow:hidden;box-shadow:0 10px 24px rgba(0,0,0,.22)}
+.arch img{width:100%;height:100%;object-fit:cover}
+.go{margin-top:14px;display:inline-flex;align-items:center;gap:12px;font-weight:700;font-size:15px;padding:6px 6px 6px 18px;border-radius:999px;background:var(--ink);color:var(--cream)}
+.half--a .go{background:var(--gold);color:var(--ink)}
+.go b{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--cream);color:var(--ink);font-size:16px}
+.half--a .go b{background:var(--ink);color:var(--gold)}
+.half__in{display:flex;flex-direction:column;transition:opacity .25s}
+.half--a .half__in{display:flex;flex-direction:column}
+.home[data-go] .half__in{opacity:0}
+.road{position:absolute;z-index:5;left:0;right:0;top:50%;height:6px;margin-top:-3px;background:var(--gold);transition:opacity .3s}
+.home[data-go] .road,.home[data-go] .mark{opacity:0}
+.mark{position:absolute;z-index:6;left:50%;top:50%;transform:translate(-50%,-50%);width:max-content;max-width:calc(100% - 40px);text-align:center;background:var(--paper);border:2px solid var(--gold);border-radius:28px;padding:10px 26px 12px;box-shadow:0 12px 30px rgba(0,0,0,.2);transition:opacity .3s;pointer-events:none}
+.mark b{display:block;font-family:var(--serif);font-weight:700;font-size:44px;line-height:1;letter-spacing:-.02em}
+.mark b .it{display:inline;margin:0;font-size:inherit;color:var(--sage)}
+.mark span{display:block;margin-top:5px;font-family:var(--serif);font-style:italic;font-weight:700;font-size:16px;color:var(--sage)}
+.mark em{display:block;margin-top:6px;font-style:normal;font-weight:700;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink)}
+
+/* ============ TUNNELS ============ */
+.tunnel{position:absolute;inset:0;display:flex;flex-direction:column;opacity:0;transition:opacity .45s}
+.tunnel.on{opacity:1}
+.tunnel--c{background:var(--cream)} .tunnel--a{background:var(--ink);color:var(--cream)}
+.tunnel__bg{position:absolute;inset:0;opacity:.55;background-size:56px 98px;background-position:0 calc(var(--sy,0)*-.18px);pointer-events:none}
+.tunnel--c .tunnel__bg{background-image:url("data:image/svg+xml,%3Csvg width='28' height='49' viewBox='0 0 28 49' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%235c7a5a' fill-opacity='.22'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/svg%3E")} .tunnel--a .tunnel__bg{background-image:url("data:image/svg+xml,%3Csvg width='28' height='49' viewBox='0 0 28 49' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23C9A84C' fill-opacity='.2'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/svg%3E")}
+.bar{position:relative;z-index:10;flex:none;height:var(--bar);padding:0 14px 0 8px;display:flex;align-items:center;justify-content:space-between;padding-top:env(safe-area-inset-top);height:calc(var(--bar) + env(safe-area-inset-top));
+  background:linear-gradient(var(--cream) 70%,transparent)}
+.tunnel--a .bar{background:linear-gradient(var(--ink) 70%,transparent)}
+.back{display:flex;align-items:center;gap:8px;min-height:44px;padding:0 12px 0 8px;font-size:14px;font-weight:700}
+.back i{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--cream);font-style:normal}
+.tunnel--a .back i{background:var(--gold);color:var(--ink)}
+.logo{font-family:var(--serif);font-weight:700;font-size:22px;letter-spacing:-.01em}
+.logo b{font-style:italic;color:var(--sage)} .tunnel--a .logo b{color:var(--gold)}
+.scroller{position:relative;z-index:2;flex:1;overflow-y:auto;overflow-x:hidden;scroll-snap-type:y proximity;scroll-behavior:smooth;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+.s{min-height:calc(100svh - var(--bar) - env(safe-area-inset-top));scroll-snap-align:start;display:flex;flex-direction:column;justify-content:center;gap:14px;padding:18px 52px 34px var(--pad)}
+.num{font-family:var(--serif);font-weight:700;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);display:flex;align-items:center;gap:10px}
+.num::after{content:"";height:2px;width:40px;background:var(--gold)}
+.tunnel--a .num{color:var(--gold)}
+.s h2{font-family:var(--serif);font-weight:700;font-size:clamp(30px,8.6vw,40px);line-height:1.06}
+.s h2 .it{color:var(--sage)} .tunnel--a .s h2 .it{color:var(--gold-2)}
+.s p,.s li{color:var(--mute);font-size:16px} .tunnel--a .s p,.tunnel--a .s li{color:var(--mute-d)}
+.card{background:var(--paper);border:1px solid var(--line);border-left:5px solid var(--sage);border-radius:20px;padding:16px 18px;box-shadow:0 8px 22px rgba(22,19,15,.06)}
+.tunnel--a .card{background:var(--ink-2);border-color:rgba(247,243,234,.14);border-left-color:var(--gold);box-shadow:none}
+.card h3{font-size:17px;line-height:1.3;color:var(--ink)} .tunnel--a .card h3{color:var(--cream)}
+.card p{margin-top:4px;font-size:15px}
+.ph{width:100%;height:auto;max-height:34svh;object-fit:cover;border-radius:20px}
+.ph--arch{width:auto;max-width:100%;height:min(36svh,320px);max-height:none;aspect-ratio:9/10;align-self:flex-start;border-radius:999px 999px 20px 20px;box-shadow:0 14px 30px rgba(0,0,0,.18)}
+.ph--app{height:auto;max-height:38svh;object-fit:contain;border-radius:0}
+.src{font-size:12px!important;color:var(--mute-d)!important}
+.cta{align-self:flex-start;display:inline-flex;align-items:center;gap:12px;min-height:48px;padding:7px 7px 7px 20px;border-radius:999px;font-weight:700;background:var(--ink);color:var(--cream)}
+.cta b{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--cream);color:var(--ink);font-weight:400}
+.tunnel--a .cta{background:var(--gold);color:var(--ink)} .tunnel--a .cta b{background:var(--ink);color:var(--gold)}
+.hint{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--sage)}
+.tunnel--a .hint{color:var(--gold)}
+.hint svg{width:18px;height:30px;fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;animation:nudge 1.6s ease-in-out infinite}
+@keyframes nudge{50%{transform:translateY(6px)}}
+.big{font-family:var(--serif);font-weight:700;font-size:64px;line-height:.95;color:var(--sage)} .big small{font-family:var(--sans);font-size:16px;color:var(--mute);font-weight:500}
+.tunnel--a .big{color:var(--gold-2)}
+.packs{display:grid;gap:10px}
+.pack{display:grid;grid-template-columns:1fr auto;gap:2px 10px;text-align:left;padding:14px 16px;border-radius:18px;background:var(--ink-2);border:1px solid rgba(247,243,234,.16);color:var(--cream)}
+.pack b{font-size:17px} .pack em{font-family:var(--serif);font-style:normal;font-weight:700;font-size:24px;color:var(--gold-2);grid-row:span 2;align-self:center}
+.pack span{font-size:13px;color:var(--mute-d)}
+.stat{display:flex;align-items:center;gap:14px}
+.stat b{font-family:var(--serif);font-size:56px;line-height:1;color:var(--gold-2)}
+.stat span{font-size:15px;color:var(--mute-d)}
+.eq{font-size:14px!important;padding:12px 14px;border-radius:14px;border:1px dashed rgba(247,243,234,.3)}
+.eq b{color:var(--gold-2)}
+.coins{position:relative;height:90px;overflow:hidden;border-radius:18px;background:linear-gradient(var(--cream-2),transparent)}
+.coins i{position:absolute;top:-30px;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-weight:700;background:radial-gradient(circle at 30% 30%,var(--gold-2),var(--gold));color:#7a5f1c;box-shadow:inset 0 0 0 3px rgba(255,255,255,.35),0 4px 10px rgba(0,0,0,.18);animation:fall 2.6s ease-in infinite;animation-play-state:paused}
+.s.in .coins i{animation-play-state:running}
+.coins i:nth-child(1){left:6%;animation-delay:0s}.coins i:nth-child(2){left:24%;animation-delay:.7s}.coins i:nth-child(3){left:42%;animation-delay:1.3s}
+.coins i:nth-child(4){left:60%;animation-delay:.3s}.coins i:nth-child(5){left:78%;animation-delay:1.8s}.coins i:nth-child(6){left:92%;animation-delay:1s}
+@keyframes fall{0%{transform:translateY(0) rotate(0)}85%{transform:translateY(112px) rotate(300deg);opacity:1}100%{transform:translateY(120px) rotate(340deg);opacity:0}}
+.form{display:grid;gap:10px}
+.form label{display:grid;gap:4px;font-size:13px;font-weight:700;color:var(--ink)} .tunnel--a .form label{color:var(--cream)}
+.form input,.form select,.form textarea{font:inherit;font-weight:400;font-size:16px;padding:11px 12px;border-radius:12px;border:1px solid var(--line);background:#fff;color:var(--ink);width:100%}
+.form .fine{font-size:13px!important} .form .fine a{color:inherit}
+.form .cta{border:0;justify-content:space-between;width:100%} .form .ok{color:var(--sage)!important;font-weight:700}
+.form button[disabled]{opacity:.6}
+/* rail de progression = la route */
+.rail{position:absolute;z-index:9;right:14px;top:calc(var(--bar) + env(safe-area-inset-top) + 10px);bottom:18px;width:22px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;pointer-events:none}
+.rail::before{content:"";position:absolute;top:6px;bottom:6px;left:50%;width:6px;margin-left:-3px;border-radius:3px;background:rgba(201,168,76,.35)}
+.rail::after{content:"";position:absolute;top:6px;left:50%;width:6px;margin-left:-3px;border-radius:3px;background:var(--gold);height:calc((100% - 12px)*var(--prog,0))}
+.rail i{position:relative;z-index:1;width:12px;height:12px;border-radius:50%;background:var(--cream);border:2px solid var(--gold);transition:transform .3s,background .3s}
+.tunnel--a .rail i{background:var(--ink)}
+.rail i.done{background:var(--gold)} .rail i.cur{transform:scale(1.7);background:var(--gold)}
+/* entrées */
+.s>*{opacity:0;transform:translateY(16px);transition:opacity .5s,transform .5s}
+.s.in>*{opacity:1;transform:none}
+.s.in>*:nth-child(2){transition-delay:.06s}.s.in>*:nth-child(3){transition-delay:.12s}.s.in>*:nth-child(4){transition-delay:.18s}.s.in>*:nth-child(5){transition-delay:.24s}
+@media (prefers-reduced-motion:reduce){*,*::before{animation:none!important;transition:none!important;scroll-behavior:auto!important}.s>*{opacity:1;transform:none}}
+@media (max-height:700px){.arch{width:92px;height:116px}.half__body{grid-template-columns:1fr 92px}.mark b{font-size:36px}}
+</style>
+</head>
+<body>
+<div class="app" id="app">
+
+<!-- ================= ÉCRAN 1 : deux choix ================= -->
+<main class="home" id="home">
+  <button class="half half--c" type="button" data-go="c" aria-label="Je suis cycliste, découvrir le parcours cycliste">
+    <span class="cap"><i></i>Cycliste</span>
+    <span class="half__in">
+      <span class="half__body">
+        <span>
+          <h2>Je suis <span class="it">cycliste</span></h2>
+          <p>Votre vélo travaille pour vous : vos trajets de tous les jours, enfin payés.</p>
+          <span class="go">Voir le parcours <b aria-hidden="true">→</b></span>
+        </span>
+        <span class="arch"><img src="tunnels/hero-cycliste.jpg" width="224" height="280" alt="" decoding="async"></span>
+      </span>
+    </span>
+  </button>
+  <div class="road" aria-hidden="true"></div>
+  <div class="mark" aria-hidden="true"><b>Bee<span class="it">clou</span></b><span>Votre vélo travaille pour vous.</span><em>Qui êtes-vous ?</em></div>
+  <button class="half half--a" type="button" data-go="a" aria-label="Je suis annonceur, découvrir le parcours annonceur">
+    <span class="cap">Annonceur<i></i></span>
+    <span class="half__in">
+      <span class="half__body">
+        <span>
+          <h2>Je suis <span class="it">annonceur</span></h2>
+          <p>Je réserve ma pub et ma marque traverse la ville.</p>
+          <span class="go">Voir le parcours <b aria-hidden="true">→</b></span>
+        </span>
+        <span class="arch"><img src="tunnels/hero-annonceur.jpg" width="224" height="280" alt="" decoding="async"></span>
+      </span>
+    </span>
+  </button>
+</main>
+
+<!-- ================= TUNNEL CYCLISTE ================= -->
+<section class="tunnel tunnel--c" id="t-c" hidden aria-label="Parcours cycliste">
+  <div class="tunnel__bg" aria-hidden="true"></div>
+  <header class="bar"><button class="back" type="button" data-back><i aria-hidden="true">←</i>Changer de parcours</button><span class="logo">Bee<b>clou</b></span></header>
+  <nav class="rail" aria-hidden="true"></nav>
+  <div class="scroller">
+    <article class="s">
+      <span class="num">Cycliste</span>
+      <img class="ph ph--arch" src="tunnels/hero-cycliste.jpg" width="720" height="800" alt="Un cycliste avec son vélo équipé de la boîte Beeclou">
+      <h2>Je suis <span class="it">cycliste</span></h2>
+      <p>Votre vélo travaille pour vous : vos trajets de tous les jours, enfin payés.</p>
+      <span class="hint"><svg viewBox="0 0 18 30" aria-hidden="true"><path d="M9 2v24M2 19l7 8 7-8"/></svg>Faites défiler</span>
+    </article>
+    <article class="s">
+      <span class="num">01 · Réserver</span>
+      <h2>De la réservation au <span class="it">premier kilomètre.</span></h2>
+      <div class="card"><h3>Vous réservez votre boîte</h3><p>Un court formulaire suffit : votre ville, votre vélo. Nous vous recontactons sous 24 à 48 h.</p></div>
+      <div class="card"><h3>Vous choisissez votre magasin</h3><p>Nous vous indiquons les magasins de cycle partenaires près de chez vous.</p></div>
+    </article>
+    <article class="s">
+      <span class="num">02 · Recevoir</span>
+      <h2>Elle vous attend <span class="it">en magasin.</span></h2>
+      <div class="card"><h3>Votre boîte vous attend</h3><p>Dans le magasin partenaire que vous avez choisi, avec la pub d'une marque locale déjà prête.</p></div>
+      <img class="ph" src="tunnels/13-cycliste-ouvre-le-top-case-beeclou.jpg?v=20261008" width="472" height="490" alt="Un cycliste ouvre son top case Beeclou" loading="lazy">
+    </article>
+    <article class="s">
+      <span class="num">03 · Poser</span>
+      <h2>On la pose, <span class="it">vous roulez.</span></h2>
+      <div class="card"><h3>Le magasin la pose sur votre vélo</h3><p>Le magasin vérifie votre porte-bagages (25 kg minimum), applique la pub et fixe la boîte en atelier. Vous signez la fiche de pose et repartez.</p></div>
+      <img class="ph" src="tunnels/07-top-case-beeclou-sur-un-v-lo.jpg?v=20261008" width="420" height="420" alt="Un top case Beeclou fixé sur le porte-bagages d'un vélo" loading="lazy">
+    </article>
+    <article class="s">
+      <span class="num">04 · Rouler</span>
+      <h2>Roulez. <span class="it">Gagnez.</span></h2>
+      <div class="coins" aria-hidden="true"><i>€</i><i>€</i><i>€</i><i>€</i><i>€</i><i>€</i></div>
+      <p>Vous faites déjà ces trajets tous les jours. Désormais, chaque kilomètre est rémunéré.</p>
+      <div class="big"><small>Jusqu'à</small><br>25 €<small> / mois</small></div>
+      <p class="src">Pendant la phase pilote. Estimation, pas un revenu garanti.</p>
+    </article>
+    <article class="s">
+      <span class="num">05 · Mesurer</span>
+      <h2>Vos kilomètres, <span class="it">comptés pour vous.</span></h2>
+      <p>Vous roulez comme d'habitude. L'application Beeclou, bientôt disponible sur l'App Store et Google Play, compte vos kilomètres quand vous activez le suivi. Nos partenaires ne reçoivent que des données regroupées.</p>
+      <img class="ph ph--app" src="tunnels/15-application-beeclou-ecrans.png" width="1120" height="1058" alt="Aperçu de l'application Beeclou, bientôt disponible" loading="lazy">
+      <p class="src">Aperçu de l'application, en cours de finalisation.</p>
+    </article>
+    <article class="s">
+      <span class="num">06 · L'offre</span>
+      <h2>Tout est <span class="it">inclus.</span></h2>
+      <div class="card"><h3>Jusqu'à 25 € / mois</h3><p>Au kilomètre, sur des trajets que vous faites déjà. Pas un revenu garanti. Le budget de l'annonceur ne reste pas dans la poche de Beeclou : il paie aussi la boîte, le magasin partenaire qui la pose, l'impression de la pub, l'application et la mesure. Rien de cela n'est à votre charge.</p></div>
+      <div class="card"><h3>30 litres de rangement</h3><p>Votre boîte reste utilisable au quotidien pour vos courses et vos affaires.</p></div>
+      <div class="card"><h3>Pose et vérifications gratuites</h3><p>En magasin partenaire. La boîte reste à Beeclou : elle vous est prêtée, avec une caution de 40 €.</p></div>
+    </article>
+    <article class="s">
+      <span class="num">07 · Je me lance</span>
+      <h2>Réservez votre <span class="it">boîte.</span></h2>
+      <form class="form" data-mail="Réserver ma boîte Beeclou (cycliste)">
+        <p class="fine">Dites-nous où vous roulez. Nous revenons vers vous sous 24 à 48 h.</p>
+        <label>Prénom et nom<input name="Nom" required autocomplete="name"></label>
+        <label>Email<input name="Email" type="email" required autocomplete="email"></label>
+        <label>Ville<input name="Ville" required autocomplete="address-level2"></label>
+        <label>Mon vélo<select name="Velo"><option>Vélo urbain</option><option>Vélo électrique</option><option>Vélo cargo</option><option>Je n'ai pas encore de vélo</option></select></label>
+        <label>Message (facultatif)<textarea name="Message" rows="2"></textarea></label>
+        <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+        <button class="cta" type="submit">Réserver ma boîte <b aria-hidden="true">→</b></button>
+        <p class="fine ok" hidden role="status">Merci ! Votre demande est bien envoyée. Nous revenons vers vous rapidement.</p>
+        <p class="fine err" hidden role="alert">L'envoi automatique a échoué : votre messagerie s'ouvre avec la demande prête à envoyer.</p>
+        <p class="fine">Vos informations ne servent qu'à répondre à votre demande. <a href="confidentialite.html">Politique de confidentialité</a> · <a href="cycliste.html">Cyclistes</a> · <a href="annonceur.html">Annonceurs</a> · <a href="mentions-legales.html">Mentions légales</a></p>
+      </form>
+    </article>
+  </div>
+</section>
+
+<!-- ================= TUNNEL ANNONCEUR ================= -->
+<section class="tunnel tunnel--a" id="t-a" hidden aria-label="Parcours annonceur">
+  <div class="tunnel__bg" aria-hidden="true"></div>
+  <header class="bar"><button class="back" type="button" data-back><i aria-hidden="true">←</i>Changer de parcours</button><span class="logo">Bee<b>clou</b></span></header>
+  <nav class="rail" aria-hidden="true"></nav>
+  <div class="scroller">
+    <article class="s">
+      <span class="num">Annonceur</span>
+      <img class="ph ph--arch" src="tunnels/hero-annonceur.jpg" width="720" height="800" alt="La boîte Beeclou sur un vélo, vue par les passants">
+      <h2>Je suis <span class="it">annonceur</span></h2>
+      <p>Je réserve ma pub et ma marque traverse la ville.</p>
+      <span class="hint"><svg viewBox="0 0 18 30" aria-hidden="true"><path d="M9 2v24M2 19l7 8 7-8"/></svg>Faites défiler</span>
+    </article>
+    <article class="s">
+      <span class="num">01 · Réserver</span>
+      <h2>Du brief <span class="it">à votre audience.</span></h2>
+      <div class="card"><h3>Vous nous donnez votre brief</h3><p>Votre message, votre cible, votre quartier. Nous vous répondons avec une proposition de campagne sous 24 h.</p></div>
+    </article>
+    <article class="s">
+      <span class="num">02 · Recevoir</span>
+      <h2>Imprimée, <span class="it">expédiée.</span></h2>
+      <div class="card"><h3>Nous imprimons votre visuel</h3><p>Il est produit aux dimensions de la boîte, prêt à être posé.</p></div>
+      <div class="card"><h3>Elle part chez le magasin partenaire</h3><p>Votre pub est livrée au magasin choisi par le cycliste, qui l'applique sur la boîte.</p></div>
+      <img class="ph" src="tunnels/04-marque-affich-e-sur-le-top-case.jpg?v=20261008" width="440" height="440" alt="Une marque affichée sur le top case Beeclou" loading="lazy">
+    </article>
+    <article class="s">
+      <span class="num">03 · Poser</span>
+      <h2>Votre marque, <span class="it">bien visible.</span></h2>
+      <div class="card"><h3>Le magasin la pose sur la boîte</h3><p>La boîte de 30 litres est fixée sur le vélo en atelier, votre marque bien visible.</p></div>
+    </article>
+    <article class="s">
+      <span class="num">04 · Rouler</span>
+      <h2>Elle circule dans <span class="it">votre quartier.</span></h2>
+      <p>Aux heures et aux endroits que vous avez ciblés, là où vivent vos clients.</p>
+      <div class="stat"><b>55 %</b><span>des personnes interrogées voient les boîtes publicitaires au moins une fois par semaine en ville.</span></div>
+      <p class="src">Source : étude Intervista AG, novembre 2022.</p>
+    </article>
+    <article class="s">
+      <span class="num">05 · Mesurer</span>
+      <h2>Elle est vue, <span class="it">et mesurée.</span></h2>
+      <div class="card"><h3>L'app détecte où passe le cycliste</h3><p>Grâce à l'application (bientôt disponible). Vous ne recevez que des données regroupées par quartier et par créneau, jamais le suivi individuel d'un cycliste.</p></div>
+      <div class="card"><h3>Elle compare à la fréquentation piétonne</h3><p>Une rue animée pèse plus qu'une rue calme.</p></div>
+      <p class="eq"><b>Temps de passage</b> × <b>fréquentation piétonne</b> = <b>contacts estimés</b></p>
+    </article>
+    <article class="s">
+      <span class="num">06 · L'offre</span>
+      <h2>Choisissez votre <span class="it">présence en ville.</span></h2>
+      <div class="packs">
+        <button class="pack" type="button" data-pack="Découverte (10 vélos, 1 mois)"><b>Découverte</b><em>600 €</em><span>10 vélos · 1 mois · 60 € / vélo / mois</span></button>
+        <button class="pack" type="button" data-pack="Quartier (20 vélos, 3 mois)"><b>Quartier</b><em>3 300 €</em><span>20 vélos · 3 mois · 55 € / vélo / mois</span></button>
+        <button class="pack" type="button" data-pack="Ville (50 vélos, 3 mois)"><b>Ville</b><em>7 500 €</em><span>50 vélos · 3 mois · 50 € / vélo / mois</span></button>
+      </div>
+      <p class="src">En plus : création du visuel 150 € (offerte dès 3 mois) · impression et pose 15 € par vélo · rapport de diffusion 100 € (inclus dans le pack Ville).</p>
+      <p class="src">Votre budget ne rémunère pas que le cycliste : il finance aussi la boîte, la pose en magasin partenaire, l'application, la mesure de diffusion et le fonctionnement de Beeclou.</p>
+    </article>
+    <article class="s">
+      <span class="num">07 · Je me lance</span>
+      <h2>Réservez <span class="it">votre pub.</span></h2>
+      <form class="form" data-mail="Réserver ma pub Beeclou (annonceur)">
+        <p class="fine">Parlez-nous de votre marque. Proposition de campagne sous 24 h.</p>
+        <label>Entreprise<input name="Entreprise" required autocomplete="organization"></label>
+        <label>Nom<input name="Nom" required autocomplete="name"></label>
+        <label>Email<input name="Email" type="email" required autocomplete="email"></label>
+        <label>Ville ou quartier ciblé<input name="Zone" required></label>
+        <label>Pack souhaité<select name="Pack"><option>Découverte (10 vélos, 1 mois)</option><option>Quartier (20 vélos, 3 mois)</option><option>Ville (50 vélos, 3 mois)</option><option>Sur mesure / je ne sais pas encore</option></select></label>
+        <label>Votre message<textarea name="Message" rows="2"></textarea></label>
+        <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+        <button class="cta" type="submit">Réserver ma pub <b aria-hidden="true">→</b></button>
+        <p class="fine ok" hidden role="status">Merci ! Votre demande est bien envoyée. Nous revenons vers vous rapidement.</p>
+        <p class="fine err" hidden role="alert">L'envoi automatique a échoué : votre messagerie s'ouvre avec la demande prête à envoyer.</p>
+        <p class="fine">Vos informations ne servent qu'à répondre à votre demande. <a href="confidentialite.html">Politique de confidentialité</a> · <a href="mentions-legales.html">Mentions légales</a></p>
+      </form>
+    </article>
+  </div>
+</section>
+</div>
+
+<script>
+(() => {
+const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const home = $('#home'), T = { c: $('#t-c'), a: $('#t-a') };
+const reduce = matchMedia('(prefers-reduced-motion:reduce)').matches;
+let cur = null;
+
+/* rail = la route : un point par étape, remplie au fil du scroll */
+Object.values(T).forEach(t => {
+  const steps = $$('.s', t), rail = $('.rail', t), sc = $('.scroller', t);
+  rail.innerHTML = steps.map(() => '<i></i>').join('');
+  const dots = $$('i', rail);
+  const upd = () => {
+    const max = sc.scrollHeight - sc.clientHeight, p = max > 0 ? sc.scrollTop / max : 0;
+    t.style.setProperty('--prog', p.toFixed(3)); t.style.setProperty('--sy', sc.scrollTop);
+    let k = 0; steps.forEach((s, i) => { if (s.offsetTop - sc.scrollTop <= sc.clientHeight * .45) k = i; });
+    dots.forEach((d, i) => { d.classList.toggle('done', i < k); d.classList.toggle('cur', i === k); });
+  };
+  sc.addEventListener('scroll', upd, { passive: true }); t._upd = upd;
+  const io = new IntersectionObserver(es => es.forEach(e => e.target.classList.toggle('in', e.isIntersecting)), { root: sc, threshold: .25 });
+  steps.forEach(s => io.observe(s));
+});
+
+function open(k, push = true) {
+  home.dataset.go = k;
+  const show = () => {
+    T[k].hidden = false; home.style.visibility = 'hidden';
+    requestAnimationFrame(() => requestAnimationFrame(() => { T[k].classList.add('on'); $('.scroller', T[k]).scrollTop = 0; T[k]._upd(); }));
+    cur = k;
+  };
+  reduce ? show() : setTimeout(show, 520);
+  if (push) history.pushState({ t: k }, '', '#' + (k === 'c' ? 'cycliste' : 'annonceur'));
+}
+function close(push = true) {
+  if (!cur) return;
+  const t = T[cur]; t.classList.remove('on');
+  setTimeout(() => { t.hidden = true; }, reduce ? 0 : 300);
+  home.style.visibility = ''; delete home.dataset.go; cur = null;
+}
+$$('[data-go]').forEach(b => b.addEventListener('click', () => open(b.dataset.go)));
+$$('[data-back]').forEach(b => b.addEventListener('click', () => history.state && history.state.t ? history.back() : close()));
+addEventListener('popstate', e => { if (e.state && e.state.t) { if (!cur) open(e.state.t, false); } else close(); });
+if (location.hash === '#cycliste') open('c', false); else if (location.hash === '#annonceur') open('a', false);
+
+/* choix d'un pack -> pré-remplit le formulaire annonceur et descend dessus */
+$$('.pack').forEach(p => p.addEventListener('click', () => {
+  const f = $('form', T.a), sel = $('select[name=Pack]', f); sel.value = p.dataset.pack;
+  const sc = $('.scroller', T.a); sc.scrollTo({ top: sc.scrollHeight, behavior: 'smooth' });
+}));
+
+/* formulaires : /api/send puis send.php, repli mailto (même logique que le site actuel) */
+$$('form[data-mail]').forEach(f => f.addEventListener('submit', async e => {
+  e.preventDefault();
+  const btn = $('button[type=submit]', f), ok = $('.ok', f), err = $('.err', f), d = new FormData(f);
+  d.append('_subject', f.dataset.mail); btn.disabled = true; ok.hidden = true; err.hidden = true;
+  try {
+    const obj = Object.fromEntries(d.entries());
+    let r = await fetch('/api/send', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(obj) }).catch(() => null);
+    let j = r && r.ok ? await r.json().catch(() => null) : null;
+    if (!j || !j.ok) { r = await fetch('send.php', { method: 'POST', body: d }); j = await r.json(); if (!r.ok || !j.ok) throw new Error('send'); }
+    f.reset(); ok.hidden = false;
+  } catch (_) {
+    const body = [...d.entries()].filter(([k]) => k !== '_subject' && k !== 'website').map(([k, v]) => `${k} : ${v}`).join('\n');
+    err.hidden = false;
+    location.href = `mailto:contact@beeclou.fr?subject=${encodeURIComponent(f.dataset.mail)}&body=${encodeURIComponent(body)}`;
+  } finally { btn.disabled = false; }
+}));
+})();
+</script>
+</body>
+</html>
