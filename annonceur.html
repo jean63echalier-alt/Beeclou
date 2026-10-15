@@ -2,178 +2,248 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Annonceurs · Beeclou</title>
-<meta name="description" content="Réservez votre pub sur les boîtes Beeclou : visibilité locale, écologique, qui finance directement la pratique du vélo.">
-<link rel="icon" href="nouveau/assets/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="nouveau/style.css">
+<script>if('IntersectionObserver' in window)document.documentElement.classList.add('js')</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Annonceurs · Beeclou, votre marque sur les vélos de votre quartier</title>
+<meta name="description" content="Publicité locale sur vélo dès 600 € : 10 vélos pendant 1 mois. Comparez avec les autres supports, recevez une proposition de campagne sous 24 h.">
+<meta property="og:title" content="Beeclou pour les annonceurs · dès 600 €">
+<meta property="og:description" content="Votre marque roule en ville. Proposition de campagne sous 24 h.">
+<meta property="og:image" content="https://beeclou.fr/og-beeclou-v3.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Publicité locale sur vélo","provider":{"@type":"Organization","name":"Beeclou","url":"https://beeclou.fr"},"areaServed":"France","offers":[{"@type":"Offer","name":"Découverte, 10 vélos pendant 1 mois","price":"600","priceCurrency":"EUR"},{"@type":"Offer","name":"Quartier, 20 vélos pendant 3 mois","price":"3300","priceCurrency":"EUR"},{"@type":"Offer","name":"Ville, 50 vélos pendant 3 mois","price":"7500","priceCurrency":"EUR"}]}</script>
+<link rel="canonical" href="https://beeclou.fr/annonceur.html">
+<link rel="icon" href="site-assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="beeclou.css?v=20261015">
+<link rel="preload" as="image" href="site-assets/clean-box.webp">
+<link rel="preload" as="image" href="site-assets/cut-box.webp?v=20261012b">
 </head>
 <body>
-<header class="nav"><div class="nav__in">
-  <a class="brand" href="index.html" aria-label="Beeclou, accueil">Bee<b>clou</b></a>
-  <nav class="nav__links" aria-label="Navigation">
-    <a href="index.html">Accueil</a>
-    <a href="cycliste.html">Cyclistes</a>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="bar">
+  <a class="brand" href="index.html" aria-label="Beeclou, accueil"><img src="site-assets/logo-ink.webp" alt="Beeclou" width="1100" height="480"></a>
+  <nav class="nav" aria-label="Principal">
     <a href="annonceur.html" aria-current="page">Annonceurs</a>
-    <a class="btn btn--dark" href="#reserver">Réserver ma pub</a>
+    <a href="cycliste.html">Cyclistes</a>
+    <a class="btn btn--gold hcta" href="#devis" data-evt="header-proposition"><span class="lg">Commander</span><span class="sm">Commander</span></a>
   </nav>
-</div></header>
+</header>
 
 <main>
-<section class="hero">
-  <div class="hexbg" aria-hidden="true"></div>
-  <div class="hero__in">
-    <span class="eyebrow rv">Parcours annonceur</span>
-    <h1 class="rv d1">Votre marque, <span class="it">vue dans toute la ville.</span></h1>
-    <p class="lead rv d2">Une pub locale, écologique, qui finance directement la pratique du vélo. Vous choisissez le quartier, nous faisons rouler votre message.</p>
-    <div class="hero__cta rv d3">
-      <a class="btn btn--tan btn--lg" href="#reserver">Réserver ma pub</a>
-      <a class="btn btn--line btn--lg" href="#parcours">Suivre le parcours de ma pub</a>
-    </div>
-  </div>
-</section>
+  <!-- HERO : fond flou, titre, vélo et boîte détourés, push-in sur la boîte -->
+  <section class="depth depth--box" data-depth style="--span:200vh" aria-label="Présentation">
+    <div class="depth__stage">
+      <div class="depth__bg" aria-hidden="true"><img src="site-assets/clean-box.webp" alt="" width="800" height="533"></div>
+      <div class="depth__wash" aria-hidden="true"></div>
 
-<section class="sec sec--alt" id="parcours">
-  <div class="wrap">
-    <div class="head rv"><span class="kicker">Le parcours de votre pub</span><h2>Du brief <span class="it">jusqu'à votre audience.</span></h2></div>
-    <div class="journey">
-      <div class="jstick"><div class="jcard" role="img" aria-label="Illustration de l'étape en cours"></div></div>
-      <div class="jsteps">
-        <article class="jstep" data-icon="brief" data-label="Brief"><span class="n">1</span><h3>Vous nous donnez votre brief</h3><p>Votre message, votre cible, votre quartier. Nous vous répondons avec une proposition de campagne sous 24 h.</p></article>
-        <article class="jstep" data-icon="print" data-label="Impression"><span class="n">2</span><h3>Nous imprimons votre pub</h3><p>Elle est produite aux dimensions de la boîte, prête à être posée.</p></article>
-        <article class="jstep" data-icon="post" data-label="Envoi"><span class="n">3</span><h3>Elle part chez le magasin partenaire</h3><p>Votre pub est livrée au magasin choisi par le cycliste, qui l'applique sur la boîte.</p></article>
-        <article class="jstep" data-icon="pose" data-label="Pose"><span class="n">4</span><h3>Le magasin la pose sur la boîte</h3><p>La boîte de 30 litres est fixée sur le vélo en atelier, votre marque bien visible.</p></article>
-        <article class="jstep" data-icon="city" data-label="En ville"><span class="n">5</span><h3>Elle circule dans votre quartier</h3><p>Aux heures et aux endroits que vous avez ciblés, là où vivent vos clients.</p></article>
-        <article class="jstep" data-icon="phone" data-label="Résultats"><span class="n">6</span><h3>Vous suivez les résultats</h3><p>Dans l'application mobile, bientôt disponible : dans quels quartiers et à quels créneaux, et combien de personnes ont vu votre pub. <a href="#mesure">Voir comment c'est mesuré</a>.</p></article>
+      <h1 class="depth__title d d--hero">Votre marque <i>roule</i> en ville.</h1>
+
+      <div class="depth__subject"><span class="halo" aria-hidden="true"></span><img src="site-assets/cut-box.webp?v=20261012b" alt="La boîte Beeclou fixée sur le porte-bagages d'un vélo, devant des passants." width="1800" height="1200"></div>
+
+      <div class="scrimfoot" aria-hidden="true"></div>
+      <div class="depth__copy">
+        <p class="lead">Dès 600 € : 10 vélos pendant 1 mois. Proposition de campagne sous 24 h.</p>
+        <a class="btn btn--gold" href="#devis">Commander</a>
+        <a class="btn btn--line" href="#comparatif">Comparer avec les autres supports</a>
       </div>
+      <p class="depth__beat d d--lg" aria-hidden="true">Même budget,<br><i>plus de présence.</i></p>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="sec" id="mesure">
-  <div class="wrap">
-    <div class="head rv" style="margin-bottom:clamp(28px,4vw,48px)">
-      <span class="kicker">L'application de suivi</span>
-      <h2>Chaque trajet, <span class="it">mis en valeur.</span></h2>
-      <p class="lead">L'application, bientôt disponible, mesurera les trajets des cyclistes qui ont activé le suivi et estime combien de personnes voient votre pub. Voici comment, en 3 étapes.</p>
+  <!-- COMPARATIF : même budget, quatre façons de l'investir -->
+  <section class="sec paper" id="comparatif">
+    <div class="wrap">
+      <div class="stack" style="max-width:760px;margin-bottom:clamp(28px,4vw,56px)">
+        <p class="eyebrow" data-in>Comparatif</p>
+        <h2 class="d d--lg" data-in>5 000 €, <i>quatre façons</i> de les investir.</h2>
+        <p class="lead soft" data-in>Chez Beeclou, un vélo coûte 60 € pour un mois. Voici ce que le même budget achète ailleurs.</p>
+      </div>
+      <div class="cmp" data-in>
+        <article class="cmp__col">
+          <svg class="cmp__ico" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="8" width="52" height="30" rx="3"/><path d="M14 30l9-9 7 7 6-5 12 10M44 16h.01"/><path d="M32 38v18M24 56h16"/></svg>
+          <h3>Panneau 4×3</h3>
+          <p class="cmp__big">10 faces, 1 semaine</p>
+          <p class="soft">Une face de panneau 4×3 coûte environ 500 € pour une semaine. Chaque face reste à un seul emplacement.</p>
+        </article>
+        <article class="cmp__col">
+          <svg class="cmp__ico" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="20" y="4" width="24" height="56" rx="5"/><path d="M28 9h8M30 54h4"/><rect x="24" y="15" width="16" height="20" rx="2"/><path d="M24 41h16M24 46h10"/></svg>
+          <h3>Pub Meta</h3>
+          <p class="cmp__big">250 000 à 500 000</p>
+          <p class="soft">apparitions de votre pub sur un téléphone. Calcul : 1 000 apparitions coûtent 10 à 20 €.</p>
+        </article>
+        <article class="cmp__col">
+          <svg class="cmp__ico" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="12" y="10" width="30" height="42" rx="2" transform="rotate(-8 27 31)"/><rect x="22" y="12" width="30" height="42" rx="2" fill="var(--paper)"/><path d="M28 24h18M28 32h18M28 40h11"/></svg>
+          <h3>Flyers</h3>
+          <p class="cmp__big">50 000 à 75 000</p>
+          <p class="soft">flyers A5 imprimés (65 à 95 € les 1 000), avant de les distribuer.</p>
+        </article>
+        <article class="cmp__col cmp__col--us">
+          <svg class="cmp__ico" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="15" cy="44" r="10"/><circle cx="49" cy="44" r="10"/><path d="M15 44l11-20h16l7 20M26 24l8 20M24 18h8M40 24l-2-8h6"/><rect x="40" y="10" width="14" height="9" rx="1.5"/></svg>
+          <h3>Beeclou</h3>
+          <p class="cmp__big">83 vélos, 1 mois</p>
+          <p class="soft">partout en France, à 60 € par vélo pour un mois.</p>
+        </article>
+      </div>
+      <p class="cmp__note soft" data-in>Estimations indicatives. Panneau : estimation Beeclou, à confirmer par devis. Meta et flyers : repères publics d'agences et d'imprimeurs. Ces supports ne se mesurent pas de la même façon : un affichage, un flyer et une boîte vue dans la rue ne sont pas équivalents.</p>
+      <p data-in><a class="btn btn--gold" href="#devis">Commander</a></p>
     </div>
-    <div class="hm">
-      <div class="hm__map rv" role="img" aria-label="Illustration : le trajet d'un cycliste (ligne noire) traverse des zones plus ou moins fréquentées par les piétons (taches orange)">
-        <svg viewBox="0 0 600 552" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-          <defs>
-            <radialGradient id="h1"><stop offset="0" stop-color="#d9742f" stop-opacity=".85"/><stop offset="1" stop-color="#d9742f" stop-opacity="0"/></radialGradient>
-            <radialGradient id="h2"><stop offset="0" stop-color="#e9b949" stop-opacity=".8"/><stop offset="1" stop-color="#e9b949" stop-opacity="0"/></radialGradient>
-            <radialGradient id="h3"><stop offset="0" stop-color="#f3e6b8" stop-opacity=".9"/><stop offset="1" stop-color="#f3e6b8" stop-opacity="0"/></radialGradient>
-          </defs>
-          <rect width="600" height="552" fill="#faf6ec"/>
-          <g class="hm__streets">
-            <path class="m" d="M0 400 C140 380 200 300 300 280 S470 150 600 110"/>
-            <path class="m" d="M120 552 C150 430 250 360 260 250 S300 80 330 0"/>
-            <path d="M0 170 C150 190 300 160 600 260"/><path d="M0 500 C200 470 380 470 600 400"/>
-            <path d="M430 552 C440 420 470 330 520 240 S560 90 600 40"/><path d="M40 0 C60 120 40 220 80 330"/>
-          </g>
-          <g class="hm__heat">
-            <circle cx="300" cy="270" r="130" fill="url(#h1)"/><circle cx="190" cy="390" r="100" fill="url(#h2)"/>
-            <circle cx="440" cy="170" r="110" fill="url(#h2)"/><circle cx="110" cy="190" r="80" fill="url(#h3)"/>
-            <circle cx="500" cy="400" r="90" fill="url(#h3)"/><circle cx="330" cy="70" r="80" fill="url(#h3)"/>
-          </g>
-          <path class="hm__route" pathLength="1" d="M40 360 C120 330 150 250 230 240 S330 150 420 120 S520 90 560 40"/>
-        </svg>
-        <span class="pin" style="left:6.7%;top:65%">1</span>
-        <span class="pin" style="left:50%;top:47%">2</span>
-        <span class="pin" style="left:90%;top:9%">3</span>
-        <span class="bub" style="left:60%;top:14%">Personnes touchées estimées</span>
-        <span class="hm__tag">Illustration</span>
-        <div class="hm__legend2" aria-hidden="true">
-          <span><i class="lg-route"></i>Trajet du cycliste</span>
-          <span><i class="lg-heat"></i>Fréquentation piétonne : faible à forte</span>
+  </section>
+
+  <!-- PARCOURS : l'image suit l'étape -->
+  <section class="sec" id="parcours">
+    <div class="wrap">
+      <div class="stack" style="max-width:760px;margin-bottom:clamp(28px,4vw,56px)">
+        <p class="eyebrow" data-in>Le parcours de votre pub</p>
+        <h2 class="d d--lg" data-in>Du brief jusqu'à <i>votre audience.</i></h2>
+      </div>
+      <div class="steps">
+        <div class="steps__media">
+          <img src="site-assets/ville.webp" alt="Un vélo équipé de la boîte Beeclou devant un manège, sur une place animée." loading="lazy">
+          <img src="site-assets/box-wall.webp" alt="La boîte Beeclou, face imprimée, sur un porte-bagages." loading="lazy">
+          <img src="site-assets/box-open.webp" alt="La boîte Beeclou ouverte, fixée sur un vélo dans une rue piétonne." loading="lazy">
+          <img src="site-assets/plate-ride.webp" alt="Un cycliste roule sur une place, la boîte Beeclou sur son porte-bagages." loading="lazy">
+          <img src="site-assets/app.webp" alt="Écrans de l'application Beeclou." loading="lazy">
+        </div>
+        <div>
+          <article class="step" data-img="0"><b>1</b><h3>Vous nous donnez votre brief</h3><p class="soft">Votre message, votre cible, votre quartier. Nous vous répondons avec une proposition de campagne sous 24 h.</p></article>
+          <article class="step" data-img="1"><b>2</b><h3>Nous imprimons votre pub</h3><p class="soft">Elle est produite aux dimensions de la boîte, prête à être posée.</p></article>
+          <article class="step" data-img="2"><b>3</b><h3>Elle part chez le magasin partenaire</h3><p class="soft">Votre pub est livrée au magasin choisi par le cycliste, qui l'applique sur la boîte.</p></article>
+          <article class="step" data-img="2"><b>4</b><h3>Le magasin la pose sur la boîte</h3><p class="soft">La boîte de 30 litres est fixée sur le vélo en atelier, votre marque bien visible.</p></article>
+          <article class="step" data-img="3"><b>5</b><h3>Elle circule dans votre quartier</h3><p class="soft">Portée par des cyclistes qui habitent votre quartier ou y font poser leur boîte. Ils roulent librement : ni rues ni horaires imposés.</p></article>
+          <article class="step" data-img="4"><b>6</b><h3>Vous suivez les résultats</h3><p class="soft">Dans l'application mobile, bientôt disponible : dans quels quartiers, à quels créneaux, et combien de personnes ont vu votre pub.</p></article>
         </div>
       </div>
-      <div class="rv d1">
-        <div class="hm__list">
-          <div class="hm__item"><b>1</b><div><h3>L'app détecte où passe le cycliste</h3><p>Grâce à l'application mobile (bientôt disponible), la boîte est localisée quand le cycliste active le suivi. Vous ne recevez que des données regroupées par quartier et par créneau, jamais le suivi individuel d'un cycliste.</p></div></div>
-          <div class="hm__item"><b>2</b><div><h3>L'app le compare à la fréquentation piétonne</h3><p>Chaque passage est placé sur une carte de chaleur : plus une rue est animée, plus la couleur est foncée et plus le passage compte.</p></div></div>
-          <div class="hm__item"><b>3</b><div><h3>L'app estime les personnes touchées</h3><p>Elle estime combien de personnes ont pu voir votre pub, par trajet, par quartier et sur toute la campagne. Une personne touchée = une personne passée à portée de vue de la boîte.</p></div></div>
-        </div>
+    </div>
+  </section>
+
+  <!-- MESURE -->
+  <section class="sec dark" id="mesure">
+    <div class="wrap measure">
+      <div class="stack">
+        <p class="eyebrow" data-in>Mesure <span class="soon" style="margin-left:8px">Bientôt disponible</span></p>
+        <h2 class="d d--lg" data-in>Chaque trajet, <i>mis en valeur.</i></h2>
+        <p class="lead soft" data-in>L'application mesurera les trajets des cyclistes qui ont activé le suivi et estimera combien de personnes voient votre pub.</p>
+        <ol class="m3" data-in>
+          <li><b>L'app détecte où passe le cycliste</b>Vous ne recevez que des données regroupées par quartier et par créneau, jamais le suivi individuel d'un cycliste.</li>
+          <li><b>Elle le compare à la fréquentation piétonne</b>Chaque passage est placé sur une carte de chaleur : plus une rue est animée, plus le passage compte.</li>
+          <li><b>Elle estime les personnes touchées</b>Par trajet, par quartier et sur toute la campagne. Une personne touchée est une personne passée à portée de vue de la boîte.</li>
+        </ol>
+      </div>
+      <figure data-in><img src="site-assets/app.webp" alt="Écrans de l'application Beeclou : carte de chaleur et personnes touchées." loading="lazy" width="1400" height="1100"></figure>
+    </div>
+  </section>
+
+  <!-- TARIFS -->
+  <section class="sec" id="tarifs">
+    <div class="wrap">
+      <div class="stack" style="max-width:760px">
+        <p class="eyebrow" data-in>Nos packs</p>
+        <h2 class="d d--lg" data-in>Choisissez votre <i>présence en ville.</i></h2>
+      </div>
+      <ul class="plist" data-in>
+        <li class="prow">
+          <h3>Découverte</h3>
+          <p class="what">10 vélos · 1 mois. Idéal pour tester.</p>
+          <p class="amt tnum">600 €<small>60 € / vélo / mois</small></p>
+          <a class="btn btn--ink" href="#devis" data-pack="Découverte (10 vélos, 1 mois)">Demander ce pack</a>
+        </li>
+        <li class="prow">
+          <h3>Quartier</h3>
+          <p class="what">20 vélos · 3 mois. Présence durable dans le quartier.</p>
+          <p class="amt tnum">3 300 €<small>55 € / vélo / mois</small></p>
+          <a class="btn btn--ink" href="#devis" data-pack="Quartier (20 vélos, 3 mois)">Demander ce pack</a>
+        </li>
+        <li class="prow">
+          <h3>Ville</h3>
+          <p class="what">50 vélos · 3 mois. Rapport de diffusion inclus.</p>
+          <p class="amt tnum">7 500 €<small>50 € / vélo / mois</small></p>
+          <a class="btn btn--ink" href="#devis" data-pack="Ville (50 vélos, 3 mois)">Demander ce pack</a>
+        </li>
+      </ul>
+      <p class="pilotnote" data-in>Phase pilote ouverte : rejoignez les premiers annonceurs.</p>
+      <p class="extras" data-in>En plus : création du visuel 150 € (offerte dès 3 mois), impression et pose 15 € par vélo, rapport de diffusion 100 € (inclus dans le pack Ville).</p>
+    </div>
+  </section>
+
+  <!-- POURQUOI -->
+  <section class="sec gold" id="pourquoi">
+    <div class="wrap" style="max-width:980px">
+      <p class="eyebrow" style="color:var(--ink)" data-in>Pourquoi Beeclou</p>
+      <h2 class="d d--lg" data-in style="margin:14px 0 22px">Votre pub <i>finance le vélo.</i></h2>
+      <p class="lead" data-in>Pas de panneau énergivore. Votre budget rémunère les cyclistes au kilomètre et finance aussi la boîte, la pose en magasin partenaire, l'application et la mesure de diffusion. Il fait rouler votre marque dans la ville.</p>
+    </div>
+  </section>
+
+  <!-- QUESTIONS -->
+  <section class="sec paper" id="questions">
+    <div class="wrap" style="max-width:900px">
+      <h2 class="d d--lg" data-in>Bon à <i>savoir.</i></h2>
+      <div class="faq" data-in>
+        <details><summary>Où roulent les vélos ?</summary><div>Dans votre quartier. Les cyclistes l'habitent ou y font poser leur boîte. Ils roulent librement : ni rues ni horaires imposés.</div></details>
+        <details><summary>Qui imprime ma pub ?</summary><div>Nous. Elle est produite aux dimensions de la boîte, puis livrée au magasin partenaire qui l'applique.</div></details>
+        <details><summary>Qui crée mon visuel ?</summary><div>Nous le créons avec vous. La création du visuel coûte 150 €, offerte dès 3 mois. L'impression et la pose coûtent 15 € par vélo.</div></details>
+        <details><summary>Comment mesurez-vous les résultats ?</summary><div>Avec l'application mobile, bientôt disponible. Elle estime les personnes touchées par trajet, par quartier et sur toute la campagne. Vous recevez des données regroupées, jamais le suivi individuel d'un cycliste.</div></details>
+        <details><summary>En combien de temps ai-je une proposition ?</summary><div>Sous 24 h après votre demande.</div></details>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="sec sec--dark">
-  <div class="wrap stat">
-    <span class="kicker">En ville</span>
-    <div class="num"><span data-count="55">0</span><small>%</small></div>
-    <p>des personnes interrogées voient les boîtes publicitaires au moins une fois par semaine en ville.</p>
-    <span class="note">Source : étude Intervista AG, novembre 2022.</span>
-  </div>
-</section>
-
-<section class="sec" id="packs">
-  <div class="wrap">
-    <div class="head rv"><span class="kicker">Nos packs</span><h2>Choisissez votre <span class="it">présence en ville.</span></h2></div>
-    <div class="packs">
-      <article class="pack rv">
-        <h3>Découverte</h3><p class="pack__d">10 vélos · 1 mois</p>
-        <p class="pack__p">600 €</p><p class="pack__u">60 € / vélo / mois</p>
-        <p class="pack__t">Idéal pour tester</p>
-        <a class="btn btn--line" href="#reserver" data-pack="Découverte">Demander ce pack</a>
-      </article>
-      <article class="pack pack--hl rv d1">
-        <h3>Quartier</h3><p class="pack__d">20 vélos · 3 mois</p>
-        <p class="pack__p">3 300 €</p><p class="pack__u">55 € / vélo / mois</p>
-        <p class="pack__t">Présence durable dans le quartier</p>
-        <a class="btn btn--tan" href="#reserver" data-pack="Quartier">Demander ce pack</a>
-      </article>
-      <article class="pack rv d2">
-        <h3>Ville</h3><p class="pack__d">50 vélos · 3 mois</p>
-        <p class="pack__p">7 500 €</p><p class="pack__u">50 € / vélo / mois</p>
-        <p class="pack__t">Rapport de diffusion inclus</p>
-        <a class="btn btn--line" href="#reserver" data-pack="Ville">Demander ce pack</a>
-      </article>
+  <!-- DEVIS -->
+  <section class="sec dark" id="devis">
+    <div class="wrap formsec">
+      <div class="stack">
+        <p class="eyebrow" data-in>Réservation</p>
+        <h2 class="d d--lg" data-in>Recevez votre <i>proposition en 24 h.</i></h2>
+        <p class="lead soft" data-in>Trois champs suffisent : entreprise, email, ville et budget. Nous revenons avec une proposition de campagne.</p>
+        <div class="preview-chip" id="chip" aria-live="polite" style="color:var(--ink);background:var(--gold)"><span class="sw" id="chip-sw" style="width:22px;height:22px;border-radius:5px;box-shadow:0 0 0 1px rgba(0,0,0,.3) inset;flex:none"></span><span id="chip-t"></span></div>
+      </div>
+      <form class="card" data-send data-form="annonceur" data-delay="Proposition de campagne sous 24 h." data-in novalidate>
+        <input type="hidden" name="_subject" value="Demande annonceur Beeclou">
+        <input type="hidden" name="Aperçu nom" id="pv-name">
+        <input type="hidden" name="Aperçu couleur" id="pv-theme">
+        <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label class="f" for="f-ent">Entreprise<input class="fld" id="f-ent" name="Entreprise" required autocomplete="organization"></label>
+        <div class="row2">
+          <label class="f" for="f-mail">Email<input class="fld" id="f-mail" name="Email" type="email" required autocomplete="email"></label>
+          <label class="f" for="f-zone">Ville et budget<input class="fld" id="f-zone" name="Ville et budget" required placeholder="Ex. : Lyon, 600 €"></label>
+        </div>
+        <label class="f" for="f-pack">Pack souhaité
+          <select class="fld" id="f-pack" name="Pack">
+            <option>Découverte (10 vélos, 1 mois)</option>
+            <option>Quartier (20 vélos, 3 mois)</option>
+            <option>Ville (50 vélos, 3 mois)</option>
+            <option>Sur mesure / je ne sais pas encore</option>
+          </select>
+        </label>
+        <label class="f" for="f-nom">Votre nom <small>(facultatif)</small><input class="fld" id="f-nom" name="Nom" autocomplete="name"></label>
+        <label class="f" for="f-msg">Votre message <small>(facultatif)</small><textarea class="fld" id="f-msg" name="Message"></textarea></label>
+        <button class="btn btn--gold" type="submit">Commander</button>
+        <p class="fmsg" role="status" aria-live="polite"></p>
+        <p class="fine">Vos informations ne servent qu'à répondre à votre demande. <a href="confidentialite.html">Politique de confidentialité</a>.</p>
+      </form>
     </div>
-    <p class="packs__extra rv">En plus : création du visuel 150 € (offerte dès 3 mois) · impression et pose 15 € par vélo · rapport de diffusion 100 € (inclus dans le pack Ville).</p>
-  </div>
-</section>
-
-<section class="sec sec--alt">
-  <div class="wrap">
-    <div class="head rv"><span class="kicker">L'offre</span><h2>Simple, <span class="it">mesurable.</span></h2></div>
-    <div class="grid3">
-      <div class="card rv"><span class="big stack"><small>Dès</small>600 €<small>/ mois</small></span><h3>Budget de départ</h3><p>Pack Découverte : 10 vélos pendant 1 mois, pour tester.</p></div>
-      <div class="card rv d1"><span class="big">24 h</span><h3>Pour votre devis</h3><p>Vous recevez une proposition de campagne sous 24 h après votre demande.</p></div>
-      <div class="card rv d2"><span class="big">Appli</span><h3>Résultats suivis</h3><p>Une application mobile, bientôt disponible, permettra de suivre la performance de votre campagne.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="sec sec--alt">
-  <div class="wrap split">
-    <div class="head rv" style="margin:0"><span class="kicker">Pourquoi Beeclou</span><h2>Votre pub <span class="it">finance le vélo.</span></h2>
-      <p class="lead">Pas de panneau énergivore. Votre budget rémunère les cyclistes au kilomètre et finance aussi la boîte, la pose en magasin partenaire, l'application et la mesure de diffusion. Il fait rouler votre marque dans la ville.</p></div>
-    <div class="photo rv d1"><img src="tunnels/13-cycliste-ouvre-le-top-case-beeclou.jpg?v=20261008" alt="Boîte Beeclou aux couleurs d'une marque" loading="lazy"></div>
-  </div>
-</section>
-
-<section class="sec sec--dark" id="reserver">
-  <div class="wrap split" style="align-items:start">
-    <div class="head rv" style="margin:0"><span class="kicker">Réservation</span><h2>Réservez <span class="it">votre pub.</span></h2><p class="lead">Parlez-nous de votre marque. Proposition de campagne sous 24 h.</p></div>
-    <form class="form rv d1" data-mail="Réserver ma pub sur les boîtes Beeclou (annonceur)" style="color:var(--ink)">
-      <div class="row2"><label>Entreprise<input name="Entreprise" required autocomplete="organization"></label><label>Nom<input name="Nom" required autocomplete="name"></label></div>
-      <div class="row2"><label>Email<input name="Email" type="email" required autocomplete="email"></label><label>Ville ou quartier ciblé<input name="Zone" required></label></div>
-      <label>Pack souhaité<select name="Pack"><option value="Découverte">Découverte (10 vélos, 1 mois)</option><option value="Quartier">Quartier (20 vélos, 3 mois)</option><option value="Ville">Ville (50 vélos, 3 mois)</option><option value="Sur mesure">Sur mesure / je ne sais pas encore</option></select></label>
-      <label>Votre message<textarea name="Message" rows="3"></textarea></label>
-      <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
-      <button class="btn btn--tan btn--lg" type="submit">Réserver ma pub</button>
-      <p class="fine ok" hidden>Merci ! Votre demande est bien envoyée. Nous revenons vers vous rapidement.</p>
-      <p class="fine err" hidden>L'envoi automatique a échoué : votre messagerie s'ouvre avec la demande prête à envoyer.</p>
-      <p class="fine">Vos informations ne servent qu'à répondre à votre demande.</p>
-    </form>
-  </div>
-</section>
+  </section>
 </main>
-<footer class="foot"><div class="wrap"><span>© Beeclou · Pilote 2025 à 2026</span><span><a href="mentions-legales.html">Mentions légales</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="mailto:contact@beeclou.fr">contact@beeclou.fr</a></span></div></footer>
-<script src="nouveau/site.js"></script>
-</body></html>
+
+<footer class="foot">
+  <div class="wrap">
+    <img src="site-assets/logo-cream.webp" alt="Beeclou" width="1100" height="480">
+    <nav aria-label="Pied de page">
+      <a href="index.html">Accueil</a>
+      <a href="cycliste.html">Cyclistes</a>
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="confidentialite.html">Confidentialité</a>
+      <a href="mailto:contact@beeclou.fr">contact@beeclou.fr</a>
+    </nav>
+    <small>© <span id="yr">2026</span> Beeclou · Phase pilote 2025 à 2026</small>
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" defer></script>
+<script src="beeclou.js"></script>
+<script src="beeclou-fx.js?v=20261013" defer></script>
+</body>
+</html>
