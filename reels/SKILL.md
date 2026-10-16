@@ -10,6 +10,7 @@ description: Produit les reels Instagram de Beeclou (publicité sur vélos urbai
 - **Rémunération des cyclistes : toujours une promesse à venir** (« jusqu'à 25 €/mois une fois les annonceurs trouvés »), jamais un fait acquis. Aucun cycliste n'est rémunéré aujourd'hui.
 - **Pilote à Clermont-Ferrand.** Ne jamais écrire « partout en France ».
 - **« jusqu'à 83 vélos »** = budget théorique de 5 000 € à 60 €/vélo/mois, pas le réseau actuel (15 cyclistes).
+- Les portraits sont des personnages IA : légende « Personnage et décor générés par IA ».
 - Tout visuel avec des prix ou comparatifs porte l'overlay **« Estimations indicatives »**.
 - Le **top case** (boîte publicitaire rectangulaire, bois clair + plastique recyclé) apparaît dans un maximum de reels.
 - Ton : engagé, pragmatique, local. Pas de sponsoring pour l'instant.
@@ -23,10 +24,10 @@ description: Produit les reels Instagram de Beeclou (publicité sur vélos urbai
 Pour chaque reel, proposer **3 à 4 variantes de hook** sur le même corps de script, puis comparer le taux de vue au-delà de 3 s dans Instagram Insights.
 
 ## Livrables pour un reel
-1. Un fichier `reels/specs/NN-slug.json` (voir `specs/01-5000-euros.json` pour le format).
+1. Une entrée dans `data/reels.json` (générée par `tools/build_data.py`, qui contient le plan complet des 61 reels).
 2. 1 prompt d'image par plan (style « photo réaliste », lumière naturelle, Clermont-Ferrand, palette cohérente).
 3. Légende + hashtags (`#Beeclou #PubliciteMobile #ClermontFerrand`).
 4. Liste de contrôle des règles de marque ci-dessus, cochée.
 
 ## Outils
-Remotion (+ skill officiel remotion-dev/skills) pour le montage ; Gemini ou autre générateur pour les images ; les specs JSON alimentent un template Remotion unique.
+Remotion pour le montage (voir README.md), Gemini ou autre générateur pour les images ; `data/reels.json` alimente le template Remotion unique (`src/Reel.tsx`).

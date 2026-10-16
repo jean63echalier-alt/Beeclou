@@ -1,0 +1,27 @@
+{
+  "name": "beeclou-reels",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Production des reels Instagram Beeclou (Remotion)",
+  "type": "module",
+  "scripts": {
+    "data": "python3 tools/build_data.py",
+    "studio": "remotion studio src/index.ts --public-dir=assets",
+    "render": "node tools/render.mjs"
+  },
+  "dependencies": {
+    "@fontsource/dm-sans": "5.1.0",
+    "@fontsource/playfair-display": "5.1.0",
+    "@remotion/bundler": "4.0.250",
+    "@remotion/cli": "4.0.250",
+    "@remotion/media-utils": "4.0.250",
+    "@remotion/renderer": "4.0.250",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.250"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.3",
+    "typescript": "5.5.4"
+  }
+}

@@ -1,0 +1,2280 @@
+[
+  {
+    "n": 1,
+    "date": "2026-10-16",
+    "dateLong": "vendredi 16 octobre 2026",
+    "heure": "12:30",
+    "type": "Teaser",
+    "titre": "Teaser de lancement",
+    "duree": 18,
+    "hook": "Bientôt, les vélos de Clermont vont parler.",
+    "disclaimer": null,
+    "portrait": false,
+    "note": "Image du plan 1 déjà générée et validée (IMG_3504.png) : à copier dans assets/reel-01/plan-1.png.",
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-01/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Rue pavée de Clermont-Ferrand au petit matin, silhouette de cycliste de dos, flèches de la cathédrale en fond, brume légère, ambiance mystérieuse",
+        "overlay": "Quelque chose arrive à Clermont.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-01/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Gros plan sur une roue de vélo qui roule sur les pavés, lumière rasante",
+        "overlay": "Sur deux roues.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-01/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. La silhouette s'éloigne dans la rue pavée, espace libre au centre pour le logo",
+        "overlay": "Beeclou · Bientôt",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Quelque chose arrive à Clermont-Ferrand. Sur deux roues. 🚲✨ Restez dans le coin.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 2,
+    "date": "2026-10-19",
+    "dateLong": "lundi 19 octobre 2026",
+    "heure": "18:30",
+    "type": "Concept",
+    "titre": "Le concept en 20 secondes",
+    "duree": 18,
+    "hook": "Et si les vélos devenaient des panneaux ?",
+    "disclaimer": null,
+    "portrait": false,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-02/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, vue de trois quarts dans une rue de Clermont-Ferrand, lumière douce",
+        "overlay": "Une boîte sur le porte-bagages.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-02/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Gros plan sur la face de la boîte avec une affiche publicitaire générique colorée sans logo ni marque réelle",
+        "overlay": "Une pub locale, en mouvement.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-02/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Cycliste qui croise des piétons qui tournent la tête vers la boîte, rue commerçante de Clermont-Ferrand",
+        "overlay": "Plus humain. Plus vert.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Beeclou transforme les vélos du quotidien en supports publicitaires urbains : une alternative plus humaine et plus verte à l'affichage classique. 🚲\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 3,
+    "date": "2026-10-22",
+    "dateLong": "jeudi 22 octobre 2026",
+    "heure": "12:30",
+    "type": "Portrait cycliste n°1 (vague 1)",
+    "titre": "Portrait 1 — Camille, étudiante en droit",
+    "duree": 17,
+    "hook": "Camille roule pour Beeclou.",
+    "disclaimer": null,
+    "portrait": true,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-03/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Portrait mi-corps de Camille, étudiante en droit, debout à côté de son vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, sourire naturel, quartier Jaude de Clermont-Ferrand en arrière-plan, lumière dorée",
+        "overlay": "Portrait 1 · Camille, étudiante en droit",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-03/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plan rapproché sur la boîte Beeclou fixée au vélo de Camille, la cathédrale de Clermont-Ferrand flou en arrière-plan",
+        "overlay": "Quartier Jaude",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-03/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Camille pédale et s'éloigne dans une rue de Jaude, vue de trois quarts arrière, boîte bien visible, léger flou de mouvement",
+        "overlay": "Et toi, tu roules où ? Rejoins Beeclou.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Camille, étudiante en droit, roule dans le quartier Jaude. Chaque trajet porte un message local. Tu fais du vélo à Clermont ? Écris-nous en message privé. 🚲\n🎨 Personnage et décor générés par IA, inspirés de nos cyclistes.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 4,
+    "date": "2026-10-25",
+    "dateLong": "dimanche 25 octobre 2026",
+    "heure": "18:30",
+    "type": "FAQ",
+    "titre": "FAQ : les cyclistes sont-ils payés ?",
+    "duree": 18,
+    "hook": "Les cyclistes Beeclou sont-ils payés ?",
+    "disclaimer": null,
+    "portrait": false,
+    "note": "Rémunération : toujours un objectif conditionné aux annonceurs, jamais un acquis.",
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-04/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Cycliste pensif qui tient son vélo par le guidon, boîte Beeclou visible, ambiance sincère",
+        "overlay": "Question honnête.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-04/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Gros plan sur la boîte Beeclou sur le vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, lumière chaude",
+        "overlay": "Aujourd'hui, on construit le réseau ensemble.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-04/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Cycliste qui s'éloigne dans une rue de Clermont-Ferrand, de dos",
+        "overlay": "Objectif : jusqu'à 25 €/mois, financé par les annonceurs, dès les premiers contrats.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "On vous doit une réponse claire : aujourd'hui, les cyclistes Beeclou ne sont pas encore rémunérés. Notre objectif : jusqu'à 25 €/mois par cycliste, financés par les annonceurs, dès les premiers contrats. Transparence totale. 🤝\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 5,
+    "date": "2026-10-28",
+    "dateLong": "mercredi 28 octobre 2026",
+    "heure": "12:30",
+    "type": "Portrait cycliste n°2 (vague 1)",
+    "titre": "Portrait 2 — Karim, infirmier",
+    "duree": 17,
+    "hook": "Karim roule pour Beeclou.",
+    "disclaimer": null,
+    "portrait": true,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-05/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Portrait mi-corps de Karim, infirmier, debout à côté de son vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, sourire naturel, quartier Fontgiève de Clermont-Ferrand en arrière-plan, lumière dorée",
+        "overlay": "Portrait 2 · Karim, infirmier",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-05/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plan rapproché sur la boîte Beeclou fixée au vélo de Karim, la place de Jaude flou en arrière-plan",
+        "overlay": "Quartier Fontgiève",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-05/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Karim pédale et s'éloigne dans une rue de Fontgiève, vue de trois quarts arrière, boîte bien visible, léger flou de mouvement",
+        "overlay": "Et toi, tu roules où ? Rejoins Beeclou.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Karim, infirmier, roule dans le quartier Fontgiève. Chaque trajet porte un message local. Tu fais du vélo à Clermont ? Écris-nous en message privé. 🚲\n🎨 Personnage et décor générés par IA, inspirés de nos cyclistes.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 6,
+    "date": "2026-10-31",
+    "dateLong": "samedi 31 octobre 2026",
+    "heure": "18:30",
+    "type": "Coulisses",
+    "titre": "Comment on fabrique la boîte",
+    "duree": 18,
+    "hook": "Comment on fabrique la boîte Beeclou.",
+    "disclaimer": null,
+    "portrait": false,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-06/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Gros plan sur des granulés de plastique recyclé gris clair dans des mains, atelier lumineux",
+        "overlay": "Plastique recyclé.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-06/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Pièces d'une boîte en bois clair et plastique recyclé en cours d'assemblage sur un établi",
+        "overlay": "Bois clair, finitions soignées.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-06/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Boîte terminée posée sur le porte-bagages d'un vélo urbain, atelier flou en fond",
+        "overlay": "Prototype en cours : la version finale arrive.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Les coulisses de la boîte : plastique recyclé, bois clair, finitions soignées. On est au stade du prototype, la version finale arrive. 🛠️♻️\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 7,
+    "date": "2026-11-03",
+    "dateLong": "mardi 3 novembre 2026",
+    "heure": "12:30",
+    "type": "Portrait cycliste n°3 (vague 1)",
+    "titre": "Portrait 3 — Julie, graphiste freelance",
+    "duree": 17,
+    "hook": "Julie roule pour Beeclou.",
+    "disclaimer": null,
+    "portrait": true,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-07/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Portrait mi-corps de Julie, graphiste freelance, debout à côté de son vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, sourire naturel, quartier Saint-Alyre de Clermont-Ferrand en arrière-plan, lumière dorée",
+        "overlay": "Portrait 3 · Julie, graphiste freelance",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-07/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plan rapproché sur la boîte Beeclou fixée au vélo de Julie, la basilique Notre-Dame-du-Port flou en arrière-plan",
+        "overlay": "Quartier Saint-Alyre",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-07/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Julie pédale et s'éloigne dans une rue de Saint-Alyre, vue de trois quarts arrière, boîte bien visible, léger flou de mouvement",
+        "overlay": "Et toi, tu roules où ? Rejoins Beeclou.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Julie, graphiste freelance, roule dans le quartier Saint-Alyre. Chaque trajet porte un message local. Tu fais du vélo à Clermont ? Écris-nous en message privé. 🚲\n🎨 Personnage et décor générés par IA, inspirés de nos cyclistes.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 8,
+    "date": "2026-11-06",
+    "dateLong": "vendredi 6 novembre 2026",
+    "heure": "18:30",
+    "type": "Reel choc (annonceurs)",
+    "titre": "5 000 € de pub, 4 façons de les dépenser",
+    "duree": 26,
+    "hook": "5 000 € de pub. 4 façons de les dépenser.",
+    "disclaimer": "Estimations indicatives",
+    "portrait": false,
+    "note": "« Estimations indicatives » sur chaque plan. « Jusqu'à 83 vélos » = budget théorique, pas le réseau actuel. Pas de « partout en France ». Source : beeclou.fr/annonceur.html, section Comparatif. Publier juste avant le reel 09 (recrutement cyclistes).",
+    "plans": [
+      {
+        "duration": 3,
+        "image": "assets/reel-08/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Gros plan sur une liasse de billets de 5 et de 20 euros qui tombent en cascade sur fond gris clair neutre, éclairage de studio net",
+        "overlay": "5 000 € de pub. 4 façons de les dépenser.",
+        "tone": "cream"
+      },
+      {
+        "duration": 5,
+        "image": "assets/reel-08/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Panneau publicitaire 4x3 avec affiche générique sur un trottoir de ville française, vue de jour, angle légèrement bas",
+        "overlay": "Panneau 4×3 : 10 faces, 1 semaine. Chacune reste au même endroit.",
+        "tone": "cream"
+      },
+      {
+        "duration": 5,
+        "image": "assets/reel-08/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Main qui scrolle rapidement un fil de réseau social sur un smartphone, flou de mouvement, arrière-plan neutre",
+        "overlay": "Pub Meta : 250 000 à 500 000 apparitions. Scrollées en une seconde.",
+        "tone": "cream"
+      },
+      {
+        "duration": 5,
+        "image": "assets/reel-08/plan-4.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Pile épaisse de flyers A5 génériques sur une table en bois, vue légèrement plongeante",
+        "overlay": "Flyers : 50 000 à 75 000. Avant même de les distribuer.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-08/plan-5.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, roulant dans une rue pavée de Clermont-Ferrand, lumière d'après-midi",
+        "overlay": "Beeclou : jusqu'à 83 vélos pendant 1 mois. 60 € par vélo.",
+        "tone": "cream"
+      },
+      {
+        "duration": 2,
+        "image": "assets/reel-08/plan-6.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Fond crème uni, espace central libre pour le logo Beeclou",
+        "overlay": "Dès 600 € · beeclou.fr",
+        "tone": "ink"
+      }
+    ],
+    "legende": "5 000 €. Un panneau, un scroll, une pile de flyers… ou jusqu'à 83 vélos qui roulent dans votre ville. Comparatif complet sur beeclou.fr 👇\nEstimations indicatives.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 9,
+    "date": "2026-11-09",
+    "dateLong": "lundi 9 novembre 2026",
+    "heure": "12:30",
+    "type": "Recrutement cyclistes",
+    "titre": "Appel à rejoindre le réseau",
+    "duree": 18,
+    "hook": "Tu fais du vélo à Clermont ?",
+    "disclaimer": null,
+    "portrait": false,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-09/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Cycliste souriant en pleine ville, son vélo avec la boîte Beeclou, lumière du matin",
+        "overlay": "Tu fais du vélo à Clermont ?",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-09/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Gros plan sur la boîte fixée au vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière",
+        "overlay": "Ton vélo devient un support local.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-09/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Trois cyclistes à un feu rouge, chacun avec une boîte Beeclou, rue de Clermont-Ferrand",
+        "overlay": "Écris-nous en message privé.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "On construit le réseau Beeclou et on cherche des cyclistes à Clermont-Ferrand. Tu roules régulièrement ? Écris-nous en message privé. Rémunération visée : jusqu'à 25 €/mois, financée par les annonceurs, dès les premiers contrats. 🚲\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 10,
+    "date": "2026-11-12",
+    "dateLong": "jeudi 12 novembre 2026",
+    "heure": "18:30",
+    "type": "Bilan mensuel",
+    "titre": "Bilan du mois 1",
+    "duree": 18,
+    "hook": "1 mois de Beeclou : où on en est.",
+    "disclaimer": null,
+    "portrait": false,
+    "note": "Mettre à jour le nombre de cyclistes (« 15 ») avec le chiffre réel avant publication.",
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-10/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Bureau lumineux, ordinateur portable et plan de Clermont-Ferrand sur la table, jeune homme de dos, tasse de café",
+        "overlay": "1 mois de Beeclou.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-10/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Rangée de vélos urbains avec boîtes Beeclou garés devant un mur clair",
+        "overlay": "15 cyclistes nous ont rejoints.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-10/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Vue sur les toits de Clermont-Ferrand au lever du soleil",
+        "overlay": "Et ce n'est que le début.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Un mois déjà. Où on en est, ce qu'on a appris, la suite. Merci à celles et ceux qui roulent avec nous. 🙏\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 11,
+    "date": "2026-11-15",
+    "dateLong": "dimanche 15 novembre 2026",
+    "heure": "12:30",
+    "type": "Communauté",
+    "titre": "La carte des quartiers",
+    "duree": 18,
+    "hook": "Où roulent les cyclistes Beeclou ?",
+    "disclaimer": null,
+    "portrait": false,
+    "note": "Faire correspondre les points aux quartiers réels des cyclistes.",
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-11/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Illustration vectorielle stylisée d'un plan de Clermont-Ferrand, palette crème et vert sauge, pastilles dorées sur les quartiers (illustration, pas une photo)",
+        "overlay": "Jaude, Montferrand, Fontgiève…",
+        "tone": "ink"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-11/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Vue aérienne photoréaliste de Clermont-Ferrand avec le Puy de Dôme au fond",
+        "overlay": "Chaque point = un cycliste.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-11/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Cycliste avec vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, dans un quartier résidentiel de Clermont-Ferrand",
+        "overlay": "Et dans ton quartier ?",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Où roulent nos cyclistes ? Un peu partout dans Clermont. Et dans ton quartier, on y est ? 📍\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 12,
+    "date": "2026-11-18",
+    "dateLong": "mercredi 18 novembre 2026",
+    "heure": "18:30",
+    "type": "Portrait cycliste n°4 (vague 1)",
+    "titre": "Portrait 4 — Henri, retraité, ancien instituteur",
+    "duree": 17,
+    "hook": "Henri roule pour Beeclou.",
+    "disclaimer": null,
+    "portrait": true,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-12/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Portrait mi-corps de Henri, retraité, ancien instituteur, debout à côté de son vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, sourire naturel, quartier Montferrand de Clermont-Ferrand en arrière-plan, lumière dorée",
+        "overlay": "Portrait 4 · Henri, retraité, ancien instituteur",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-12/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plan rapproché sur la boîte Beeclou fixée au vélo de Henri, le jardin Lecoq flou en arrière-plan",
+        "overlay": "Quartier Montferrand",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-12/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Henri pédale et s'éloigne dans une rue de Montferrand, vue de trois quarts arrière, boîte bien visible, léger flou de mouvement",
+        "overlay": "Et toi, tu roules où ? Rejoins Beeclou.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Henri, retraité, ancien instituteur, roule dans le quartier Montferrand. Chaque trajet porte un message local. Tu fais du vélo à Clermont ? Écris-nous en message privé. 🚲\n🎨 Personnage et décor générés par IA, inspirés de nos cyclistes.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 13,
+    "date": "2026-11-21",
+    "dateLong": "samedi 21 novembre 2026",
+    "heure": "12:30",
+    "type": "Vlog",
+    "titre": "Une journée à vélo dans Clermont",
+    "duree": 18,
+    "hook": "Une journée à vélo dans Clermont.",
+    "disclaimer": null,
+    "portrait": false,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-13/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Lever du jour sur Clermont-Ferrand, cycliste qui sort son vélo avec la boîte Beeclou d'un porche",
+        "overlay": "7 h 30 · départ.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-13/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Vélo avec la boîte Beeclou garé devant une terrasse de la place de Jaude à midi",
+        "overlay": "12 h · pause place de Jaude.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-13/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Cycliste qui rentre le soir, Puy de Dôme en fond, lumière dorée",
+        "overlay": "18 h · retour avec le Puy de Dôme.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Une journée de cycliste Beeclou : rien ne change dans son trajet, tout change dans ce que son vélo raconte. 🌄\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 14,
+    "date": "2026-11-24",
+    "dateLong": "mardi 24 novembre 2026",
+    "heure": "18:30",
+    "type": "Portrait cycliste n°5 (vague 1)",
+    "titre": "Portrait 5 — Léa, barista",
+    "duree": 17,
+    "hook": "Léa roule pour Beeclou.",
+    "disclaimer": null,
+    "portrait": true,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-14/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Portrait mi-corps de Léa, barista, debout à côté de son vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, sourire naturel, quartier Delille de Clermont-Ferrand en arrière-plan, lumière dorée",
+        "overlay": "Portrait 5 · Léa, barista",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-14/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plan rapproché sur la boîte Beeclou fixée au vélo de Léa, le Puy de Dôme au loin flou en arrière-plan",
+        "overlay": "Quartier Delille",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-14/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Léa pédale et s'éloigne dans une rue de Delille, vue de trois quarts arrière, boîte bien visible, léger flou de mouvement",
+        "overlay": "Et toi, tu roules où ? Rejoins Beeclou.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Léa, barista, roule dans le quartier Delille. Chaque trajet porte un message local. Tu fais du vélo à Clermont ? Écris-nous en message privé. 🚲\n🎨 Personnage et décor générés par IA, inspirés de nos cyclistes.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 15,
+    "date": "2026-11-27",
+    "dateLong": "vendredi 27 novembre 2026",
+    "heure": "12:30",
+    "type": "Fondateur",
+    "titre": "Jean, 23 ans, pourquoi Beeclou",
+    "duree": 18,
+    "hook": "J'ai 23 ans et je lance Beeclou.",
+    "disclaimer": null,
+    "portrait": false,
+    "note": "Idéal : remplacer ces visuels IA par de vraies photos de Jean.",
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-15/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Jeune homme de dos devant un ordinateur portable dans un petit bureau, lumière chaude (silhouette, pas de visage)",
+        "overlay": "J'ai 23 ans. Je lance Beeclou depuis Clermont.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-15/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Carnet ouvert avec des croquis de boîte à vélo et de plan de ville, mains qui dessinent",
+        "overlay": "Mon idée : transformer les vélos du quotidien en supports pub.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-15/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Jeune homme de dos devant une fenêtre qui regarde la ville",
+        "overlay": "Je construis ça avec vous.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Je m'appelle Jean, j'ai 23 ans, et je construis Beeclou depuis Clermont-Ferrand. Pourquoi ? Pour proposer une pub plus humaine et plus verte. Merci de suivre l'aventure. 🙌\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 16,
+    "date": "2026-11-30",
+    "dateLong": "lundi 30 novembre 2026",
+    "heure": "18:30",
+    "type": "Portrait cycliste n°6 (vague 1)",
+    "titre": "Portrait 6 — Thomas, apprenti menuisier",
+    "duree": 17,
+    "hook": "Thomas roule pour Beeclou.",
+    "disclaimer": null,
+    "portrait": true,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-16/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Portrait mi-corps de Thomas, apprenti menuisier, debout à côté de son vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, sourire naturel, quartier Les Salins de Clermont-Ferrand en arrière-plan, lumière dorée",
+        "overlay": "Portrait 6 · Thomas, apprenti menuisier",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-16/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plan rapproché sur la boîte Beeclou fixée au vélo de Thomas, la place de la Victoire flou en arrière-plan",
+        "overlay": "Quartier Les Salins",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-16/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Thomas pédale et s'éloigne dans une rue de Les Salins, vue de trois quarts arrière, boîte bien visible, léger flou de mouvement",
+        "overlay": "Et toi, tu roules où ? Rejoins Beeclou.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Thomas, apprenti menuisier, roule dans le quartier Les Salins. Chaque trajet porte un message local. Tu fais du vélo à Clermont ? Écris-nous en message privé. 🚲\n🎨 Personnage et décor générés par IA, inspirés de nos cyclistes.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 17,
+    "date": "2026-12-03",
+    "dateLong": "jeudi 3 décembre 2026",
+    "heure": "12:30",
+    "type": "Pédagogie",
+    "titre": "Comment ça marche pour un cycliste",
+    "duree": 18,
+    "hook": "Comment ça marche quand on est cycliste Beeclou ?",
+    "disclaimer": null,
+    "portrait": false,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-17/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Mains qui fixent une boîte en bois clair et plastique recyclé sur un porte-bagages",
+        "overlay": "1. Tu installes la boîte.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-17/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Cycliste qui roule normalement dans une rue de Clermont-Ferrand, boîte visible",
+        "overlay": "2. Tu roules comme d'habitude.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-17/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Boîte Beeclou en gros plan sur le vélo, lumière dorée",
+        "overlay": "3. Les annonceurs financent. Bientôt.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Trois étapes : on installe la boîte, on roule comme d'habitude, les annonceurs financent le réseau. 1, 2, 3. 🚲\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 18,
+    "date": "2026-12-06",
+    "dateLong": "dimanche 6 décembre 2026",
+    "heure": "18:30",
+    "type": "Portrait cycliste n°7 (vague 1)",
+    "titre": "Portrait 7 — Sofia, étudiante en médecine",
+    "duree": 17,
+    "hook": "Sofia roule pour Beeclou.",
+    "disclaimer": null,
+    "portrait": true,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-18/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Portrait mi-corps de Sofia, étudiante en médecine, debout à côté de son vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, sourire naturel, quartier Cataroux de Clermont-Ferrand en arrière-plan, lumière dorée",
+        "overlay": "Portrait 7 · Sofia, étudiante en médecine",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-18/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plan rapproché sur la boîte Beeclou fixée au vélo de Sofia, une rue pavée de Montferrand flou en arrière-plan",
+        "overlay": "Quartier Cataroux",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-18/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Sofia pédale et s'éloigne dans une rue de Cataroux, vue de trois quarts arrière, boîte bien visible, léger flou de mouvement",
+        "overlay": "Et toi, tu roules où ? Rejoins Beeclou.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Sofia, étudiante en médecine, roule dans le quartier Cataroux. Chaque trajet porte un message local. Tu fais du vélo à Clermont ? Écris-nous en message privé. 🚲\n🎨 Personnage et décor générés par IA, inspirés de nos cyclistes.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 19,
+    "date": "2026-12-09",
+    "dateLong": "mercredi 9 décembre 2026",
+    "heure": "12:30",
+    "type": "Portrait cycliste n°8 (vague 1)",
+    "titre": "Portrait 8 — Bruno, facteur à la retraite",
+    "duree": 17,
+    "hook": "Bruno roule pour Beeclou.",
+    "disclaimer": null,
+    "portrait": true,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-19/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Portrait mi-corps de Bruno, facteur à la retraite, debout à côté de son vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, sourire naturel, quartier Croix-de-Neyrat de Clermont-Ferrand en arrière-plan, lumière dorée",
+        "overlay": "Portrait 8 · Bruno, facteur à la retraite",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-19/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plan rapproché sur la boîte Beeclou fixée au vélo de Bruno, la cathédrale de Clermont-Ferrand flou en arrière-plan",
+        "overlay": "Quartier Croix-de-Neyrat",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-19/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Bruno pédale et s'éloigne dans une rue de Croix-de-Neyrat, vue de trois quarts arrière, boîte bien visible, léger flou de mouvement",
+        "overlay": "Et toi, tu roules où ? Rejoins Beeclou.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Bruno, facteur à la retraite, roule dans le quartier Croix-de-Neyrat. Chaque trajet porte un message local. Tu fais du vélo à Clermont ? Écris-nous en message privé. 🚲\n🎨 Personnage et décor générés par IA, inspirés de nos cyclistes.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 20,
+    "date": "2026-12-12",
+    "dateLong": "samedi 12 décembre 2026",
+    "heure": "18:30",
+    "type": "Bilan mensuel",
+    "titre": "Bilan du mois 2",
+    "duree": 18,
+    "hook": "2 mois de Beeclou : le point.",
+    "disclaimer": null,
+    "portrait": false,
+    "note": "Mettre à jour le nombre de cyclistes avec le chiffre réel avant publication.",
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-20/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Table de travail avec carnet de notes et plan de Clermont-Ferrand, lumière du soir",
+        "overlay": "2 mois de Beeclou.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-20/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Groupe de cyclistes avec boîtes Beeclou devant la cathédrale de Clermont-Ferrand",
+        "overlay": "Le réseau grandit.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-20/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Vue sur la ville au crépuscule",
+        "overlay": "Merci.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Deux mois. Ce qui avance, ce qui coince, et la suite. Merci de rouler avec nous. 🙏\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 21,
+    "date": "2026-12-15",
+    "dateLong": "mardi 15 décembre 2026",
+    "heure": "12:30",
+    "type": "Pédagogie",
+    "titre": "Pourquoi une pub à vélo se remarque",
+    "duree": 18,
+    "hook": "Pourquoi une pub à vélo se remarque.",
+    "disclaimer": null,
+    "portrait": false,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-21/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Cycliste avec boîte Beeclou croisant des piétons qui la regardent, rue commerçante",
+        "overlay": "Elle passe là où les gens passent.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-21/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Boîte Beeclou à hauteur d'yeux au feu rouge, voitures à l'arrêt à côté",
+        "overlay": "Au feu rouge, elle est à hauteur de regard.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-21/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plan large d'une avenue animée avec un cycliste au premier plan",
+        "overlay": "Pas d'écran. Pas d'algorithme.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Une pub qui roule va là où se trouvent vos clients. À hauteur de regard, au feu rouge, devant la boulangerie. 👀\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 22,
+    "date": "2026-12-18",
+    "dateLong": "vendredi 18 décembre 2026",
+    "heure": "18:30",
+    "type": "Portrait cycliste n°9 (vague 1)",
+    "titre": "Portrait 9 — Inès, kiné",
+    "duree": 17,
+    "hook": "Inès roule pour Beeclou.",
+    "disclaimer": null,
+    "portrait": true,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-22/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Portrait mi-corps de Inès, kiné, debout à côté de son vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, sourire naturel, quartier Gaillard de Clermont-Ferrand en arrière-plan, lumière dorée",
+        "overlay": "Portrait 9 · Inès, kiné",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-22/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plan rapproché sur la boîte Beeclou fixée au vélo d'Inès, la place de Jaude flou en arrière-plan",
+        "overlay": "Quartier Gaillard",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-22/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Inès pédale et s'éloigne dans une rue de Gaillard, vue de trois quarts arrière, boîte bien visible, léger flou de mouvement",
+        "overlay": "Et toi, tu roules où ? Rejoins Beeclou.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Inès, kiné, roule dans le quartier Gaillard. Chaque trajet porte un message local. Tu fais du vélo à Clermont ? Écris-nous en message privé. 🚲\n🎨 Personnage et décor générés par IA, inspirés de nos cyclistes.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 23,
+    "date": "2026-12-21",
+    "dateLong": "lundi 21 décembre 2026",
+    "heure": "12:30",
+    "type": "Rétrospective",
+    "titre": "Rétrospective 2026",
+    "duree": 18,
+    "hook": "2026 : l'année où Beeclou est né.",
+    "disclaimer": null,
+    "portrait": false,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-23/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Croquis d'une boîte à vélo sur une feuille, mains, lumière chaude",
+        "overlay": "Une idée.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-23/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière sur un vélo garé contre un mur clair",
+        "overlay": "Une boîte.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-23/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Groupe de cyclistes au feu rouge dans une rue de Clermont-Ferrand",
+        "overlay": "Des cyclistes.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "2026 en trois mots : une idée, une boîte, des cyclistes. Merci d'avoir été là dès le début. ✨\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 24,
+    "date": "2026-12-24",
+    "dateLong": "jeudi 24 décembre 2026",
+    "heure": "18:30",
+    "type": "Vœux",
+    "titre": "Joyeux Noël",
+    "duree": 18,
+    "hook": "Joyeux Noël de la part de Beeclou.",
+    "disclaimer": null,
+    "portrait": false,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-24/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Rue de Clermont-Ferrand illuminée de guirlandes la nuit, cycliste avec boîte Beeclou",
+        "overlay": "Joyeux Noël.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-24/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Boîte Beeclou ornée d'un petit ruban doré sur le porte-bagages",
+        "overlay": "Merci à toute la communauté.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-24/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Cycliste qui s'éloigne dans une rue calme et éclairée",
+        "overlay": "À l'année prochaine.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Joyeux Noël à toute la communauté Beeclou. Merci d'être là. 🎄\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 25,
+    "date": "2026-12-27",
+    "dateLong": "dimanche 27 décembre 2026",
+    "heure": "12:30",
+    "type": "Portrait cycliste n°10 (vague 1)",
+    "titre": "Portrait 10 — Paul, développeur",
+    "duree": 17,
+    "hook": "Paul roule pour Beeclou.",
+    "disclaimer": null,
+    "portrait": true,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-25/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Portrait mi-corps de Paul, développeur, debout à côté de son vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, sourire naturel, quartier La Pardieu de Clermont-Ferrand en arrière-plan, lumière dorée",
+        "overlay": "Portrait 10 · Paul, développeur",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-25/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plan rapproché sur la boîte Beeclou fixée au vélo de Paul, la basilique Notre-Dame-du-Port flou en arrière-plan",
+        "overlay": "Quartier La Pardieu",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-25/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Paul pédale et s'éloigne dans une rue de La Pardieu, vue de trois quarts arrière, boîte bien visible, léger flou de mouvement",
+        "overlay": "Et toi, tu roules où ? Rejoins Beeclou.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Paul, développeur, roule dans le quartier La Pardieu. Chaque trajet porte un message local. Tu fais du vélo à Clermont ? Écris-nous en message privé. 🚲\n🎨 Personnage et décor générés par IA, inspirés de nos cyclistes.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 26,
+    "date": "2026-12-30",
+    "dateLong": "mercredi 30 décembre 2026",
+    "heure": "18:30",
+    "type": "Pédagogie",
+    "titre": "Le modèle économique simplifié",
+    "duree": 18,
+    "hook": "Comment Beeclou fonctionne, en 3 étapes.",
+    "disclaimer": null,
+    "portrait": false,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-26/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Illustration vectorielle stylisée : une marque locale, une boîte sur un vélo, un cycliste, flèches entre les trois, palette crème / vert sauge / or",
+        "overlay": "1. Un annonceur finance une campagne.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-26/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière qui roule dans une rue de Clermont-Ferrand",
+        "overlay": "2. La boîte porte son message en ville.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-26/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Cycliste souriant qui s'éloigne dans une rue ensoleillée",
+        "overlay": "3. Une part revient aux cyclistes, dès les premiers contrats.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Le modèle, simplement : un annonceur finance, la boîte porte son message, une part revient aux cyclistes dès les premiers contrats. 🔁\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 27,
+    "date": "2027-01-02",
+    "dateLong": "samedi 2 janvier 2027",
+    "heure": "12:30",
+    "type": "Portrait cycliste n°11 (vague 1)",
+    "titre": "Portrait 11 — Marion, libraire",
+    "duree": 17,
+    "hook": "Marion roule pour Beeclou.",
+    "disclaimer": null,
+    "portrait": true,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-27/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Portrait mi-corps de Marion, libraire, debout à côté de son vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, sourire naturel, quartier Place de la Victoire de Clermont-Ferrand en arrière-plan, lumière dorée",
+        "overlay": "Portrait 11 · Marion, libraire",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-27/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plan rapproché sur la boîte Beeclou fixée au vélo de Marion, le jardin Lecoq flou en arrière-plan",
+        "overlay": "Quartier Place de la Victoire",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-27/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Marion pédale et s'éloigne dans une rue de Place de la Victoire, vue de trois quarts arrière, boîte bien visible, léger flou de mouvement",
+        "overlay": "Et toi, tu roules où ? Rejoins Beeclou.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Marion, libraire, roule dans le quartier Place de la Victoire. Chaque trajet porte un message local. Tu fais du vélo à Clermont ? Écris-nous en message privé. 🚲\n🎨 Personnage et décor générés par IA, inspirés de nos cyclistes.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 28,
+    "date": "2027-01-05",
+    "dateLong": "mardi 5 janvier 2027",
+    "heure": "18:30",
+    "type": "Vœux",
+    "titre": "Objectifs 2027",
+    "duree": 18,
+    "hook": "2027 : voici ce qu'on construit.",
+    "disclaimer": null,
+    "portrait": false,
+    "note": "Formuler comme des objectifs (« on vise »), pas comme des acquis.",
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-28/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Feuille de route manuscrite sur une table en bois, stylo, lumière douce du matin",
+        "overlay": "2027 : nos objectifs.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-28/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Groupe de vélos avec boîtes Beeclou alignés devant un mur clair",
+        "overlay": "Plus de cyclistes.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-28/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière en gros plan, version finale soignée",
+        "overlay": "Les premiers annonceurs. La boîte finale.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Bonne année ! Nos objectifs 2027 : plus de cyclistes, les premiers annonceurs, la version finale de la boîte. 🥂\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 29,
+    "date": "2027-01-08",
+    "dateLong": "vendredi 8 janvier 2027",
+    "heure": "12:30",
+    "type": "Portrait cycliste n°12 (vague 1)",
+    "titre": "Portrait 12 — Yanis, livreur à vélo",
+    "duree": 17,
+    "hook": "Yanis roule pour Beeclou.",
+    "disclaimer": null,
+    "portrait": true,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-29/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Portrait mi-corps de Yanis, livreur à vélo, debout à côté de son vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, sourire naturel, quartier Jaude de Clermont-Ferrand en arrière-plan, lumière dorée",
+        "overlay": "Portrait 12 · Yanis, livreur à vélo",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-29/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plan rapproché sur la boîte Beeclou fixée au vélo de Yanis, le Puy de Dôme au loin flou en arrière-plan",
+        "overlay": "Quartier Jaude",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-29/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Yanis pédale et s'éloigne dans une rue de Jaude, vue de trois quarts arrière, boîte bien visible, léger flou de mouvement",
+        "overlay": "Et toi, tu roules où ? Rejoins Beeclou.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Yanis, livreur à vélo, roule dans le quartier Jaude. Chaque trajet porte un message local. Tu fais du vélo à Clermont ? Écris-nous en message privé. 🚲\n🎨 Personnage et décor générés par IA, inspirés de nos cyclistes.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 30,
+    "date": "2027-01-11",
+    "dateLong": "lundi 11 janvier 2027",
+    "heure": "18:30",
+    "type": "Portrait cycliste n°13 (vague 1)",
+    "titre": "Portrait 13 — Claire, professeure des écoles",
+    "duree": 17,
+    "hook": "Claire roule pour Beeclou.",
+    "disclaimer": null,
+    "portrait": true,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-30/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Portrait mi-corps de Claire, professeure des écoles, debout à côté de son vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, sourire naturel, quartier Montferrand de Clermont-Ferrand en arrière-plan, lumière dorée",
+        "overlay": "Portrait 13 · Claire, professeure des écoles",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-30/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plan rapproché sur la boîte Beeclou fixée au vélo de Claire, la place de la Victoire flou en arrière-plan",
+        "overlay": "Quartier Montferrand",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-30/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Claire pédale et s'éloigne dans une rue de Montferrand, vue de trois quarts arrière, boîte bien visible, léger flou de mouvement",
+        "overlay": "Et toi, tu roules où ? Rejoins Beeclou.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Claire, professeure des écoles, roule dans le quartier Montferrand. Chaque trajet porte un message local. Tu fais du vélo à Clermont ? Écris-nous en message privé. 🚲\n🎨 Personnage et décor générés par IA, inspirés de nos cyclistes.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 31,
+    "date": "2027-01-14",
+    "dateLong": "jeudi 14 janvier 2027",
+    "heure": "12:30",
+    "type": "Portrait cycliste n°14 (vague 1)",
+    "titre": "Portrait 14 — Mehdi, étudiant en école d'ingénieur",
+    "duree": 17,
+    "hook": "Mehdi roule pour Beeclou.",
+    "disclaimer": null,
+    "portrait": true,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-31/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Portrait mi-corps de Mehdi, étudiant en école d'ingénieur, debout à côté de son vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, sourire naturel, quartier Saint-Jacques de Clermont-Ferrand en arrière-plan, lumière dorée",
+        "overlay": "Portrait 14 · Mehdi, étudiant en école d'ingénieur",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-31/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plan rapproché sur la boîte Beeclou fixée au vélo de Mehdi, une rue pavée de Montferrand flou en arrière-plan",
+        "overlay": "Quartier Saint-Jacques",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-31/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Mehdi pédale et s'éloigne dans une rue de Saint-Jacques, vue de trois quarts arrière, boîte bien visible, léger flou de mouvement",
+        "overlay": "Et toi, tu roules où ? Rejoins Beeclou.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Mehdi, étudiant en école d'ingénieur, roule dans le quartier Saint-Jacques. Chaque trajet porte un message local. Tu fais du vélo à Clermont ? Écris-nous en message privé. 🚲\n🎨 Personnage et décor générés par IA, inspirés de nos cyclistes.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 32,
+    "date": "2027-01-17",
+    "dateLong": "dimanche 17 janvier 2027",
+    "heure": "18:30",
+    "type": "Recrutement cyclistes",
+    "titre": "Campagne de recrutement directe",
+    "duree": 18,
+    "hook": "On cherche des cyclistes à Clermont.",
+    "disclaimer": null,
+    "portrait": false,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-32/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Cycliste souriant sur une grande place de Clermont-Ferrand, boîte Beeclou visible",
+        "overlay": "Tu roules chaque semaine ?",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-32/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Gros plan sur la boîte fixée au vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière",
+        "overlay": "Rejoins la communauté Beeclou.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-32/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Groupe de trois cyclistes qui discutent devant leurs vélos",
+        "overlay": "Écris-nous en message privé.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "On cherche de nouveaux cyclistes à Clermont-Ferrand. Tu roules régulièrement ? Écris-nous en message privé. Rémunération visée : jusqu'à 25 €/mois, financée par les annonceurs, dès les premiers contrats. 🚲\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 33,
+    "date": "2027-01-20",
+    "dateLong": "mercredi 20 janvier 2027",
+    "heure": "12:30",
+    "type": "Comparatif",
+    "titre": "Vélo classique vs vélo Beeclou",
+    "duree": 18,
+    "hook": "Un vélo normal vs un vélo Beeclou.",
+    "disclaimer": null,
+    "portrait": false,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-33/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Vélo urbain sans boîte garé contre un mur clair, rue de Clermont-Ferrand",
+        "overlay": "Avant : un vélo comme les autres.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-33/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Le même vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière garé au même endroit",
+        "overlay": "Après : un support local en mouvement.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-33/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Les deux vélos côte à côte, vue de face",
+        "overlay": "Même trajet. Plus de sens.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Même vélo, même trajet. Une boîte en plus, un message local en plus. 🚲\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 34,
+    "date": "2027-01-23",
+    "dateLong": "samedi 23 janvier 2027",
+    "heure": "18:30",
+    "type": "Coulisses",
+    "titre": "Zoom sur le plastique recyclé",
+    "duree": 18,
+    "hook": "Pourquoi le plastique recyclé ?",
+    "disclaimer": null,
+    "portrait": false,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-34/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Gros plan sur des granulés de plastique recyclé gris clair, lumière douce",
+        "overlay": "Un matériau qui a déjà servi.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-34/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Pièces de boîte en plastique recyclé et bois clair posées sur un établi",
+        "overlay": "Pensé pour durer.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-34/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Boîte terminée sur un porte-bagages, atelier flou en arrière-plan",
+        "overlay": "Objectif : fabrication locale.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Le plastique recyclé, c'est le choix de la cohérence. Notre objectif : une fabrication locale, en Auvergne. ♻️\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 35,
+    "date": "2027-01-26",
+    "dateLong": "mardi 26 janvier 2027",
+    "heure": "12:30",
+    "type": "Portrait cycliste n°15 (vague 1)",
+    "titre": "Portrait 15 — Anne, architecte",
+    "duree": 17,
+    "hook": "Anne roule pour Beeclou.",
+    "disclaimer": null,
+    "portrait": true,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-35/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Portrait mi-corps de Anne, architecte, debout à côté de son vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, sourire naturel, quartier Saint-Alyre de Clermont-Ferrand en arrière-plan, lumière dorée",
+        "overlay": "Portrait 15 · Anne, architecte",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-35/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plan rapproché sur la boîte Beeclou fixée au vélo d'Anne, la cathédrale de Clermont-Ferrand flou en arrière-plan",
+        "overlay": "Quartier Saint-Alyre",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-35/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Anne pédale et s'éloigne dans une rue de Saint-Alyre, vue de trois quarts arrière, boîte bien visible, léger flou de mouvement",
+        "overlay": "Et toi, tu roules où ? Rejoins Beeclou.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Anne, architecte, roule dans le quartier Saint-Alyre. Chaque trajet porte un message local. Tu fais du vélo à Clermont ? Écris-nous en message privé. 🚲\n🎨 Personnage et décor générés par IA, inspirés de nos cyclistes.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 36,
+    "date": "2027-01-29",
+    "dateLong": "vendredi 29 janvier 2027",
+    "heure": "18:30",
+    "type": "Recrutement cyclistes",
+    "titre": "3 raisons de rouler pour Beeclou",
+    "duree": 18,
+    "hook": "3 raisons de rouler pour Beeclou.",
+    "disclaimer": null,
+    "portrait": false,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-36/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Cycliste en trajet quotidien avec boîte Beeclou dans une rue de Clermont-Ferrand",
+        "overlay": "1. Tu ne changes rien à ton trajet.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-36/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Groupe de cyclistes souriants devant un mur clair, boîtes Beeclou visibles",
+        "overlay": "2. Tu fais partie d'un projet local.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-36/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Cycliste de dos qui s'éloigne, lumière dorée",
+        "overlay": "3. Rémunération visée : jusqu'à 25 €/mois, dès les premiers annonceurs.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "3 raisons de rouler pour Beeclou : zéro contrainte, un projet local, et une rémunération visée jusqu'à 25 €/mois dès les premiers annonceurs. Message privé pour rejoindre. 🚲\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 37,
+    "date": "2027-02-01",
+    "dateLong": "lundi 1 février 2027",
+    "heure": "12:30",
+    "type": "Portrait cycliste n°16 (vague 2)",
+    "titre": "Portrait 16 — Louis, photographe",
+    "duree": 17,
+    "hook": "Louis roule pour Beeclou.",
+    "disclaimer": null,
+    "portrait": true,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-37/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Portrait mi-corps de Louis, photographe, debout à côté de son vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, sourire naturel, quartier Fontgiève de Clermont-Ferrand en arrière-plan, lumière dorée",
+        "overlay": "Portrait 16 · Louis, photographe",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-37/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plan rapproché sur la boîte Beeclou fixée au vélo de Louis, la place de Jaude flou en arrière-plan",
+        "overlay": "Quartier Fontgiève",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-37/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Louis pédale et s'éloigne dans une rue de Fontgiève, vue de trois quarts arrière, boîte bien visible, léger flou de mouvement",
+        "overlay": "Et toi, tu roules où ? Rejoins Beeclou.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Louis, photographe, roule dans le quartier Fontgiève. Chaque trajet porte un message local. Tu fais du vélo à Clermont ? Écris-nous en message privé. 🚲\n🎨 Personnage et décor générés par IA, inspirés de nos cyclistes.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 38,
+    "date": "2027-02-04",
+    "dateLong": "jeudi 4 février 2027",
+    "heure": "18:30",
+    "type": "Coulisses",
+    "titre": "Le prototype étape par étape",
+    "duree": 18,
+    "hook": "Le prototype, étape par étape.",
+    "disclaimer": null,
+    "portrait": false,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-38/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Croquis de boîte à vélo étalés sur une table, mains, lumière douce",
+        "overlay": "1. Le croquis.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-38/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Maquette de boîte en bois clair et plastique recyclé sur un établi",
+        "overlay": "2. La maquette.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-38/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Boîte prototype fixée sur un vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière pour un test en rue",
+        "overlay": "3. Le test en rue.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Du croquis au test en rue : le prototype avance, étape par étape. 🛠️\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 39,
+    "date": "2027-02-07",
+    "dateLong": "dimanche 7 février 2027",
+    "heure": "12:30",
+    "type": "Portrait cycliste n°17 (vague 2)",
+    "titre": "Portrait 17 — Nadia, aide-soignante",
+    "duree": 17,
+    "hook": "Nadia roule pour Beeclou.",
+    "disclaimer": null,
+    "portrait": true,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-39/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Portrait mi-corps de Nadia, aide-soignante, debout à côté de son vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, sourire naturel, quartier Delille de Clermont-Ferrand en arrière-plan, lumière dorée",
+        "overlay": "Portrait 17 · Nadia, aide-soignante",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-39/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plan rapproché sur la boîte Beeclou fixée au vélo de Nadia, la basilique Notre-Dame-du-Port flou en arrière-plan",
+        "overlay": "Quartier Delille",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-39/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Nadia pédale et s'éloigne dans une rue de Delille, vue de trois quarts arrière, boîte bien visible, léger flou de mouvement",
+        "overlay": "Et toi, tu roules où ? Rejoins Beeclou.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Nadia, aide-soignante, roule dans le quartier Delille. Chaque trajet porte un message local. Tu fais du vélo à Clermont ? Écris-nous en message privé. 🚲\n🎨 Personnage et décor générés par IA, inspirés de nos cyclistes.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 40,
+    "date": "2027-02-10",
+    "dateLong": "mercredi 10 février 2027",
+    "heure": "18:30",
+    "type": "Bilan mensuel",
+    "titre": "Bilan du mois 4",
+    "duree": 18,
+    "hook": "4 mois de Beeclou : le point.",
+    "disclaimer": null,
+    "portrait": false,
+    "note": "Mettre à jour le nombre de cyclistes avec le chiffre réel avant publication.",
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-40/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Bureau avec ordinateur portable et carnet, jeune homme de dos, lumière de fin de journée",
+        "overlay": "4 mois de Beeclou.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-40/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Rangée de vélos avec boîtes Beeclou devant un mur clair",
+        "overlay": "Le réseau grandit.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-40/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Vue sur Clermont-Ferrand et le Puy de Dôme",
+        "overlay": "On continue.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Quatre mois. Les chiffres, les leçons, la suite. 🙏\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 41,
+    "date": "2027-02-13",
+    "dateLong": "samedi 13 février 2027",
+    "heure": "12:30",
+    "type": "Coulisses",
+    "titre": "Coulisses de l'incubateur",
+    "duree": 18,
+    "hook": "Beeclou dans un incubateur à Clermont.",
+    "disclaimer": null,
+    "portrait": false,
+    "note": "À publier seulement une fois l'incubation confirmée et la mention autorisée.",
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-41/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Espace de coworking moderne et lumineux, bureaux en bois clair, plantes vertes",
+        "overlay": "Un lieu pour construire.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-41/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Jeune homme de dos devant un tableau blanc avec des schémas",
+        "overlay": "Du soutien pour avancer.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-41/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Vue sur Clermont-Ferrand depuis une fenêtre de bureau",
+        "overlay": "Un projet 100 % clermontois.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Beeclou est accompagné par un incubateur clermontois. Un cadre pour construire, des conseils pour avancer. 🚀\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 42,
+    "date": "2027-02-16",
+    "dateLong": "mardi 16 février 2027",
+    "heure": "18:30",
+    "type": "Portrait cycliste n°18 (vague 2)",
+    "titre": "Portrait 18 — Hugo, chef de cuisine",
+    "duree": 17,
+    "hook": "Hugo roule pour Beeclou.",
+    "disclaimer": null,
+    "portrait": true,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-42/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Portrait mi-corps de Hugo, chef de cuisine, debout à côté de son vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, sourire naturel, quartier Jaude de Clermont-Ferrand en arrière-plan, lumière dorée",
+        "overlay": "Portrait 18 · Hugo, chef de cuisine",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-42/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plan rapproché sur la boîte Beeclou fixée au vélo de Hugo, le jardin Lecoq flou en arrière-plan",
+        "overlay": "Quartier Jaude",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-42/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Hugo pédale et s'éloigne dans une rue de Jaude, vue de trois quarts arrière, boîte bien visible, léger flou de mouvement",
+        "overlay": "Et toi, tu roules où ? Rejoins Beeclou.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Hugo, chef de cuisine, roule dans le quartier Jaude. Chaque trajet porte un message local. Tu fais du vélo à Clermont ? Écris-nous en message privé. 🚲\n🎨 Personnage et décor générés par IA, inspirés de nos cyclistes.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 43,
+    "date": "2027-02-19",
+    "dateLong": "vendredi 19 février 2027",
+    "heure": "12:30",
+    "type": "Pédagogie",
+    "titre": "Pub mobile vs pub fixe",
+    "duree": 18,
+    "hook": "Panneau fixe vs pub qui roule.",
+    "disclaimer": null,
+    "portrait": false,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-43/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Panneau publicitaire fixe dans une rue de Clermont-Ferrand presque vide",
+        "overlay": "Le panneau attend qu'on passe devant.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-43/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière qui traverse la même rue",
+        "overlay": "La boîte va là où sont les gens.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-43/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plan large : panneau fixe au fond, cycliste avec boîte au premier plan",
+        "overlay": "Deux logiques. Une seule bouge.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Une pub fixe attend. Une pub qui roule va à la rencontre. Chacun son rôle. 🚲\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 44,
+    "date": "2027-02-22",
+    "dateLong": "lundi 22 février 2027",
+    "heure": "18:30",
+    "type": "Portrait cycliste n°19 (vague 2)",
+    "titre": "Portrait 19 — Elsa, chargée de communication",
+    "duree": 17,
+    "hook": "Elsa roule pour Beeclou.",
+    "disclaimer": null,
+    "portrait": true,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-44/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Portrait mi-corps de Elsa, chargée de communication, debout à côté de son vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, sourire naturel, quartier Cataroux de Clermont-Ferrand en arrière-plan, lumière dorée",
+        "overlay": "Portrait 19 · Elsa, chargée de communication",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-44/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plan rapproché sur la boîte Beeclou fixée au vélo d'Elsa, le Puy de Dôme au loin flou en arrière-plan",
+        "overlay": "Quartier Cataroux",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-44/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Elsa pédale et s'éloigne dans une rue de Cataroux, vue de trois quarts arrière, boîte bien visible, léger flou de mouvement",
+        "overlay": "Et toi, tu roules où ? Rejoins Beeclou.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Elsa, chargée de communication, roule dans le quartier Cataroux. Chaque trajet porte un message local. Tu fais du vélo à Clermont ? Écris-nous en message privé. 🚲\n🎨 Personnage et décor générés par IA, inspirés de nos cyclistes.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 45,
+    "date": "2027-02-25",
+    "dateLong": "jeudi 25 février 2027",
+    "heure": "12:30",
+    "type": "POV",
+    "titre": "POV : tu roules pour Beeclou",
+    "duree": 18,
+    "hook": "POV : tu roules pour Beeclou.",
+    "disclaimer": null,
+    "portrait": false,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-45/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Vue subjective depuis le guidon d'un vélo, rue pavée de Clermont-Ferrand, boîte visible sur le porte-bagages dans le rétroviseur",
+        "overlay": "POV : tu roules pour Beeclou.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-45/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Vue subjective devant une terrasse de café animée, des passants se retournent",
+        "overlay": "Les regards se tournent.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-45/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Vue subjective qui arrive place de Jaude, lumière dorée",
+        "overlay": "Et tu rentres chez toi.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "POV : tu roules pour Beeclou. Même trajet, plus de regards. 👀\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 46,
+    "date": "2027-02-28",
+    "dateLong": "dimanche 28 février 2027",
+    "heure": "18:30",
+    "type": "Portrait cycliste n°20 (vague 2)",
+    "titre": "Portrait 20 — Samuel, musicien",
+    "duree": 17,
+    "hook": "Samuel roule pour Beeclou.",
+    "disclaimer": null,
+    "portrait": true,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-46/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Portrait mi-corps de Samuel, musicien, debout à côté de son vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, sourire naturel, quartier Montferrand de Clermont-Ferrand en arrière-plan, lumière dorée",
+        "overlay": "Portrait 20 · Samuel, musicien",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-46/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plan rapproché sur la boîte Beeclou fixée au vélo de Samuel, la place de la Victoire flou en arrière-plan",
+        "overlay": "Quartier Montferrand",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-46/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Samuel pédale et s'éloigne dans une rue de Montferrand, vue de trois quarts arrière, boîte bien visible, léger flou de mouvement",
+        "overlay": "Et toi, tu roules où ? Rejoins Beeclou.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Samuel, musicien, roule dans le quartier Montferrand. Chaque trajet porte un message local. Tu fais du vélo à Clermont ? Écris-nous en message privé. 🚲\n🎨 Personnage et décor générés par IA, inspirés de nos cyclistes.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 47,
+    "date": "2027-03-03",
+    "dateLong": "mercredi 3 mars 2027",
+    "heure": "12:30",
+    "type": "Teasing annonceurs",
+    "titre": "Premiers échanges avec des marques locales",
+    "duree": 18,
+    "hook": "Quelque chose se prépare avec des marques locales.",
+    "disclaimer": null,
+    "portrait": false,
+    "note": "Ne publier que si c'est vrai à la date de publication ; sinon remplacer par un reel Coulisses.",
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-47/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Deux silhouettes qui se serrent la main dans un commerce lumineux, sans visage identifiable",
+        "overlay": "Des échanges en cours.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-47/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Boîte Beeclou avec une affiche générique floutée sur un vélo, rue de Clermont-Ferrand",
+        "overlay": "Des marques locales.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-47/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Rue de Clermont-Ferrand au crépuscule, cycliste de dos",
+        "overlay": "À suivre.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "On échange avec des marques locales. On vous en dit plus bientôt. 👀\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 48,
+    "date": "2027-03-06",
+    "dateLong": "samedi 6 mars 2027",
+    "heure": "18:30",
+    "type": "Portrait cycliste n°21 (vague 2)",
+    "titre": "Portrait 21 — Clara, vétérinaire",
+    "duree": 17,
+    "hook": "Clara roule pour Beeclou.",
+    "disclaimer": null,
+    "portrait": true,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-48/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Portrait mi-corps de Clara, vétérinaire, debout à côté de son vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, sourire naturel, quartier Les Salins de Clermont-Ferrand en arrière-plan, lumière dorée",
+        "overlay": "Portrait 21 · Clara, vétérinaire",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-48/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plan rapproché sur la boîte Beeclou fixée au vélo de Clara, une rue pavée de Montferrand flou en arrière-plan",
+        "overlay": "Quartier Les Salins",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-48/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Clara pédale et s'éloigne dans une rue de Les Salins, vue de trois quarts arrière, boîte bien visible, léger flou de mouvement",
+        "overlay": "Et toi, tu roules où ? Rejoins Beeclou.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Clara, vétérinaire, roule dans le quartier Les Salins. Chaque trajet porte un message local. Tu fais du vélo à Clermont ? Écris-nous en message privé. 🚲\n🎨 Personnage et décor générés par IA, inspirés de nos cyclistes.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 49,
+    "date": "2027-03-09",
+    "dateLong": "mardi 9 mars 2027",
+    "heure": "12:30",
+    "type": "Portrait cycliste n°22 (vague 2)",
+    "titre": "Portrait 22 — Antoine, guide conférencier",
+    "duree": 17,
+    "hook": "Antoine roule pour Beeclou.",
+    "disclaimer": null,
+    "portrait": true,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-49/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Portrait mi-corps de Antoine, guide conférencier, debout à côté de son vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, sourire naturel, quartier Saint-Alyre de Clermont-Ferrand en arrière-plan, lumière dorée",
+        "overlay": "Portrait 22 · Antoine, guide conférencier",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-49/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plan rapproché sur la boîte Beeclou fixée au vélo d'Antoine, la cathédrale de Clermont-Ferrand flou en arrière-plan",
+        "overlay": "Quartier Saint-Alyre",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-49/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Antoine pédale et s'éloigne dans une rue de Saint-Alyre, vue de trois quarts arrière, boîte bien visible, léger flou de mouvement",
+        "overlay": "Et toi, tu roules où ? Rejoins Beeclou.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Antoine, guide conférencier, roule dans le quartier Saint-Alyre. Chaque trajet porte un message local. Tu fais du vélo à Clermont ? Écris-nous en message privé. 🚲\n🎨 Personnage et décor générés par IA, inspirés de nos cyclistes.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 50,
+    "date": "2027-03-12",
+    "dateLong": "vendredi 12 mars 2027",
+    "heure": "18:30",
+    "type": "Bilan mensuel",
+    "titre": "Bilan du mois 5",
+    "duree": 18,
+    "hook": "5 mois de Beeclou : le point.",
+    "disclaimer": null,
+    "portrait": false,
+    "note": "Mettre à jour le nombre de cyclistes avec le chiffre réel avant publication.",
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-50/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Bureau avec ordinateur portable et carnet, lumière du matin",
+        "overlay": "5 mois de Beeclou.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-50/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Groupe de cyclistes avec boîtes Beeclou devant la cathédrale",
+        "overlay": "Une vraie communauté.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-50/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Vue sur la ville au lever du jour",
+        "overlay": "La suite arrive.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Cinq mois. On avance. Merci à la communauté. 🙏\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 51,
+    "date": "2027-03-15",
+    "dateLong": "lundi 15 mars 2027",
+    "heure": "12:30",
+    "type": "Transition",
+    "titre": "Vers le lancement commercial",
+    "duree": 18,
+    "hook": "Beeclou passe à l'étape suivante.",
+    "disclaimer": null,
+    "portrait": false,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-51/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Cycliste de dos qui regarde au loin sur une place de Clermont-Ferrand, lumière dorée",
+        "overlay": "Beeclou passe à l'étape suivante.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-51/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière en gros plan, version soignée",
+        "overlay": "Une boîte prête à rouler.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-51/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Rue de Clermont-Ferrand animée avec plusieurs vélos à boîtes",
+        "overlay": "Un réseau prêt à parler.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Le réseau est là, la boîte aussi. Place à la suite : les marques locales. 🚀\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 52,
+    "date": "2027-03-18",
+    "dateLong": "jeudi 18 mars 2027",
+    "heure": "18:30",
+    "type": "Portrait cycliste n°23 (vague 2)",
+    "titre": "Portrait 23 — Manon, architecte d'intérieur",
+    "duree": 17,
+    "hook": "Manon roule pour Beeclou.",
+    "disclaimer": null,
+    "portrait": true,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-52/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Portrait mi-corps de Manon, architecte d'intérieur, debout à côté de son vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, sourire naturel, quartier Gaillard de Clermont-Ferrand en arrière-plan, lumière dorée",
+        "overlay": "Portrait 23 · Manon, architecte d'intérieur",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-52/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plan rapproché sur la boîte Beeclou fixée au vélo de Manon, la place de Jaude flou en arrière-plan",
+        "overlay": "Quartier Gaillard",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-52/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Manon pédale et s'éloigne dans une rue de Gaillard, vue de trois quarts arrière, boîte bien visible, léger flou de mouvement",
+        "overlay": "Et toi, tu roules où ? Rejoins Beeclou.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Manon, architecte d'intérieur, roule dans le quartier Gaillard. Chaque trajet porte un message local. Tu fais du vélo à Clermont ? Écris-nous en message privé. 🚲\n🎨 Personnage et décor générés par IA, inspirés de nos cyclistes.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 53,
+    "date": "2027-03-21",
+    "dateLong": "dimanche 21 mars 2027",
+    "heure": "12:30",
+    "type": "Annonceurs",
+    "titre": "Pourquoi choisir Beeclou",
+    "duree": 18,
+    "hook": "Annonceur à Clermont : pourquoi Beeclou ?",
+    "disclaimer": "Estimations indicatives",
+    "portrait": false,
+    "note": "Source du prix d'appel : beeclou.fr/annonceur.html. Reel destiné aux annonceurs.",
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-53/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Commerçant devant sa boutique qui regarde passer un vélo avec boîte Beeclou",
+        "overlay": "Local : vos clients sont à côté.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-53/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Boîte Beeclou à hauteur d'yeux au feu rouge, voitures à l'arrêt",
+        "overlay": "Visible : à hauteur de regard.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-53/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Cycliste avec boîte Beeclou devant une vitrine de boutique",
+        "overlay": "Souple : dès 600 € pour 10 vélos pendant 1 mois.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Une pub locale, visible et souple. Dès 600 € pour 10 vélos pendant 1 mois, proposition de campagne sous 24 h. Écrivez-nous. 📩\nOffre pilote à Clermont-Ferrand, sous réserve de disponibilité des cyclistes.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 54,
+    "date": "2027-03-24",
+    "dateLong": "mercredi 24 mars 2027",
+    "heure": "18:30",
+    "type": "Impact",
+    "titre": "Impact environnemental",
+    "duree": 18,
+    "hook": "Une pub qui ne consomme pas d'énergie.",
+    "disclaimer": null,
+    "portrait": false,
+    "note": "Ne pas ajouter de chiffres d'impact (CO₂, etc.) sans source vérifiée.",
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-54/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Cycliste qui roule dans une rue arborée de Clermont-Ferrand, lumière verte",
+        "overlay": "Un vélo. Zéro émission à l'usage.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-54/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Boîte en plastique recyclé en gros plan, texture visible",
+        "overlay": "Une boîte en plastique recyclé.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-54/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plan large d'une rue calme avec plusieurs vélos et peu de voitures",
+        "overlay": "Une ville plus agréable.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Une pub qui roule à la force des jambes, dans une boîte en plastique recyclé. ♻️🚲\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 55,
+    "date": "2027-03-27",
+    "dateLong": "samedi 27 mars 2027",
+    "heure": "12:30",
+    "type": "Portrait cycliste n°24 (vague 2)",
+    "titre": "Portrait 24 — Pierre, cheminot",
+    "duree": 17,
+    "hook": "Pierre roule pour Beeclou.",
+    "disclaimer": null,
+    "portrait": true,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-55/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Portrait mi-corps de Pierre, cheminot, debout à côté de son vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, sourire naturel, quartier La Pardieu de Clermont-Ferrand en arrière-plan, lumière dorée",
+        "overlay": "Portrait 24 · Pierre, cheminot",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-55/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plan rapproché sur la boîte Beeclou fixée au vélo de Pierre, la basilique Notre-Dame-du-Port flou en arrière-plan",
+        "overlay": "Quartier La Pardieu",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-55/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Pierre pédale et s'éloigne dans une rue de La Pardieu, vue de trois quarts arrière, boîte bien visible, léger flou de mouvement",
+        "overlay": "Et toi, tu roules où ? Rejoins Beeclou.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Pierre, cheminot, roule dans le quartier La Pardieu. Chaque trajet porte un message local. Tu fais du vélo à Clermont ? Écris-nous en message privé. 🚲\n🎨 Personnage et décor générés par IA, inspirés de nos cyclistes.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 56,
+    "date": "2027-03-30",
+    "dateLong": "mardi 30 mars 2027",
+    "heure": "18:30",
+    "type": "Behind the brand",
+    "titre": "Les valeurs derrière Beeclou",
+    "duree": 18,
+    "hook": "Les valeurs derrière Beeclou.",
+    "disclaimer": null,
+    "portrait": false,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-56/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Cycliste qui discute avec un passant, rue commerçante de Clermont-Ferrand",
+        "overlay": "Local.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-56/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Mains qui se serrent sur fond de vélo et de boîte Beeclou (plan serré, sans visage)",
+        "overlay": "Humain.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-56/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière sous un arbre, lumière verte douce",
+        "overlay": "Durable.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Trois mots qui nous guident : local, humain, durable. 🌿\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 57,
+    "date": "2027-04-02",
+    "dateLong": "vendredi 2 avril 2027",
+    "heure": "12:30",
+    "type": "Portrait cycliste n°25 (vague 2)",
+    "titre": "Portrait 25 — Zoé, étudiante en lettres",
+    "duree": 17,
+    "hook": "Zoé roule pour Beeclou.",
+    "disclaimer": null,
+    "portrait": true,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-57/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Portrait mi-corps de Zoé, étudiante en lettres, debout à côté de son vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, sourire naturel, quartier Jaude de Clermont-Ferrand en arrière-plan, lumière dorée",
+        "overlay": "Portrait 25 · Zoé, étudiante en lettres",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-57/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plan rapproché sur la boîte Beeclou fixée au vélo de Zoé, le jardin Lecoq flou en arrière-plan",
+        "overlay": "Quartier Jaude",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-57/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Zoé pédale et s'éloigne dans une rue de Jaude, vue de trois quarts arrière, boîte bien visible, léger flou de mouvement",
+        "overlay": "Et toi, tu roules où ? Rejoins Beeclou.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Zoé, étudiante en lettres, roule dans le quartier Jaude. Chaque trajet porte un message local. Tu fais du vélo à Clermont ? Écris-nous en message privé. 🚲\n🎨 Personnage et décor générés par IA, inspirés de nos cyclistes.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 58,
+    "date": "2027-04-05",
+    "dateLong": "lundi 5 avril 2027",
+    "heure": "18:30",
+    "type": "Annonceurs",
+    "titre": "Lancer une campagne en 3 étapes",
+    "duree": 18,
+    "hook": "Lancer une campagne Beeclou en 3 étapes.",
+    "disclaimer": "Estimations indicatives",
+    "portrait": false,
+    "note": "Source : beeclou.fr/annonceur.html. Ajouter « Estimations indicatives » en bas d'écran.",
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-58/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Commerçante qui écrit sur son ordinateur portable dans sa boutique",
+        "overlay": "1. Vous nous écrivez.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-58/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Calendrier posé sur un bureau avec un stylo, lumière douce",
+        "overlay": "2. Proposition de campagne sous 24 h.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-58/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plusieurs vélos avec la boîte Beeclou dans une rue de Clermont-Ferrand",
+        "overlay": "3. Vos vélos roulent en ville. Dès 600 €.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Trois étapes pour lancer une campagne : un message, une proposition sous 24 h, des vélos dans la ville. Dès 600 € pour 10 vélos pendant 1 mois. 📩\nOffre pilote à Clermont-Ferrand. Estimations indicatives.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 59,
+    "date": "2027-04-08",
+    "dateLong": "jeudi 8 avril 2027",
+    "heure": "12:30",
+    "type": "Portrait cycliste n°26 (vague 2)",
+    "titre": "Portrait 26 — Adèle, fleuriste",
+    "duree": 17,
+    "hook": "Adèle roule pour Beeclou.",
+    "disclaimer": null,
+    "portrait": true,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-59/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Portrait mi-corps de Adèle, fleuriste, debout à côté de son vélo urbain équipé d'une boîte rectangulaire en bois clair avec finitions en plastique recyclé gris clair, fixée sur le porte-bagages arrière, sourire naturel, quartier Place de la Victoire de Clermont-Ferrand en arrière-plan, lumière dorée",
+        "overlay": "Portrait 26 · Adèle, fleuriste",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-59/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Plan rapproché sur la boîte Beeclou fixée au vélo d'Adèle, le Puy de Dôme au loin flou en arrière-plan",
+        "overlay": "Quartier Place de la Victoire",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-59/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Adèle pédale et s'éloigne dans une rue de Place de la Victoire, vue de trois quarts arrière, boîte bien visible, léger flou de mouvement",
+        "overlay": "Et toi, tu roules où ? Rejoins Beeclou.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Adèle, fleuriste, roule dans le quartier Place de la Victoire. Chaque trajet porte un message local. Tu fais du vélo à Clermont ? Écris-nous en message privé. 🚲\n🎨 Personnage et décor générés par IA, inspirés de nos cyclistes.\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 60,
+    "date": "2027-04-11",
+    "dateLong": "dimanche 11 avril 2027",
+    "heure": "18:30",
+    "type": "Communauté",
+    "titre": "Merci aux cyclistes",
+    "duree": 18,
+    "hook": "Merci à nos cyclistes.",
+    "disclaimer": null,
+    "portrait": false,
+    "note": null,
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-60/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Groupe de cyclistes souriants avec leurs boîtes Beeclou devant la cathédrale de Clermont-Ferrand",
+        "overlay": "Merci à nos cyclistes.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-60/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Gros plan sur une poignée de main entre deux cyclistes",
+        "overlay": "Sans eux, rien ne roule.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-60/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Cyclistes qui partent ensemble dans une rue de Clermont-Ferrand",
+        "overlay": "On continue ensemble.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Merci à toutes celles et ceux qui roulent pour Beeclou. Sans vous, rien ne roule. 🙏\n#Beeclou #ClermontFerrand #VeloUrbain"
+  },
+  {
+    "n": 61,
+    "date": "2027-04-14",
+    "dateLong": "mercredi 14 avril 2027",
+    "heure": "12:30",
+    "type": "Bilan global",
+    "titre": "Bilan complet des 6 mois",
+    "duree": 18,
+    "hook": "6 mois de Beeclou : le bilan.",
+    "disclaimer": null,
+    "portrait": false,
+    "note": "Mettre à jour tous les chiffres réels avant publication.",
+    "plans": [
+      {
+        "duration": 5,
+        "image": "assets/reel-61/plan-1.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Table de travail avec carnet, laptop et tasse de café, vue sur Clermont-Ferrand, lumière dorée",
+        "overlay": "6 mois de Beeclou.",
+        "tone": "cream"
+      },
+      {
+        "duration": 7,
+        "image": "assets/reel-61/plan-2.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Groupe de cyclistes avec boîtes Beeclou réunis place de Jaude",
+        "overlay": "Un réseau, une communauté.",
+        "tone": "cream"
+      },
+      {
+        "duration": 6,
+        "image": "assets/reel-61/plan-3.png",
+        "prompt": "Photo photoréaliste, format vertical 9:16, lumière naturelle douce, palette crème / vert sauge / or miel / noir, aucun texte ni logo dans l'image, aucune marque réelle. Cycliste de dos qui roule vers le Puy de Dôme au coucher du soleil",
+        "overlay": "La suite se construit.",
+        "tone": "cream"
+      }
+    ],
+    "legende": "Six mois de Beeclou. Ce qu'on a fait, ce qu'on a appris, la suite. Merci. 🙏\n#Beeclou #ClermontFerrand #VeloUrbain"
+  }
+]

@@ -1,0 +1,62 @@
+numero,date,heure,titre,fichier_video,fichier_legende
+01,2026-10-16,12:30,Teaser de lancement,out/reel-01.mp4,out/reel-01-legende.txt
+02,2026-10-19,18:30,Le concept en 20 secondes,out/reel-02.mp4,out/reel-02-legende.txt
+03,2026-10-22,12:30,"Portrait 1 — Camille, étudiante en droit",out/reel-03.mp4,out/reel-03-legende.txt
+04,2026-10-25,18:30,FAQ : les cyclistes sont-ils payés ?,out/reel-04.mp4,out/reel-04-legende.txt
+05,2026-10-28,12:30,"Portrait 2 — Karim, infirmier",out/reel-05.mp4,out/reel-05-legende.txt
+06,2026-10-31,18:30,Comment on fabrique la boîte,out/reel-06.mp4,out/reel-06-legende.txt
+07,2026-11-03,12:30,"Portrait 3 — Julie, graphiste freelance",out/reel-07.mp4,out/reel-07-legende.txt
+08,2026-11-06,18:30,"5 000 € de pub, 4 façons de les dépenser",out/reel-08.mp4,out/reel-08-legende.txt
+09,2026-11-09,12:30,Appel à rejoindre le réseau,out/reel-09.mp4,out/reel-09-legende.txt
+10,2026-11-12,18:30,Bilan du mois 1,out/reel-10.mp4,out/reel-10-legende.txt
+11,2026-11-15,12:30,La carte des quartiers,out/reel-11.mp4,out/reel-11-legende.txt
+12,2026-11-18,18:30,"Portrait 4 — Henri, retraité, ancien instituteur",out/reel-12.mp4,out/reel-12-legende.txt
+13,2026-11-21,12:30,Une journée à vélo dans Clermont,out/reel-13.mp4,out/reel-13-legende.txt
+14,2026-11-24,18:30,"Portrait 5 — Léa, barista",out/reel-14.mp4,out/reel-14-legende.txt
+15,2026-11-27,12:30,"Jean, 23 ans, pourquoi Beeclou",out/reel-15.mp4,out/reel-15-legende.txt
+16,2026-11-30,18:30,"Portrait 6 — Thomas, apprenti menuisier",out/reel-16.mp4,out/reel-16-legende.txt
+17,2026-12-03,12:30,Comment ça marche pour un cycliste,out/reel-17.mp4,out/reel-17-legende.txt
+18,2026-12-06,18:30,"Portrait 7 — Sofia, étudiante en médecine",out/reel-18.mp4,out/reel-18-legende.txt
+19,2026-12-09,12:30,"Portrait 8 — Bruno, facteur à la retraite",out/reel-19.mp4,out/reel-19-legende.txt
+20,2026-12-12,18:30,Bilan du mois 2,out/reel-20.mp4,out/reel-20-legende.txt
+21,2026-12-15,12:30,Pourquoi une pub à vélo se remarque,out/reel-21.mp4,out/reel-21-legende.txt
+22,2026-12-18,18:30,"Portrait 9 — Inès, kiné",out/reel-22.mp4,out/reel-22-legende.txt
+23,2026-12-21,12:30,Rétrospective 2026,out/reel-23.mp4,out/reel-23-legende.txt
+24,2026-12-24,18:30,Joyeux Noël,out/reel-24.mp4,out/reel-24-legende.txt
+25,2026-12-27,12:30,"Portrait 10 — Paul, développeur",out/reel-25.mp4,out/reel-25-legende.txt
+26,2026-12-30,18:30,Le modèle économique simplifié,out/reel-26.mp4,out/reel-26-legende.txt
+27,2027-01-02,12:30,"Portrait 11 — Marion, libraire",out/reel-27.mp4,out/reel-27-legende.txt
+28,2027-01-05,18:30,Objectifs 2027,out/reel-28.mp4,out/reel-28-legende.txt
+29,2027-01-08,12:30,"Portrait 12 — Yanis, livreur à vélo",out/reel-29.mp4,out/reel-29-legende.txt
+30,2027-01-11,18:30,"Portrait 13 — Claire, professeure des écoles",out/reel-30.mp4,out/reel-30-legende.txt
+31,2027-01-14,12:30,"Portrait 14 — Mehdi, étudiant en école d'ingénieur",out/reel-31.mp4,out/reel-31-legende.txt
+32,2027-01-17,18:30,Campagne de recrutement directe,out/reel-32.mp4,out/reel-32-legende.txt
+33,2027-01-20,12:30,Vélo classique vs vélo Beeclou,out/reel-33.mp4,out/reel-33-legende.txt
+34,2027-01-23,18:30,Zoom sur le plastique recyclé,out/reel-34.mp4,out/reel-34-legende.txt
+35,2027-01-26,12:30,"Portrait 15 — Anne, architecte",out/reel-35.mp4,out/reel-35-legende.txt
+36,2027-01-29,18:30,3 raisons de rouler pour Beeclou,out/reel-36.mp4,out/reel-36-legende.txt
+37,2027-02-01,12:30,"Portrait 16 — Louis, photographe",out/reel-37.mp4,out/reel-37-legende.txt
+38,2027-02-04,18:30,Le prototype étape par étape,out/reel-38.mp4,out/reel-38-legende.txt
+39,2027-02-07,12:30,"Portrait 17 — Nadia, aide-soignante",out/reel-39.mp4,out/reel-39-legende.txt
+40,2027-02-10,18:30,Bilan du mois 4,out/reel-40.mp4,out/reel-40-legende.txt
+41,2027-02-13,12:30,Coulisses de l'incubateur,out/reel-41.mp4,out/reel-41-legende.txt
+42,2027-02-16,18:30,"Portrait 18 — Hugo, chef de cuisine",out/reel-42.mp4,out/reel-42-legende.txt
+43,2027-02-19,12:30,Pub mobile vs pub fixe,out/reel-43.mp4,out/reel-43-legende.txt
+44,2027-02-22,18:30,"Portrait 19 — Elsa, chargée de communication",out/reel-44.mp4,out/reel-44-legende.txt
+45,2027-02-25,12:30,POV : tu roules pour Beeclou,out/reel-45.mp4,out/reel-45-legende.txt
+46,2027-02-28,18:30,"Portrait 20 — Samuel, musicien",out/reel-46.mp4,out/reel-46-legende.txt
+47,2027-03-03,12:30,Premiers échanges avec des marques locales,out/reel-47.mp4,out/reel-47-legende.txt
+48,2027-03-06,18:30,"Portrait 21 — Clara, vétérinaire",out/reel-48.mp4,out/reel-48-legende.txt
+49,2027-03-09,12:30,"Portrait 22 — Antoine, guide conférencier",out/reel-49.mp4,out/reel-49-legende.txt
+50,2027-03-12,18:30,Bilan du mois 5,out/reel-50.mp4,out/reel-50-legende.txt
+51,2027-03-15,12:30,Vers le lancement commercial,out/reel-51.mp4,out/reel-51-legende.txt
+52,2027-03-18,18:30,"Portrait 23 — Manon, architecte d'intérieur",out/reel-52.mp4,out/reel-52-legende.txt
+53,2027-03-21,12:30,Pourquoi choisir Beeclou,out/reel-53.mp4,out/reel-53-legende.txt
+54,2027-03-24,18:30,Impact environnemental,out/reel-54.mp4,out/reel-54-legende.txt
+55,2027-03-27,12:30,"Portrait 24 — Pierre, cheminot",out/reel-55.mp4,out/reel-55-legende.txt
+56,2027-03-30,18:30,Les valeurs derrière Beeclou,out/reel-56.mp4,out/reel-56-legende.txt
+57,2027-04-02,12:30,"Portrait 25 — Zoé, étudiante en lettres",out/reel-57.mp4,out/reel-57-legende.txt
+58,2027-04-05,18:30,Lancer une campagne en 3 étapes,out/reel-58.mp4,out/reel-58-legende.txt
+59,2027-04-08,12:30,"Portrait 26 — Adèle, fleuriste",out/reel-59.mp4,out/reel-59-legende.txt
+60,2027-04-11,18:30,Merci aux cyclistes,out/reel-60.mp4,out/reel-60-legende.txt
+61,2027-04-14,12:30,Bilan complet des 6 mois,out/reel-61.mp4,out/reel-61-legende.txt
