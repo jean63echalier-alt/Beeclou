@@ -85,7 +85,8 @@ const Background: React.FC<{plan: Plan; index: number; n: number; present: boole
           width: '100%',
           height: '100%',
           objectFit: 'cover',
-          transform: `translate(${x}px, ${y}px) scale(${scale})`,
+          transform: `translate(${x}px, ${y}px) scale(${scale * (plan.crop?.zoom ?? 1)})`,
+          transformOrigin: plan.crop ? `${plan.crop.x}% ${plan.crop.y}%` : '50% 50%',
         }}
       />
     </AbsoluteFill>

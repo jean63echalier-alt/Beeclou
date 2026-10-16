@@ -4,6 +4,8 @@ export type Plan = {
   prompt: string;
   overlay: string;
   tone: 'cream' | 'ink';
+  /** Recadrage optionnel : point focal (en %) et zoom de base. */
+  crop?: {x: number; y: number; zoom: number};
 };
 
 export type ReelData = {

@@ -5,6 +5,7 @@
 //   node tools/render.mjs --reel 1,8        # certains reels
 //   node tools/render.mjs --all             # les 61 reels
 //   node tools/render.mjs --reel 8 --placeholders   # aperçu avec images manquantes remplacées
+//   node tools/render.mjs --reel 1 --single image.jpg   # une seule image pour tous les plans (recadrages différents)
 //   Options : --music chemin  --no-music  --out dossier
 //
 // Un reel dont des images manquent n'est PAS rendu (sauf --placeholders, qui produit
@@ -60,6 +61,18 @@ const logo = fs.existsSync(path.join(ASSETS, 'brand/logo.png'))
 const music = flag('no-music') ? null : value('music') ?? pick('music', ['mp3', 'wav', 'm4a', 'aac']);
 if (!music) console.log('ℹ️  Pas de musique (déposez un fichier libre de droits dans assets/music/).');
 
+const single = value('single');
+const SINGLE_CROPS = [
+  {x: 60, y: 58, zoom: 1.15}, // plan 1 : la boîte
+  {x: 62, y: 84, zoom: 1.7}, // plan 2 : gros plan roue / bas du vélo
+  {x: 35, y: 30, zoom: 1.05}, // plan 3 : le cycliste en entier
+];
+if (single) {
+  const dest = path.join(ASSETS, '_single', 'image' + path.extname(single));
+  fs.mkdirSync(path.dirname(dest), {recursive: true});
+  fs.copyFileSync(path.resolve(single), dest);
+}
+
 console.log('Préparation du bundle Remotion…');
 const serveUrl = await bundle({entryPoint: path.join(ROOT, 'src/index.ts'), publicDir: ASSETS});
 const browserExecutable = process.env.BROWSER_EXECUTABLE || undefined;
@@ -76,8 +89,9 @@ for (const n of wanted) {
   const ov = overrides[String(n)] ?? {};
   const reel = structuredClone(base);
   reel.plans.forEach((p, i) => {
-    const found = findImage(n, i + 1);
+    const found = single ? `assets/_single/image${path.extname(single)}` : findImage(n, i + 1);
     if (found) p.image = found;
+    if (single) p.crop = SINGLE_CROPS[i % SINGLE_CROPS.length];
     const o = ov.plans?.[String(i + 1)];
     if (o) p.overlay = o;
   });
