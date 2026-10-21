@@ -212,8 +212,8 @@ textarea.fld{min-height:120px;resize:vertical}
 
 /* measure */
 .measure{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,5vw,80px);align-items:center}
-.measure figure{border-radius:var(--r);overflow:hidden;box-shadow:var(--e2);background:#fff}
-.measure figure img{width:100%;height:auto}
+.measure figure{background:none;box-shadow:none;border-radius:0;overflow:visible}
+.measure figure img{width:100%;height:auto;filter:drop-shadow(0 24px 40px rgba(0,0,0,.45))}
 .m3{list-style:none;counter-reset:m;margin-top:26px}
 .m3 li{counter-increment:m;position:relative;padding:18px 0 18px 56px;border-top:1px solid var(--line)}
 .m3 li::before{content:counter(m);position:absolute;left:0;top:14px;font:800 1.6rem var(--display);color:var(--gold-deep)}
