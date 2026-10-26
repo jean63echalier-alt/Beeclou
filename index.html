@@ -5,7 +5,7 @@
 <script>if('IntersectionObserver' in window)document.documentElement.classList.add('js')</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Beeclou · la pub qui fait rouler la ville</title>
-<meta name="description" content="Une boîte sur le vélo d'un habitant : la marque est vue dans son quartier, le cycliste touche un forfait par semaine de campagne. Dès 270 € pour 3 vélos pendant 1 mois, ou jusqu'à 25 € par mois pour le cycliste.">
+<meta name="description" content="Votre pub sur le vélo d'un habitant, vue dans son quartier. Dès 270 € pour 3 vélos pendant 1 mois. Proposition de campagne sous 24 h.">
 <link rel="canonical" href="https://beeclou.fr/">
 <meta property="og:title" content="Beeclou · la pub qui fait rouler la ville">
 <meta property="og:description" content="Publicité locale sur vélo : l'annonceur est vu dans son quartier, le cycliste touche un forfait par semaine de campagne.">
@@ -28,7 +28,7 @@
   <nav class="nav" aria-label="Principal">
     <a href="annonceur.html">Annonceurs</a>
     <a href="cycliste.html">Cyclistes</a>
-    <a class="btn btn--gold hcta" href="#proposition" data-evt="header-proposition"><span class="lg">Nous contacter</span><span class="sm">Nous contacter</span></a>
+    <a class="btn btn--gold hcta" href="#proposition" data-evt="header-proposition"><span class="lg">Demander ma proposition</span><span class="sm">Ma proposition</span></a>
   </nav>
 </header>
 
@@ -47,7 +47,7 @@
       <div class="scrimfoot" aria-hidden="true"></div>
 
       <div class="depth__copy">
-        <p class="lead">Une boîte sur le vélo d'un habitant. La marque est vue, le cycliste touche un forfait par semaine de campagne.</p>
+        <p class="lead">Votre marque sur le vélo d'un habitant, vue chaque jour dans son quartier. Dès 270 € pour 3 vélos pendant 1 mois.</p>
         <a class="btn btn--gold" href="annonceur.html" data-evt="hero-annonceur">Je suis annonceur</a>
         <a class="btn btn--line" href="cycliste.html" data-evt="hero-cycliste">Je suis cycliste</a>
       </div>
@@ -65,9 +65,9 @@
           <img src="site-assets/box-wall.webp" alt="La boîte Beeclou jaune, crème et rose sur un porte-bagages, devant un mur de pierre." loading="lazy" width="1800" height="1161">
           <span class="eyebrow" style="color:var(--gold)">Annonceur</span>
           <p class="price tnum">Dès 270 € <small>3 vélos pendant 1 mois</small></p>
-          <p>Votre marque roule en ville. Proposition de campagne sous 24 h.</p>
+          <p>Faites voir votre marque dans votre quartier dès 270 €. Proposition de campagne sous 24 h.</p>
           <div class="door__row">
-            <a class="btn btn--gold" href="#proposition" data-evt="door-annonceur">Commander</a>
+            <a class="btn btn--gold" href="#proposition" data-evt="door-annonceur">Recevoir ma proposition en 24 h</a>
             <a class="door__more" href="annonceur.html">Voir les packs</a>
           </div>
         </article>
@@ -75,9 +75,9 @@
           <img src="site-assets/portrait.webp" alt="Un cycliste debout à côté de son vélo, une boîte Beeclou sur le porte-bagages." loading="lazy" width="1600" height="1067">
           <span class="eyebrow" style="color:var(--gold)">Cycliste</span>
           <p class="price tnum">Jusqu'à 25 € <small>par mois, selon les campagnes</small></p>
-          <p>Vos trajets de tous les jours, enfin payés. Pose gratuite en magasin partenaire.</p>
+          <p>Gagnez jusqu'à 25 € par mois sur les trajets que vous faites déjà. Pose gratuite en magasin partenaire.</p>
           <div class="door__row">
-            <a class="btn btn--gold" href="#reserver" data-evt="door-cycliste">Réserver ma boîte</a>
+            <a class="btn btn--gold" href="#reserver" data-evt="door-cycliste">Réserver ma boîte, pose gratuite</a>
             <a class="door__more" href="cycliste.html">Comment ça marche</a>
           </div>
         </article>
@@ -137,14 +137,14 @@
       <h2 class="d d--lg" data-in style="margin-top:14px">Un message, <i>une réponse.</i></h2>
       <div class="forms2">
         <form class="card" id="proposition" data-send data-form="accueil-annonceur" data-delay="Proposition de campagne sous 24 h." data-in novalidate>
-          <h3>Annonceur : je commande</h3>
+          <h3>Annonceur : je demande ma proposition</h3>
           <p class="sub">Trois champs, une réponse sous 24 h.</p>
           <input type="hidden" name="_subject" value="Demande annonceur Beeclou (accueil)">
           <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
           <label class="f" for="h-ent">Entreprise<input class="fld" id="h-ent" name="Entreprise" required autocomplete="organization"></label>
           <label class="f" for="h-mail">Email<input class="fld" id="h-mail" name="Email" type="email" required autocomplete="email"></label>
           <label class="f" for="h-zone">Ville et budget<input class="fld" id="h-zone" name="Ville et budget" required placeholder="Ex. : Lyon, 480 € par mois"></label>
-          <button class="btn btn--gold" type="submit">Commander</button>
+          <button class="btn btn--gold" type="submit">Envoyer ma demande</button>
           <p class="fmsg" role="status" aria-live="polite"></p>
           <p class="fine">Vos informations ne servent qu'à répondre à votre demande. <a href="confidentialite.html">Confidentialité</a>.</p>
         </form>
