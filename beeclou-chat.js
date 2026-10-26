@@ -53,6 +53,10 @@
   var css = '' +
     '.bcc-btn{position:fixed;right:18px;bottom:18px;z-index:9998;width:56px;height:56px;border-radius:50%;border:0;background:#D9A927;color:#17130F;font-size:26px;cursor:pointer;box-shadow:0 10px 24px -8px rgba(60,40,10,.5)}' +
     '.bcc-btn:focus-visible,.bcc-chip:focus-visible,.bcc-send:focus-visible{outline:3px solid #17130F;outline-offset:2px}' +
+    '.bcc-tip{position:fixed;right:18px;bottom:82px;z-index:9998;background:#17130F;color:#F7F3EA;border:0;border-radius:12px;padding:8px 13px;font:700 14px/1.2 "DM Sans",system-ui,sans-serif;cursor:pointer;box-shadow:0 10px 24px -10px rgba(60,40,10,.5)}' +
+    '.bcc-tip::after{content:"";position:absolute;right:22px;bottom:-6px;width:12px;height:12px;background:#17130F;transform:rotate(45deg)}' +
+    '.bcc-tip.hide{display:none}' +
+    '.bcc-tip:focus-visible{outline:3px solid #D9A927;outline-offset:2px}' +
     '.bcc-box{position:fixed;right:18px;bottom:88px;z-index:9999;width:min(360px,calc(100vw - 36px));max-height:min(540px,calc(100vh - 120px));display:none;flex-direction:column;background:#FCFAF4;color:#17130F;border:1px solid rgba(23,19,15,.14);border-radius:16px;box-shadow:0 22px 40px -18px rgba(60,40,10,.45);font:15px/1.45 "DM Sans",system-ui,sans-serif;overflow:hidden}' +
     '.bcc-box.open{display:flex}' +
     '.bcc-head{background:#17130F;color:#F7F3EA;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;font-weight:700}' +
@@ -98,7 +102,8 @@
     var send = el('button', 'bcc-send', 'Envoyer'); send.type = 'submit';
     form.appendChild(inp); form.appendChild(send);
     [head, log, chips, form].forEach(function (n) { box.appendChild(n); });
-    document.body.appendChild(box); document.body.appendChild(btn);
+    var tip = el('button', 'bcc-tip', 'Une question ?'); tip.type = 'button';
+    document.body.appendChild(box); document.body.appendChild(tip); document.body.appendChild(btn);
 
     function say(text, who, link) {
       var m = el('div', 'bcc-m ' + who, text);
@@ -127,6 +132,7 @@
     var started = false;
     function toggle(open) {
       box.classList.toggle('open', open);
+      if (open) tip.classList.add('hide');
       btn.setAttribute('aria-expanded', String(open));
       if (open) {
         if (!started) { started = true; say('Bonjour 🐝 Je réponds à vos questions sur Beeclou : tarifs, cyclistes, fonctionnement.', 'bot'); }
@@ -134,6 +140,7 @@
       } else btn.focus();
     }
     btn.addEventListener('click', function () { toggle(!box.classList.contains('open')); });
+    tip.addEventListener('click', function () { toggle(true); });
     x.addEventListener('click', function () { toggle(false); });
     box.addEventListener('keydown', function (e) { if (e.key === 'Escape') toggle(false); });
     form.addEventListener('submit', function (e) {
