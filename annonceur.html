@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<script>if('IntersectionObserver' in window)document.documentElement.classList.add('js')</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Annonceurs · Beeclou, votre marque sur les vélos de votre quartier</title>
+<meta name="description" content="Faites rouler votre marque au cœur de votre ville : publicité mobile sur boîtes de vélo, dès 270 €. Proposition de campagne sous 24 h.">
+<meta property="og:title" content="Beeclou pour les annonceurs · dès 270 €">
+<meta property="og:description" content="Votre marque roule en ville. Proposition de campagne sous 24 h.">
+<meta property="og:image" content="https://beeclou.fr/og-beeclou-v3.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Publicité locale sur vélo","provider":{"@type":"Organization","name":"Beeclou","url":"https://beeclou.fr"},"areaServed":"France","offers":[{"@type":"Offer","name":"Éclair, 3 vélos pendant 1 mois","price":"270","priceCurrency":"EUR"},{"@type":"Offer","name":"Visibilité, 6 vélos pendant 3 mois","price":"1440","priceCurrency":"EUR"},{"@type":"Offer","name":"Impact, 12 vélos pendant 3 mois","price":"2340","priceCurrency":"EUR"},{"@type":"Offer","name":"Premium, 20 vélos et plus, dès 1100 € par mois","price":"1100","priceCurrency":"EUR"}]}</script>
+<link rel="canonical" href="https://beeclou.fr/annonceur.html">
+<link rel="icon" href="site-assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="beeclou.css?v=20261019">
+<link rel="preload" as="image" href="site-assets/clean-box.webp">
+<link rel="preload" as="image" href="site-assets/cut-box.webp?v=20261012b">
+<style>
+.cmp--3{grid-template-columns:repeat(3,1fr)}
+@media (max-width:900px){.cmp--3{grid-template-columns:1fr}}
+.tbl{overflow-x:auto;border:1px solid rgba(23,19,15,.12);border-radius:18px;background:var(--paper)}
+.tbl table{width:100%;border-collapse:collapse;min-width:640px}
+.tbl th,.tbl td{padding:16px 18px;text-align:left;vertical-align:top;border-bottom:1px solid rgba(23,19,15,.12)}
+.tbl thead th{font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;color:var(--ink-soft)}
+.tbl tbody tr:last-child td{border-bottom:0}
+.tbl tr.us td{background:var(--gold);color:var(--ink);font-weight:700}
+
+/* ===== annonceur : mise en page aérée + animations ===== */
+html{scroll-behavior:smooth}
+#pourquoi,#cpm,#tarifs,#comment,#devis{padding-block:clamp(88px,12vw,190px);position:relative}
+#pourquoi .stack,#cpm .stack,#tarifs .stack{gap:clamp(14px,1.6vw,22px)}
+.sec .d--lg{font-size:clamp(2.2rem,5.2vw,4.6rem);line-height:1.02}
+.sec .lead{font-size:clamp(1.1rem,1.5vw,1.35rem);line-height:1.6;max-width:62ch}
+.stack h2[data-in]::after{content:"";display:block;height:5px;width:0;border-radius:9px;background:var(--gold);margin-top:clamp(16px,2vw,26px);transition:width .9s cubic-bezier(.2,.8,.2,1) .25s}
+.stack h2[data-in].in::after{width:clamp(72px,9vw,128px)}
+.dark .stack h2::after{background:var(--gold)}
+.cmp{gap:clamp(18px,2.4vw,32px)}
+.cmp__col{padding:clamp(28px,3vw,44px) clamp(24px,2.6vw,36px);border-radius:26px;transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s}
+.cmp__big{font-size:clamp(3.2rem,6vw,5.4rem);font-weight:900;letter-spacing:-.04em;line-height:.95;margin-block:14px 18px}
+.cmp--3 .cmp__col:last-child .cmp__big{font-size:clamp(1.9rem,3vw,2.7rem);line-height:1.05;letter-spacing:-.02em}
+@media (hover:hover) and (pointer:fine){.cmp__col:hover{transform:translateY(-8px);box-shadow:0 28px 50px -24px rgba(23,19,15,.35)}}
+.m3 li{padding-block:clamp(22px,2.4vw,34px);padding-left:clamp(64px,7vw,92px);font-size:clamp(1rem,1.2vw,1.12rem)}
+.m3 li::before{top:clamp(16px,2vw,26px);font-size:clamp(2.4rem,4vw,3.6rem)}
+.m3 b{font-size:clamp(1.15rem,1.6vw,1.45rem);margin-bottom:6px}
+.pill{display:inline-block;background:var(--gold);color:var(--ink);padding:2px 12px;border-radius:999px;font-weight:800;white-space:normal}
+.tbl{border-radius:26px;box-shadow:0 30px 60px -40px rgba(23,19,15,.35)}
+.tbl th,.tbl td{padding:clamp(18px,2vw,26px) clamp(16px,2vw,28px)}
+.tbl tbody tr{transition:background .25s}
+.tbl tbody tr:not(.us):hover td{background:rgba(217,169,39,.12)}
+.tbl tr.us td{font-size:1.05em}
+.extras{font-size:clamp(1.05rem,1.4vw,1.25rem);margin-top:clamp(28px,3.4vw,48px);padding-left:22px;border-left:4px solid var(--gold)}
+.prow{padding-block:clamp(28px,3.6vw,52px)}
+.prow h3{font-size:clamp(1.7rem,2.8vw,2.5rem)}
+.prow .amt{font-size:clamp(2.2rem,4.4vw,4rem)}
+.prow--top{position:relative}
+.prow--top::before{content:"Le plus choisi";position:absolute;top:10px;right:0;font:800 .68rem var(--text);letter-spacing:.14em;text-transform:uppercase;background:var(--ink);color:var(--gold);padding:4px 12px;border-radius:999px}
+#devis .card{border-radius:30px;padding:clamp(28px,3.4vw,52px);box-shadow:0 40px 90px -40px rgba(0,0,0,.6)}
+/* hero : micro-animations */
+.depth__subject .halo{animation:halo 9s ease-in-out infinite alternate}
+@keyframes halo{to{border-radius:44% 56% 48% 52%/56% 44% 52% 48%;transform:translate(-50%,-50%) scale(1.04)}}
+.depth__copy .btn--gold{animation:pulse 3.2s ease-in-out 1.5s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(217,169,39,.5)}50%{box-shadow:0 0 0 14px rgba(217,169,39,0)}}
+/* barre de progression */
+.prog{position:fixed;left:0;top:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:var(--gold);z-index:90;pointer-events:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.depth__subject .halo,.depth__copy .btn--gold{animation:none}.stack h2[data-in]::after{transition:none;width:clamp(72px,9vw,128px)}.prog{display:none}}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="bar">
+  <a class="brand" href="index.html" aria-label="Beeclou, accueil"><img src="site-assets/logo-ink.webp" alt="Beeclou" width="1100" height="480"></a>
+  <nav class="nav" aria-label="Principal">
+    <a href="annonceur.html" aria-current="page">Annonceurs</a>
+    <a href="cycliste.html">Cyclistes</a>
+    <a class="btn btn--gold hcta" href="#devis" data-evt="header-proposition"><span class="lg">Commander</span><span class="sm">Commander</span></a>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO : fond flou, titre, vélo et boîte détourés, push-in sur la boîte -->
+  <section class="depth depth--box" data-depth style="--span:200vh" aria-label="Présentation">
+    <div class="depth__stage">
+      <div class="depth__bg" aria-hidden="true"><img src="site-assets/clean-box.webp" alt="" width="800" height="533"></div>
+      <div class="depth__wash" aria-hidden="true"></div>
+
+      <h1 class="depth__title d d--hero">Faites rouler <i>votre marque.</i></h1>
+
+      <div class="depth__subject"><span class="halo" aria-hidden="true"></span><img src="site-assets/cut-box.webp?v=20261012b" alt="La boîte Beeclou fixée sur le porte-bagages d'un vélo, devant des passants." width="1800" height="1200"></div>
+
+      <div class="scrimfoot" aria-hidden="true"></div>
+      <div class="depth__copy">
+        <p class="lead">Une publicité mobile, éco-responsable et mémorisable, portée par les habitants.</p>
+        <a class="btn btn--gold" href="#devis">Commander</a>
+        <a class="btn btn--line" href="#cpm">Comparer avec les autres supports</a>
+      </div>
+      <p class="depth__beat d d--lg" aria-hidden="true">Même budget,<br><i>plus de présence.</i></p>
+    </div>
+  </section>
+
+  <!-- INTRO + POURQUOI -->
+  <section class="sec paper" id="pourquoi">
+    <div class="wrap">
+      <div class="stack" style="max-width:820px;margin-bottom:clamp(28px,4vw,56px)">
+        <p class="lead" data-in>Vous cherchez à booster votre visibilité locale sans vous ruiner dans l'affichage traditionnel ? Beeclou transforme les vélos des citadins en supports publicitaires ambulants. Une communication de proximité à fort capital sympathie qui soutient directement le pouvoir d'achat local.</p>
+        <p class="eyebrow" data-in style="margin-top:18px">Pourquoi Beeclou</p>
+        <h2 class="d d--lg" data-in>Pourquoi choisir l'affichage <i>mobile Beeclou ?</i></h2>
+        <p class="lead soft" data-in>Le modèle d'affichage sur boîte de vélo a fait ses preuves en Europe. Les études d'impact menées par l'institut indépendant Intervista AG démontrent la puissance de ce support en milieu urbain.</p>
+      </div>
+      <div class="cmp cmp--3" data-in>
+        <article style="--i:0" class="cmp__col"><h3>🎯 Une mémorisation record</h3><p class="cmp__big"><span data-count="55">55</span>&nbsp;%</p><p class="soft">des citadins remarquent et identifient positivement ces boîtes publicitaires au moins une fois par semaine en ville.</p></article>
+        <article style="--i:3" class="cmp__col"><h3>🛑 Une présence stratégique</h3><p class="cmp__big"><span data-count="92">92</span>&nbsp;%</p><p class="soft">des contacts publicitaires se font lorsque le vélo est stationné dans des zones clés (devant les commerces, universités, terrasses, places animées).</p></article>
+        <article style="--i:6" class="cmp__col cmp__col--us"><h3>💚 Un capital sympathie unique</h3><p class="cmp__big">Vert et solidaire</p><p class="soft">Contrairement aux panneaux publicitaires jugés intrusifs, Beeclou est perçu comme une initiative verte et solidaire.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CPM -->
+  <section class="sec" id="cpm">
+    <div class="wrap">
+      <div class="stack" style="max-width:820px;margin-bottom:clamp(28px,4vw,56px)">
+        <p class="eyebrow" data-in>Le calcul du CPM</p>
+        <h2 class="d d--lg" data-in>Une efficacité budgétaire <i>imbattable.</i></h2>
+        <p class="lead soft" data-in>En communication, le CPM (Coût pour Mille impressions) mesure le coût pour toucher 1 000 personnes. Grâce à notre modèle agile, Beeclou affiche des performances budgétaires uniques par rapport aux médias classiques.</p>
+      </div>
+      <h3 data-in style="margin-bottom:12px">Notre méthode d'estimation <span class="soft">(exemple sur notre phase pilote)</span></h3>
+      <ol class="m3" data-in>
+        <li><b>Sur le terrain</b>Un vélo Beeclou qui circule ou stationne dans les zones clés d'une agglomération (places centrales, zones piétonnes, campus universitaires) génère environ 5 000 à 10 000 impressions visuelles par jour (contacts directs et périphériques aux heures de pointe).</li>
+        <li><b>Sur un mois</b>Un seul vélo cumule ainsi près de 200 000 impressions.</li>
+        <li><b>Le résultat</b>Avec notre Pack Impact à 65 € / mois par vélo, votre CPM réel estimé tombe à seulement <b class="pill">~0,32 € pour mille vues</b>.</li>
+      </ol>
+      <h3 data-in style="margin:clamp(32px,5vw,56px) 0 14px">Comparatif des solutions publicitaires urbaines</h3>
+      <div class="tbl" data-in>
+        <table>
+          <thead><tr><th>Support publicitaire</th><th>Budget moyen constaté</th><th>Impact &amp; mobilité</th><th>CPM moyen constaté</th></tr></thead>
+          <tbody>
+            <tr><td>🛑 Panneau 4x3 statique</td><td>600 € à 1 500 € / semaine</td><td>Fixe, souvent ignoré par habitude</td><td>3,00 € à 9,00 €</td></tr>
+            <tr><td>🚌 Affichage sur bus urbain</td><td>800 € à 2 000 € / mois</td><td>Limité aux grands axes routiers</td><td>3,00 € à 9,00 €</td></tr>
+            <tr class="us"><td>🚴 Beeclou (Pack Impact, 12 vélos)</td><td>780 € / mois</td><td>Centres-villes &amp; rues piétonnes</td><td>~0,32 € pour mille vues (estimé)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="extras" data-in><b>Notre indicateur clé :</b> avec un tarif dégressif atteignant 55 € / mois par vélo, Beeclou vous permet de saturer visuellement les zones à fort trafic piéton pour une fraction du coût d'une campagne classique.</p>
+    </div>
+  </section>
+
+  <!-- OFFRES -->
+  <section class="sec paper" id="tarifs">
+    <div class="wrap">
+      <div class="stack" style="max-width:820px">
+        <p class="eyebrow" data-in>Nos offres spéciales · tarifs de lancement</p>
+        <h2 class="d d--lg" data-in>Devenez l'une des premières marques <i>à faire rouler la ville.</i></h2>
+        <p class="lead soft" data-in>Profitez de nos tarifs exclusifs de phase pilote.</p>
+      </div>
+      <ul class="plist" data-in>
+        <li class="prow" style="--i:2">
+          <h3>⚡ Pack Éclair</h3>
+          <p class="what">Idéal pour tester un événement ou un lancement éphémère. 3 vélos pendant 1 mois. Pose gratuite en magasin partenaire incluse.</p>
+          <p class="amt tnum">270 €<small>au total · 90 € / vélo / mois</small></p>
+          <a class="btn btn--ink" href="#devis" data-pack="Éclair (3 vélos, 1 mois)">Demander ce pack</a>
+        </li>
+        <li class="prow" style="--i:4">
+          <h3>👁️ Pack Visibilité</h3>
+          <p class="what">Une présence continue et rassurante dans les rues. 6 vélos pendant 3 mois.</p>
+          <p class="amt tnum">480 €<small>par mois · 80 € / vélo · 1 440 € au total</small></p>
+          <a class="btn btn--ink" href="#devis" data-pack="Visibilité (6 vélos, 3 mois)">Demander ce pack</a>
+        </li>
+        <li class="prow prow--top" style="--i:6">
+          <h3>🔥 Pack Impact</h3>
+          <p class="what">Dominez l'espace urbain. Rapport de diffusion mensuel inclus. 12 vélos pendant 3 mois.</p>
+          <p class="amt tnum">780 €<small>par mois · 65 € / vélo · 2 340 € au total</small></p>
+          <a class="btn btn--ink" href="#devis" data-pack="Impact (12 vélos, 3 mois)">Demander ce pack</a>
+        </li>
+        <li class="prow" style="--i:8">
+          <h3>👑 Pack Premium</h3>
+          <p class="what">Une flotte sur-mesure pour les campagnes d'envergure. Rapport détaillé inclus. 20 vélos et + pendant 6 mois et +.</p>
+          <p class="amt tnum">dès 1 100 €<small>par mois · 55 € / vélo</small></p>
+          <a class="btn btn--ink" href="#devis" data-pack="Premium (20 vélos et +, 6 mois et +)">Demander ce pack</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- COMMENT ÇA MARCHE -->
+  <section class="sec" id="comment">
+    <div class="wrap" style="max-width:900px">
+      <p class="eyebrow" data-in>Comment ça marche</p>
+      <h2 class="d d--lg" data-in>Comment ça marche <i>pour vous ?</i></h2>
+      <ol class="m3" data-in>
+        <li><b>📝 Vous commandez votre pack</b>Remplissez notre formulaire en 2 minutes. Nous vous recontactons sous 24 h avec une proposition visuelle.</li>
+        <li><b>🖨️ Nous fabriquons vos visuels</b>Vos publicités sont imprimées sur nos boîtes rigides de 30 litres (qui restent 100 % utilisables par nos cyclistes au quotidien).</li>
+        <li><b>🚴 La ville vous découvre</b>Nos cyclistes locaux sélectionnés roulent pour leurs trajets de tous les jours (vélotaf, courses, loisirs). Vos rapports de diffusion vous sont partagés.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- DEVIS -->
+  <section class="sec dark" id="devis">
+    <div class="wrap formsec">
+      <div class="stack">
+        <p class="eyebrow" data-in>Réservation</p>
+        <h2 class="d d--lg" data-in>Prêt à faire <i>rouler votre marque ?</i></h2>
+        <p class="lead soft" data-in>Trois champs, une réponse sous 24 heures.</p>
+      </div>
+      <form class="card" data-send data-form="annonceur" data-delay="Proposition de campagne sous 24 h." data-in novalidate>
+        <input type="hidden" name="_subject" value="Demande annonceur Beeclou">
+        <input type="hidden" id="f-pack" name="Pack" value="">
+        <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label class="f" for="f-ent">Entreprise<input class="fld" id="f-ent" name="Entreprise" required autocomplete="organization"></label>
+        <label class="f" for="f-mail">E-mail<input class="fld" id="f-mail" name="Email" type="email" required autocomplete="email"></label>
+        <label class="f" for="f-zone">Votre ville &amp; budget<input class="fld" id="f-zone" name="Ville et budget" required placeholder="Ex. : Lyon, 480 € par mois"></label>
+        <button class="btn btn--gold" type="submit">Recevoir ma proposition de campagne</button>
+        <p class="fmsg" role="status" aria-live="polite"></p>
+        <p class="fine">Vos informations ne servent qu'à répondre à votre demande. <a href="confidentialite.html">Politique de confidentialité</a>.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <img src="site-assets/logo-cream.webp" alt="Beeclou" width="1100" height="480">
+    <nav aria-label="Pied de page">
+      <a href="index.html">Accueil</a>
+      <a href="cycliste.html">Cyclistes</a>
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="confidentialite.html">Confidentialité</a>
+      <a href="mailto:contact@beeclou.fr">contact@beeclou.fr</a>
+    </nav>
+    <small>© <span id="yr">2026</span> Beeclou · Phase pilote 2025 à 2026</small>
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" defer></script>
+<script src="beeclou.js"></script>
+<script src="beeclou-fx.js?v=20261013" defer></script>
+<script src="beeclou-chat.js?v=20261026b" defer></script>
+<div class="prog" id="prog" aria-hidden="true"></div>
+<script>
+(function(){
+var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var p=document.getElementById('prog');
+if(p&&!rm){var t=false;addEventListener('scroll',function(){if(t)return;t=true;requestAnimationFrame(function(){var h=document.documentElement.scrollHeight-innerHeight;p.style.transform='scaleX('+(h>0?Math.min(1,scrollY/h):0)+')';t=false;});},{passive:true});}
+var els=document.querySelectorAll('[data-count]');
+if(rm||!('IntersectionObserver' in window))return;
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;io.unobserve(e.target);var el=e.target,to=+el.dataset.count,t0=performance.now();el.textContent='0';(function tick(n){var k=Math.min(1,(n-t0)/1400);el.textContent=Math.round(to*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(tick);})(t0);});},{threshold:.6});
+els.forEach(function(el){io.observe(el);});
+})();
+</script>
+</body>
+</html>

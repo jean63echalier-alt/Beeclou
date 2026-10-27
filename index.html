@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<script>if('IntersectionObserver' in window)document.documentElement.classList.add('js')</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Beeclou · la pub qui fait rouler la ville</title>
+<meta name="description" content="Une boîte sur le vélo d'un habitant : la marque est vue dans son quartier, le cycliste touche un forfait par semaine de campagne. Dès 270 € pour 3 vélos pendant 1 mois, ou jusqu'à 25 € par mois pour le cycliste.">
+<link rel="canonical" href="https://beeclou.fr/">
+<meta property="og:title" content="Beeclou · la pub qui fait rouler la ville">
+<meta property="og:description" content="Publicité locale sur vélo : l'annonceur est vu dans son quartier, le cycliste touche un forfait par semaine de campagne.">
+<meta property="og:image" content="https://beeclou.fr/og-beeclou-v3.jpg">
+<meta property="og:type" content="website">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Beeclou","url":"https://beeclou.fr","email":"contact@beeclou.fr","description":"Publicité locale sur vélo : une boîte de 30 litres posée sur le vélo d'un habitant. La marque est vue dans son quartier, le cycliste touche un forfait par semaine de campagne."}</script>
+<link rel="icon" href="site-assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="beeclou.css?v=20261019">
+<link rel="preload" as="image" href="site-assets/clean-ride.webp">
+<link rel="preload" as="image" href="site-assets/cut-ride.webp?v=20261012b">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="bar">
+  <a class="brand" href="index.html" aria-label="Beeclou, accueil"><img src="site-assets/logo-ink.webp" alt="Beeclou" width="1100" height="480"></a>
+  <nav class="nav" aria-label="Principal">
+    <a href="annonceur.html">Annonceurs</a>
+    <a href="cycliste.html">Cyclistes</a>
+    <a class="btn btn--gold hcta" href="#proposition" data-evt="header-proposition"><span class="lg">Nous contacter</span><span class="sm">Nous contacter</span></a>
+  </nav>
+</header>
+
+<main>
+  <!-- 1 · HERO en couches : fond flou, titre, cycliste détouré avec halo derrière la boîte -->
+  <section class="depth depth--ride" data-depth aria-label="Présentation">
+    <div class="depth__stage">
+      <div class="depth__bg" aria-hidden="true"><img src="site-assets/clean-ride.webp" alt="" width="800" height="533"></div>
+      <div class="depth__wash" aria-hidden="true"></div>
+
+      <h1 class="depth__title d d--hero">La pub qui fait <i>rouler</i> la ville.</h1>
+
+      <div class="depth__subject"><span class="halo" aria-hidden="true"></span><img src="site-assets/cut-ride.webp?v=20261012b" alt="Un cycliste pédale en ville, une boîte Beeclou jaune et rose fixée sur son porte-bagages." width="1800" height="1200"></div>
+
+      <svg class="depth__blob depth__blob--front" viewBox="0 0 400 300" aria-hidden="true"><path fill="#EBA58D" d="M0 140C30 60 130 20 230 50c90 28 130 110 100 180-30 70-130 80-210 60C50 275-20 230 0 140Z"/></svg>
+      <div class="scrimfoot" aria-hidden="true"></div>
+
+      <div class="depth__copy">
+        <p class="lead">Une boîte sur le vélo d'un habitant. La marque est vue, le cycliste touche un forfait par semaine de campagne.</p>
+        <a class="btn btn--gold" href="annonceur.html" data-evt="hero-annonceur">Je suis annonceur</a>
+        <a class="btn btn--line" href="cycliste.html" data-evt="hero-cycliste">Je suis cycliste</a>
+      </div>
+
+      <p class="depth__beat d d--lg" aria-hidden="true">Un cycliste roule.<br><i>Votre marque est vue.</i></p>
+    </div>
+  </section>
+
+  <!-- 2 · PORTES -->
+  <section class="sec" id="portes">
+    <div class="wrap">
+      <h2 class="d d--lg" data-in>Vous êtes ?</h2>
+      <div class="doors">
+        <article class="door door--a" data-in>
+          <img src="site-assets/box-wall.webp" alt="La boîte Beeclou jaune, crème et rose sur un porte-bagages, devant un mur de pierre." loading="lazy" width="1800" height="1161">
+          <span class="eyebrow" style="color:var(--gold)">Annonceur</span>
+          <p class="price tnum">Dès 270 € <small>3 vélos pendant 1 mois</small></p>
+          <p>Votre marque roule en ville. Proposition de campagne sous 24 h.</p>
+          <div class="door__row">
+            <a class="btn btn--gold" href="#proposition" data-evt="door-annonceur">Commander</a>
+            <a class="door__more" href="annonceur.html">Voir les packs</a>
+          </div>
+        </article>
+        <article class="door door--b" data-in>
+          <img src="site-assets/portrait.webp" alt="Un cycliste debout à côté de son vélo, une boîte Beeclou sur le porte-bagages." loading="lazy" width="1600" height="1067">
+          <span class="eyebrow" style="color:var(--gold)">Cycliste</span>
+          <p class="price tnum">Jusqu'à 25 € <small>par mois, selon les campagnes</small></p>
+          <p>Vos trajets de tous les jours, enfin payés. Pose gratuite en magasin partenaire.</p>
+          <div class="door__row">
+            <a class="btn btn--gold" href="#reserver" data-evt="door-cycliste">Réserver ma boîte</a>
+            <a class="door__more" href="cycliste.html">Comment ça marche</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · PRINCIPE -->
+  <section class="sec dark" id="principe">
+    <div class="wrap principle">
+      <div>
+        <p class="eyebrow" data-in>Le principe</p>
+        <h2 class="d d--lg" data-in style="margin-top:14px" aria-label="Trois plus, une boîte"><span style="white-space:nowrap">Trois <span class="plus" aria-hidden="true"></span>,</span> <i>une boîte.</i></h2>
+        <ol class="lines" data-in>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5 3.5 7v10L12 21.5 20.5 17V7z"/><path d="M3.5 7 12 11.5 20.5 7M12 11.5v10"/></svg>
+            <span>Un espace de stockage de 30 litres sur son vélo.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="15" rx="2"/><path d="m3.5 16 5-5 4 4 3-3 5 5"/><circle cx="9" cy="9" r="1.4"/></svg>
+            <span>Une marque locale y fait imprimer sa publicité.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21.5s7-6 7-11.8a7 7 0 1 0-14 0c0 5.8 7 11.8 7 11.8z"/><circle cx="12" cy="9.7" r="2.6"/></svg>
+            <span>La ville la voit passer, le cycliste touche un forfait par semaine de campagne.</span>
+          </li>
+        </ol>
+      </div>
+      <figure data-in>
+        <img src="site-assets/box-open.webp" alt="Un cycliste ouvre la boîte Beeclou fixée sur son porte-bagages, dans une rue piétonne." loading="lazy" width="1800" height="1200">
+        <figcaption>La boîte de 30 litres, ouverte. Elle reste utilisable au quotidien.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 4 · PREUVE -->
+  <section class="sec gold" id="preuve">
+    <div class="wrap">
+      <div class="proof">
+        <div class="big tnum"><span>55</span><sup>%</sup></div>
+        <div>
+          <p>des personnes interrogées voient les boîtes publicitaires au moins une fois par semaine en ville.</p>
+          <small>Source : étude Intervista AG, novembre 2022.</small>
+        </div>
+      </div>
+      <figure class="pilot" data-in>
+        <img src="site-assets/ville.webp" alt="Un vélo équipé de la boîte Beeclou devant un manège, sur une place animée." loading="lazy" width="1800" height="1200">
+        <figcaption><b>Phase pilote ouverte</b>Le premier vélo roule déjà en ville. Rejoignez les premiers cyclistes et les premiers annonceurs.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 5 · CAPTURE : deux formulaires courts -->
+  <section class="sec dark" id="contact">
+    <div class="wrap">
+      <p class="eyebrow" data-in>Rejoindre la phase pilote</p>
+      <h2 class="d d--lg" data-in style="margin-top:14px">Un message, <i>une réponse.</i></h2>
+      <div class="forms2">
+        <form class="card" id="proposition" data-send data-form="accueil-annonceur" data-delay="Proposition de campagne sous 24 h." data-in novalidate>
+          <h3>Annonceur : je commande</h3>
+          <p class="sub">Trois champs, une réponse sous 24 h.</p>
+          <input type="hidden" name="_subject" value="Demande annonceur Beeclou (accueil)">
+          <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <label class="f" for="h-ent">Entreprise<input class="fld" id="h-ent" name="Entreprise" required autocomplete="organization"></label>
+          <label class="f" for="h-mail">Email<input class="fld" id="h-mail" name="Email" type="email" required autocomplete="email"></label>
+          <label class="f" for="h-zone">Ville et budget<input class="fld" id="h-zone" name="Ville et budget" required placeholder="Ex. : Lyon, 480 € par mois"></label>
+          <button class="btn btn--gold" type="submit">Commander</button>
+          <p class="fmsg" role="status" aria-live="polite"></p>
+          <p class="fine">Vos informations ne servent qu'à répondre à votre demande. <a href="confidentialite.html">Confidentialité</a>.</p>
+        </form>
+        <form class="card" id="reserver" data-send data-form="accueil-cycliste" data-delay="Nous revenons vers vous sous 24 à 48 h." data-in novalidate>
+          <h3>Cycliste : je réserve ma boîte</h3>
+          <p class="sub">Réponse sous 24 à 48 h.</p>
+          <input type="hidden" name="_subject" value="Réservation cycliste Beeclou (accueil)">
+          <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <label class="f" for="h-cmail">Email<input class="fld" id="h-cmail" name="Email" type="email" required autocomplete="email"></label>
+          <label class="f" for="h-ville">Ville<input class="fld" id="h-ville" name="Ville" required autocomplete="address-level2"></label>
+          <label class="f" for="h-velo">Mon vélo
+            <select class="fld" id="h-velo" name="Vélo">
+              <option>Vélo urbain</option>
+              <option>Vélo électrique</option>
+              <option>Vélo cargo</option>
+              <option>Je n'ai pas encore de vélo</option>
+            </select>
+          </label>
+          <button class="btn btn--gold" type="submit">Réserver ma boîte</button>
+          <p class="fmsg" role="status" aria-live="polite"></p>
+          <p class="fine">Vos informations ne servent qu'à répondre à votre demande. <a href="confidentialite.html">Confidentialité</a>.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <img src="site-assets/logo-cream.webp" alt="Beeclou" width="1100" height="480">
+    <nav aria-label="Pied de page">
+      <a href="annonceur.html">Annonceurs</a>
+      <a href="cycliste.html">Cyclistes</a>
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="confidentialite.html">Confidentialité</a>
+      <a href="mailto:contact@beeclou.fr">contact@beeclou.fr</a>
+    </nav>
+    <small>© <span id="yr">2026</span> Beeclou · Phase pilote 2025 à 2026</small>
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" defer></script>
+<script src="beeclou.js"></script>
+<script src="beeclou-fx.js?v=20261013" defer></script>
+</body>
+</html>
