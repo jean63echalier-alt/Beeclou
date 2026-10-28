@@ -69,7 +69,7 @@ a{color:inherit;text-underline-offset:.2em;text-decoration-thickness:1px}
 .depth--box{--sx:8vw;--run:-14vw;--grow:.5;--orig:60% 62%;--hx:50%;--hy:60%;--hw:46%}
 .depth--box .depth__subject{--sw:min(94vw,138svh);bottom:-9svh}
 .depth--stand{--sx:12vw;--run:-80vw;--grow:.06;--hx:30.5%;--hy:51%;--hw:24%}
-.d--hero{font-size:clamp(2rem,4.8vw,4.8rem);line-height:1}
+.d--hero{font-size:clamp(2rem,4.8vw,4.8rem);line-height:1.2;letter-spacing:.005em;word-spacing:.08em}
 .depth{position:relative;height:var(--span,230vh)}
 .depth__stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;background:var(--cream);isolation:isolate}
 .depth__bg,.depth__wash,.depth__subject,.depth__blob{position:absolute;pointer-events:none}
@@ -107,7 +107,7 @@ a{color:inherit;text-underline-offset:.2em;text-decoration-thickness:1px}
   .depth__title{top:clamp(76px,12svh,110px)}
   .d--xl{font-size:clamp(2.6rem,12.6vw,4.4rem)}
   .d--hero{font-size:clamp(1.9rem,8.6vw,3.2rem)}
-  .depth__subject{--sw:132vw;bottom:clamp(214px,31svh,270px)}
+  .depth__subject{--sw:132vw;bottom:calc(137px + env(safe-area-inset-bottom) - 13.6vw)}
   .depth--box .depth__subject{--sw:200vw;bottom:clamp(120px,17svh,160px)}
   .depth__copy{left:var(--gut);right:var(--gut);width:auto;min-width:0;bottom:calc(18px + env(safe-area-inset-bottom));gap:12px;flex-direction:column}
   .depth__copy .lead{font-size:1rem}
@@ -373,3 +373,6 @@ html.js .door.fx-tilt{transition:opacity .5s var(--ease)}
 
 .js-tilt-glare{overflow:hidden;border-radius:inherit}
 main,section,footer,header{max-width:100%}
+
+/* bulle « Une question ? » du chat retirée (le bouton abeille reste) */
+.bcc-tip{display:none!important}
