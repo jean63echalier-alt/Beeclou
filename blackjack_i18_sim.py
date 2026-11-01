@@ -27,6 +27,7 @@ def decide(cards, up, can_split, can_dbl, tc, dev):
         if t in (17, 16): return D if 3 <= up <= 6 else 'H'
         if t in (15, 14): return D if 4 <= up <= 6 else 'H'
         return D if 5 <= up <= 6 else 'H'          # 13, 12
+    if dev == 2 and tc > 1 and 12 <= t <= 16: return 'S'   # no-bust quand TC > 1
     if dev:
         if t == 16 and up == 10 and tc >= 0: return 'S'
         if t == 15 and up == 10 and tc >= 4: return 'S'
